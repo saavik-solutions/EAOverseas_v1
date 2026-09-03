@@ -35,7 +35,7 @@ export const translateText = async (texts: string[], targetLang: string): Promis
 
 CRITICAL INSTRUCTIONS:
 1. Always distinguish between **Proper Nouns** (Names, Places, Brands, Titles) and **Common Nouns** (General words).
-2. For Proper Nouns or titles used as names (e.g., 'Prince', 'Sunny', 'London', 'EA Overseas'), you MUST use **PHONETIC TRANSLITERATION** (representing the Sound in ${targetLangName} script) instead of translating the semantic meaning.
+2. For Proper Nouns or titles used as names (e.g., 'Prince', 'Sunny', 'London', 'Eduwoy'), you MUST use **PHONETIC TRANSLITERATION** (representing the Sound in ${targetLangName} script) instead of translating the semantic meaning.
 3. For general sentences and common nouns, use standard translation.
 4. Maintain tone and casing.
 

@@ -91,7 +91,7 @@ model StudentProfile {
 ```
 
 ## 7. Implementation Roadmap
-1. **Phase 1: Frontend Structure (Current)**: Build the React UI, form state management, and visualizations matching the EAOverseas theme.
+1. **Phase 1: Frontend Structure (Current)**: Build the React UI, form state management, and visualizations matching the Eduwoy theme.
 2. **Phase 2: Data Aggregation Engine**: Implement the FastAPI backend services for basic integrations (GitHub API, PDF parsing).
 3. **Phase 3: Scraping Services**: Deploy Playwright/Scrapy workers for LinkedIn and Portfolios.
 4. **Phase 4: AI & Reporting**: Integrate OpenAI and generate the `Profile Intelligence Report`.

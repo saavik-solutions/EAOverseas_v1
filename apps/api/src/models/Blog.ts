@@ -22,7 +22,7 @@ const BlogSchema: Schema = new Schema(
         slug: { type: String, required: true, unique: true },
         content: { type: String, required: true },
         excerpt: { type: String, required: true },
-        author: { type: String, default: 'EAOverseas Expert' },
+        author: { type: String, default: 'Eduwoy Expert' },
         coverImage: { type: String, required: true },
         category: { type: String, default: 'General' },
         tags: [{ type: String }],

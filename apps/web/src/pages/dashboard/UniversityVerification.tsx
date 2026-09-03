@@ -119,7 +119,7 @@ const UniversityVerification = () => {
             {/* Header */}
             <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
                 <div className="w-full px-6 h-20 flex items-center">
-                    <img src={logo} alt="EAOverseas Logo" className="h-12 mix-blend-multiply" />
+                    <img src={logo} alt="Eduwoy Logo" className="h-12 mix-blend-multiply" />
                 </div>
             </header>
 
@@ -284,7 +284,7 @@ const UniversityVerification = () => {
                                     className="mt-1 w-5 h-5 rounded border-slate-300 text-[#0d6cf2] focus:ring-[#0d6cf2] accent-[#0d6cf2]"
                                 />
                                 <span className="text-sm text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors">
-                                    I agree to the EAOverseas <Link to="/terms" target="_blank" className="text-[#0d6cf2] hover:underline">Terms of Service</Link> and <Link to="/privacy-security" target="_blank" className="text-[#0d6cf2] hover:underline">Privacy Policy</Link>.
+                                    I agree to the Eduwoy <Link to="/terms" target="_blank" className="text-[#0d6cf2] hover:underline">Terms of Service</Link> and <Link to="/privacy-security" target="_blank" className="text-[#0d6cf2] hover:underline">Privacy Policy</Link>.
                                 </span>
                             </label>
                             <label className="flex items-start gap-3 cursor-pointer group">

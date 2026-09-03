@@ -13,7 +13,7 @@ const ConsultantLayout = () => {
 
             {/* Mobile Header - Same as MainLayout */}
             <div className="lg:hidden bg-white px-4 py-3 flex items-center justify-between z-30 shrink-0">
-                <img src={logo} alt="EAOverseas" className="h-8 w-auto object-contain" />
+                <img src={logo} alt="Eduwoy" className="h-8 w-auto object-contain" />
                 <button
                     onClick={() => setIsSidebarOpen(true)}
                     className="p-2 text-gray-500 hover:text-gray-700 rounded-lg hover:bg-gray-100"

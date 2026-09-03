@@ -266,7 +266,7 @@ const Feed = () => {
                     isOpen={isShareModalOpen}
                     onClose={() => setIsShareModalOpen(false)}
                     title="Distribute Opportunity"
-                    shareUrl={`https://eaoverseas.com/feed/${shareData.id}`}
+                    shareUrl={`https://eduwoy.com/feed/${shareData.id}`}
                     preview={{
                         title: shareData.title,
                         subtitle: shareData.institution,

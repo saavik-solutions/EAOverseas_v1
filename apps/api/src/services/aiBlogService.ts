@@ -31,7 +31,7 @@ export const generateBlogContent = async (category: string, mode: 'experiment' |
 
         const categoryContext = CATEGORY_PROMPTS[category] || 'General international education and study abroad guidance.';
         
-        const systemPrompt = `You are an expert content strategist for EAOverseas, a premium study abroad consultancy with 30 years of excellence. 
+        const systemPrompt = `You are an expert content strategist for Eduwoy, a premium study abroad platform with 30 years of excellence. 
         Your goal is to generate high-performance, SEO-optimized blog posts for students and parents.
         
         Category: ${category}

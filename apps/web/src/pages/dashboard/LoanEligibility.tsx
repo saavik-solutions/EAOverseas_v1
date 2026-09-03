@@ -442,7 +442,7 @@ const LoanEligibility = () => {
 
             {/* Footer area */}
             <footer className="mt-10 py-8 px-10 border-t border-gray-100 text-center">
-                <p className="text-sm text-[#60728a]">© 2024 EAOverseas AI - Helping students bridge the gap to global education.</p>
+                <p className="text-sm text-[#60728a]">© 2024 Eduwoy AI - Helping students bridge the gap to global education.</p>
             </footer>
         </div>
     );

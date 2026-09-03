@@ -62,8 +62,8 @@ const DestinationsSection: React.FC = () => {
         <section className="relative w-full py-20 pb-16 min-h-[900px] max-md:min-h-auto overflow-hidden bg-transparent z-0">
             <div className="max-w-[1200px] mx-auto px-8 max-sm:px-4 flex flex-col items-center relative z-10">
                 {/* Section Badge */}
-                <div className="inline-flex items-center gap-2 bg-[#7a29c2]/[0.08] border border-[#7a29c2]/20 text-[#7a29c2] text-[13px] font-semibold tracking-wide uppercase py-1.5 px-4 rounded-full mb-5">
-                    <span className="w-[7px] h-[7px] rounded-full bg-[#7a29c2] animate-pulse" />
+                <div className="inline-flex items-center gap-2 bg-primary/[0.08] border border-primary/20 text-primary text-[13px] font-semibold tracking-wide uppercase py-1.5 px-4 rounded-full mb-5">
+                    <span className="w-[7px] h-[7px] rounded-full bg-primary animate-pulse" />
                     Study Abroad
                 </div>
 
@@ -84,8 +84,8 @@ const DestinationsSection: React.FC = () => {
                                     onClick={() => setSelectedCountry(country)}
                                     className={`inline-flex items-center gap-2 text-[14px] max-sm:text-[13px] font-medium cursor-pointer py-2 px-4 max-sm:px-3.5 rounded-full border-[1.5px] transition-all duration-200 select-none shadow-sm ${
                                         isActive 
-                                        ? 'bg-gradient-to-br from-[#9333ea] to-[#7a29c2] border-transparent text-white font-semibold shadow-[0_4px_14px_rgba(122,41,194,0.35)] -translate-y-[2px]' 
-                                        : 'bg-white border-gray-200 text-gray-700 hover:border-[#7a29c2] hover:text-[#7a29c2] hover:bg-purple-50 hover:-translate-y-[1px] hover:shadow-[0_2px_8px_rgba(122,41,194,0.12)]'
+                                        ? 'bg-gradient-to-br from-[#9333ea] to-primary border-transparent text-white font-semibold shadow-[0_4px_14px_rgba(122,41,194,0.35)] -translate-y-[2px]' 
+                                        : 'bg-white border-gray-200 text-gray-700 hover:border-primary hover:text-primary hover:bg-purple-50 hover:-translate-y-[1px] hover:shadow-[0_2px_8px_rgba(122,41,194,0.12)]'
                                     }`}
                                 >
                                     <span className="text-[18px] max-sm:text-[16px] leading-none">{countryMeta[country].flag}</span>
@@ -96,7 +96,7 @@ const DestinationsSection: React.FC = () => {
                     </div>
 
                     <button
-                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#7a29c2] bg-transparent border-2 border-[#7a29c2] rounded-full py-2 px-5 cursor-pointer transition-all duration-200 whitespace-nowrap outline-none hover:bg-[#7a29c2] hover:text-white hover:shadow-[0_4px_16px_rgba(122,41,194,0.3)] hover:-translate-y-[2px]"
+                        className="inline-flex items-center gap-2 text-[14px] font-semibold text-primary bg-transparent border-2 border-primary rounded-full py-2 px-5 cursor-pointer transition-all duration-200 whitespace-nowrap outline-none hover:bg-primary hover:text-white hover:shadow-[0_4px_16px_rgba(122,41,194,0.3)] hover:-translate-y-[2px]"
                         onClick={() => navigate('/contact')}
                     >
                         <span>Explore More</span>
@@ -113,7 +113,7 @@ const DestinationsSection: React.FC = () => {
                             <div 
                                 key={index} 
                                 onClick={() => navigate('/contact')}
-                                className="relative rounded-[22px] overflow-hidden min-h-[400px] max-sm:min-h-0 bg-gradient-to-b from-purple-100 via-purple-200 to-[#7a29c2] flex flex-col shadow-md hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(122,41,194,0.2)] transition-all duration-300 animate-[fadeInUp_0.45s_ease-out_forwards] max-sm:min-w-[220px] max-sm:w-[220px] max-sm:snap-center max-sm:rounded-[18px] cursor-pointer group"
+                                className="relative rounded-[22px] overflow-hidden min-h-[400px] max-sm:min-h-0 bg-gradient-to-b from-purple-100 via-purple-200 to-primary flex flex-col shadow-md hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(122,41,194,0.2)] transition-all duration-300 animate-[fadeInUp_0.45s_ease-out_forwards] max-sm:min-w-[220px] max-sm:w-[220px] max-sm:snap-center max-sm:rounded-[18px] cursor-pointer group"
                                 style={{ animationDelay: `${index * 0.05}s` }}
                             >
                                 <div className="relative shrink-0 p-2 pt-2">
@@ -132,7 +132,7 @@ const DestinationsSection: React.FC = () => {
                                         </svg>
                                         #{uni.ranking} World
                                     </div>
-                                    <div className="absolute top-[18px] right-[18px] inline-flex items-center gap-1 bg-[#7a29c2]/80 backdrop-blur-sm text-white text-[11px] font-bold py-1 px-2 rounded-full tracking-wide">
+                                    <div className="absolute top-[18px] right-[18px] inline-flex items-center gap-1 bg-primary/80 backdrop-blur-sm text-white text-[11px] font-bold py-1 px-2 rounded-full tracking-wide">
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                                             <circle cx="6" cy="6" r="5" stroke="white" strokeWidth="1.2" />
                                             <path d="M4 6h4M6 4v4" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
@@ -157,7 +157,7 @@ const DestinationsSection: React.FC = () => {
                                         </div>
                                     </div>
                                     <button
-                                        className="inline-flex items-center justify-center gap-1.5 bg-white text-[#7a29c2] border-none py-2.5 px-4 max-sm:py-2.5 max-sm:px-3 rounded-full font-bold text-[13px] max-sm:text-[11px] cursor-pointer w-full text-center shadow-[0_4px_15px_rgba(0,0,0,0.12)] transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_6px_20px_rgba(0,0,0,0.18)]"
+                                        className="inline-flex items-center justify-center gap-1.5 bg-white text-primary border-none py-2.5 px-4 max-sm:py-2.5 max-sm:px-3 rounded-full font-bold text-[13px] max-sm:text-[11px] cursor-pointer w-full text-center shadow-[0_4px_15px_rgba(0,0,0,0.12)] transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_6px_20px_rgba(0,0,0,0.18)]"
                                         onClick={(e) => {
                                             e.stopPropagation();
                                             window.location.href = '/contact';
@@ -177,7 +177,7 @@ const DestinationsSection: React.FC = () => {
                 {/* Footer CTA */}
                 <div className="mt-12 mb-4 max-sm:mt-8">
                     <button 
-                        className="inline-flex items-center gap-2 bg-gradient-to-dr from-[#9333ea] to-[#7a29c2] bg-[#7a29c2] color-white text-white border-none py-3.5 px-9 max-sm:py-3 max-sm:px-7 rounded-full text-[16px] max-sm:text-[15px] font-bold cursor-pointer shadow-[0_6px_20px_rgba(122,41,194,0.35)] transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_10px_28px_rgba(122,41,194,0.45)] tracking-wide" 
+                        className="inline-flex items-center gap-2 bg-gradient-to-dr from-[#9333ea] to-primary bg-primary color-white text-white border-none py-3.5 px-9 max-sm:py-3 max-sm:px-7 rounded-full text-[16px] max-sm:text-[15px] font-bold cursor-pointer shadow-[0_6px_20px_rgba(122,41,194,0.35)] transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_10px_28px_rgba(122,41,194,0.45)] tracking-wide" 
                         onClick={() => navigate('/contact')}
                     >
                         View All Destinations

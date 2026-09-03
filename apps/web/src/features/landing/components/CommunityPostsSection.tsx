@@ -207,7 +207,7 @@ const CommunityPostsSection: React.FC = () => {
     }, []);
 
     return (
-        <section className="relative py-24 px-4 overflow-hidden bg-transparent border-t border-[#7a29c2]/5" ref={sectionRef}>
+        <section className="relative py-24 px-4 overflow-hidden bg-transparent border-t border-primary/5" ref={sectionRef}>
             {/* Decorative Theme Blobs */}
             <div className={`absolute rounded-full blur-[100px] z-0 opacity-40 transition-all duration-1000 ease-in-out w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(122,41,194,0.1)_0%,rgba(255,255,255,0)_70%)] top-[-100px] left-[-100px] ${isVisible ? 'animate-[floatingBlobs_15s_infinite_alternate]' : ''}`} />
             <div className={`absolute rounded-full blur-[100px] z-0 opacity-30 transition-all duration-1000 ease-in-out w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(249,115,22,0.1)_0%,rgba(255,255,255,0)_70%)] bottom-0 right-[-100px] ${isVisible ? 'animate-[floatingBlobs_12s_infinite_alternate-reverse]' : ''}`} />
@@ -215,12 +215,12 @@ const CommunityPostsSection: React.FC = () => {
             <div className="max-w-[1400px] mx-auto relative z-10 w-full px-4">
                 {/* Header */}
                 <div className={`text-center mb-16 flex flex-col items-center ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'}`}>
-                    <div className="inline-flex items-center gap-2 py-2 px-5 bg-[#f3e8ff] text-[#7a29c2] border border-[#e9d5ff] rounded-full text-[11px] font-black uppercase tracking-[0.2em] mb-6">
+                    <div className="inline-flex items-center gap-2 py-2 px-5 bg-[#f3e8ff] text-primary border border-[#e9d5ff] rounded-full text-[11px] font-black uppercase tracking-[0.2em] mb-6">
                         <span className="w-2 h-2 bg-[#9333ea] rounded-full animate-pulse shadow-[0_0_8px_#9333ea]" />
                         Dashboard Activity
                     </div>
                     <h2 className="text-[2.5rem] md:text-[4rem] font-black text-[#090914] mb-6 leading-[1.1] font-bricolage">
-                        Voices of the <span className="text-[#7a29c2] relative">EA Dashboard</span>
+                        Voices of the <span className="text-primary relative">EA Dashboard</span>
                     </h2>
                     <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
                         Stay connected with real-time updates, expert advice, and success stories shared by our global student network.
@@ -274,7 +274,7 @@ const CommunityPostsSection: React.FC = () => {
                 <div className={`mt-16 flex justify-center ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
                     <button 
                         onClick={() => navigate('/ointake-feed')}
-                        className="group flex items-center gap-3 bg-white text-[#7a29c2] py-4 px-10 rounded-2xl text-base font-black border-2 border-purple-100 cursor-pointer shadow-sm transition-all duration-300 hover:border-[#7a29c2] hover:bg-[#7a29c2] hover:text-white hover:shadow-[0_15px_30px_-5px_rgba(122,41,194,0.3)] hover:-translate-y-1 active:translate-y-0"
+                        className="group flex items-center gap-3 bg-white text-primary py-4 px-10 rounded-2xl text-base font-black border-2 border-purple-100 cursor-pointer shadow-sm transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white hover:shadow-[0_15px_30px_-5px_rgba(122,41,194,0.3)] hover:-translate-y-1 active:translate-y-0"
                     >
                         Explore Dashboard Feed
                         <span className="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">forum</span>

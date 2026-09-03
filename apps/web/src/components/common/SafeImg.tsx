@@ -1,6 +1,6 @@
 /**
  * SafeImg — Drop-in replacement for <img> that falls back to the
- * EAOverseas logo whenever the source URL is missing or fails to load.
+ * Eduwoy logo whenever the source URL is missing or fails to load.
  *
  * Usage:
  *   <SafeImg src={url} alt="desc" className="w-full h-full object-cover" />
@@ -24,7 +24,7 @@ const SafeImg: React.FC<SafeImgProps> = ({ src, alt, className, logoClassName, s
       >
         <img
           src={logo}
-          alt="EAOverseas"
+          alt="Eduwoy"
           className={logoClassName ?? 'h-10 w-auto object-contain opacity-60'}
         />
       </div>

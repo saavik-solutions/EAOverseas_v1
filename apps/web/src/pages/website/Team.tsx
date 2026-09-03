@@ -13,7 +13,7 @@ const Team = () => {
                     <div className="max-w-2xl">
                         <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4">Our Expert Team</h1>
                         <p className="text-[#636988] text-lg leading-relaxed">
-                            Meet the dedicated professionals at EAOverseas committed to guiding your global education journey with integrity and expertise.
+                            Meet the dedicated professionals at Eduwoy committed to guiding your global education journey with integrity and expertise.
                         </p>
                     </div>
                 </div>

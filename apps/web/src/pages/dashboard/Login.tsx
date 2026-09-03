@@ -119,14 +119,14 @@ const Login = () => {
                         </div>
                         <p className="text-lg leading-relaxed font-medium mb-6">"
                             {selectedRole === 'University'
-                                ? "Our international student intake has increased by 40% since using EAOverseas. The verification tools save us countless hours of administrative work."
+                                ? "Our international student intake has increased by 40% since using Eduwoy. The verification tools save us countless hours of administrative work."
                                 : selectedRole === 'Counsellor'
                                     ? "Client satisfaction has never been higher. The transparency regarding application status allows us to manage expectations and deliver results."
                                     : selectedRole === 'Vendors'
-                                        ? "Partnering with EAOverseas has opened new revenue streams. The platform's vendor management system is intuitive and helps us reach thousands of students."
+                                        ? "Partnering with Eduwoy has opened new revenue streams. The platform's vendor management system is intuitive and helps us reach thousands of students."
                                         : selectedRole === 'Chief Counsel'
                                             ? "The oversight tools and analytics dashboard give me complete visibility into operations. Managing compliance and counsellor performance has never been easier."
-                                            : "EAOverseas helped me find the perfect university program and guided me through every step of the visa process. I couldn't have done it without them!"
+                                            : "Eduwoy helped me find the perfect university program and guided me through every step of the visa process. I couldn't have done it without them!"
                             }"</p>
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full bg-white/20 bg-cover bg-center border-2 border-white/50" style={{
@@ -151,9 +151,9 @@ const Login = () => {
                                 }</p>
                                 <p className="text-sm text-blue-200">{
                                     selectedRole === 'University' ? 'Department Head, Oxford Brookes' :
-                                        selectedRole === 'Counsellor' ? 'Senior Counsellor, EAOverseas' :
+                                        selectedRole === 'Counsellor' ? 'Senior Counsellor, Eduwoy' :
                                             selectedRole === 'Vendors' ? 'Partner, Global Services Ltd' :
-                                                selectedRole === 'Chief Counsel' ? 'Chief Counsel, EAOverseas' :
+                                                selectedRole === 'Chief Counsel' ? 'Chief Counsel, Eduwoy' :
                                                     "Student, King's College London"
                                 }</p>
                             </div>
@@ -170,7 +170,7 @@ const Login = () => {
                         <div className="bg-[#0d6cf2]/10 rounded-lg flex items-center justify-center size-9 lg:size-10 text-[#0d6cf2] transition-colors group-hover:bg-[#0d6cf2]/20">
                             <span className="material-symbols-outlined text-[20px] lg:text-[24px]">school</span>
                         </div>
-                        <span className="font-bold text-slate-900 text-lg lg:text-xl group-hover:text-[#0d6cf2] transition-colors">EAOverseas</span>
+                        <span className="font-bold text-slate-900 text-lg lg:text-xl group-hover:text-[#0d6cf2] transition-colors">Eduwoy</span>
                     </Link>
 
                     {/* Header */}

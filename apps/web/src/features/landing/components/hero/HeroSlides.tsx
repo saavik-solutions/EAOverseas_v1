@@ -30,7 +30,7 @@ export const MainSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
           </div>
           <h2 className="text-[28px] sm:text-[32px] md:text-[54px] lg:text-[72px] font-black text-[#0f172a] leading-[1.1] md:leading-[1.05] tracking-tight font-bricolage transition-all">
             Secure Your <br />
-            <span className="text-[#7a29c2]">Global Future</span> <br />
+            <span className="text-primary">Global Future</span> <br />
             With Expert Guidance.
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-slate-500 max-w-xl leading-relaxed font-medium">
@@ -38,7 +38,7 @@ export const MainSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-5 pt-4">
             <button
-              onClick={() => window.open('https://student.eaoverseas.com/auth/signup', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://student.eduwoy.com/auth/signup', '_blank', 'noopener,noreferrer')}
               className="group relative px-8 md:px-10 py-4 md:py-5 bg-[#0f172a] text-white font-bold rounded-2xl overflow-hidden transition-all hover:bg-[#1e293b] hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-slate-900/10"
             >
               Sign Up
@@ -87,12 +87,12 @@ export const ScholarshipSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
     <div className="relative w-full min-h-[500px] md:min-h-[550px] md:h-full flex items-center justify-center overflow-hidden pt-28 pb-10 md:pt-40 md:pb-20">
       <div className="max-w-[1400px] w-full px-6 lg:px-16 grid lg:grid-cols-2 gap-10 md:gap-24 items-center z-10 text-left">
         <div className="space-y-6 md:space-y-8 animate-fade-in-up order-1 lg:order-1">
-          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-[#7a29c2] font-bold text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-primary font-bold text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
             Financial Strategy & Awards
           </div>
           <h1 className="text-[28px] sm:text-[32px] md:text-[54px] lg:text-[72px] font-black text-[#0f172a] leading-[1.1] md:leading-[1.05] tracking-tight font-bricolage">
             Strategic <br />
-            <span className="text-[#7a29c2]">Scholarship</span> <br />
+            <span className="text-primary">Scholarship</span> <br />
             Advisory.
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-slate-500 max-w-xl leading-relaxed font-medium">
@@ -100,8 +100,8 @@ export const ScholarshipSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-5 pt-4">
             <button
-              onClick={() => window.open('https://student.eaoverseas.com/auth/login', '_blank', 'noopener,noreferrer')}
-              className="px-8 md:px-10 py-4 md:py-5 bg-[#7a29c2] text-white font-bold rounded-2xl hover:bg-[#6a24aa] transition-all hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/10"
+              onClick={() => window.open('https://student.eduwoy.com/auth/login', '_blank', 'noopener,noreferrer')}
+              className="px-8 md:px-10 py-4 md:py-5 bg-primary text-white font-bold rounded-2xl hover:bg-primary-hover transition-all hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/10"
             >
               Sign In
             </button>
@@ -148,7 +148,7 @@ export const DestinationsSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
     <div className="relative w-full min-h-[500px] md:min-h-[550px] md:h-full flex items-center justify-center overflow-hidden pt-28 pb-10 md:pt-40 md:pb-20">
       <div className="max-w-[1400px] w-full px-6 lg:px-16 grid lg:grid-cols-2 gap-10 md:gap-24 items-center z-10 text-left">
         <div className="space-y-6 md:space-y-8 animate-fade-in-up order-1 lg:order-1">
-          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-[#7a29c2] font-bold text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-primary font-bold text-[10px] md:text-[11px] tracking-[0.2em] uppercase">
             Global Network Centers
           </div>
           <h2 className="text-[28px] sm:text-[32px] md:text-[54px] lg:text-[72px] font-black text-[#0f172a] leading-[1.1] md:leading-[1.05] tracking-tight font-bricolage">
@@ -166,7 +166,7 @@ export const DestinationsSlide: React.FC<SlideProps> = ({ onBookingClick }) => {
           </div>
           <button
             onClick={() => navigate('/countries')}
-            className="px-8 md:px-10 py-4 md:py-5 bg-[#7a29c2] text-white font-bold rounded-2xl transition-all hover:bg-[#6a24aa] hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/10"
+            className="px-8 md:px-10 py-4 md:py-5 bg-primary text-white font-bold rounded-2xl transition-all hover:bg-primary-hover hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/10"
           >
             Explore Network
           </button>

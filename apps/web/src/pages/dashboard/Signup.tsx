@@ -106,7 +106,7 @@ const Signup = () => {
                             <span className="material-symbols-outlined fill-current">star</span>
                             <span className="material-symbols-outlined fill-current">star_half</span>
                         </div>
-                        <p className="text-lg leading-relaxed font-medium mb-6">"Applying to universities abroad felt overwhelming until I found EAOverseas. The platform made the entire process simple and stress-free."</p>
+                        <p className="text-lg leading-relaxed font-medium mb-6">"Applying to universities abroad felt overwhelming until I found Eduwoy. The platform made the entire process simple and stress-free."</p>
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full bg-white/20 bg-cover bg-center border-2 border-white/50" style={{
                                 backgroundImage: `url("https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2576&auto=format&fit=crop")`
@@ -128,7 +128,7 @@ const Signup = () => {
                         <div className="bg-[#0d6cf2]/10 rounded-lg flex items-center justify-center size-9 lg:size-10 text-[#0d6cf2] transition-colors group-hover:bg-[#0d6cf2]/20">
                             <span className="material-symbols-outlined text-[20px] lg:text-[24px]">school</span>
                         </div>
-                        <span className="font-bold text-slate-900 text-lg lg:text-xl group-hover:text-[#0d6cf2] transition-colors">EAOverseas</span>
+                        <span className="font-bold text-slate-900 text-lg lg:text-xl group-hover:text-[#0d6cf2] transition-colors">Eduwoy</span>
                     </Link>
 
                     {step === 'form' ? (

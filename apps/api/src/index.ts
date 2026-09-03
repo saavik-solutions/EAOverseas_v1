@@ -34,7 +34,8 @@ const allowedOrigins = [
     'http://localhost:5185',
     'http://localhost:3000',
     'http://localhost:3001',
-    'https://eaoverseas.com',
+    'https://eduwoy.com',
+    'https://student.eduwoy.com',
     process.env.FRONTEND_URL
 ].filter(Boolean);
 

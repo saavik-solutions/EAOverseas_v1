@@ -4,7 +4,7 @@ import { CONTACTS, getWhatsAppLink } from '@/shared/constants/contacts';
 import { destinations } from '@/data/countries';
 import logo from '@/assets/logo.webp';
 
-const FALLBACK = 'https://student.eaoverseas.com';
+const FALLBACK = 'https://student.eduwoy.com';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Footer = () => {
     { name: 'Cookie Policy',       path: '/cookie-policy' },
     { name: 'Help Center',         path: FALLBACK, external: true },
     { name: 'Careers',             path: FALLBACK, external: true },
-    { name: 'EAOverseas USA',      path: FALLBACK, external: true },
+    { name: 'Eduwoy USA',          path: FALLBACK, external: true },
     { name: 'Sitemap',             path: FALLBACK, external: true },
   ];
 
@@ -53,8 +53,8 @@ const Footer = () => {
     { name: 'Partner with Us',        path: FALLBACK, external: true },
     { name: 'Refer & Earn',           path: FALLBACK, external: true },
     { name: 'Book a Consultation',    path: FALLBACK, external: true },
-    { name: 'Sign In',                path: 'https://student.eaoverseas.com/auth/login', external: true },
-    { name: 'Sign Up',                path: 'https://student.eaoverseas.com/auth/signup', external: true },
+    { name: 'Sign In',                path: 'https://student.eduwoy.com/auth/login', external: true },
+    { name: 'Sign Up',                path: 'https://student.eduwoy.com/auth/signup', external: true },
     { name: 'News & Updates',         path: FALLBACK, external: true },
     { name: 'Work With Us',           path: FALLBACK, external: true },
     { name: 'Media & Press',          path: FALLBACK, external: true },
@@ -92,11 +92,11 @@ const Footer = () => {
               <Link
                 to="/"
                 className="flex-shrink-0 cursor-pointer select-none mb-5 inline-block"
-                aria-label="EAOverseas Home"
+                aria-label="Eduwoy Home"
               >
                 <img 
                   src={logo} 
-                  alt="EAOverseas Logo" 
+                  alt="Eduwoy Logo" 
                   className="h-12 w-auto object-contain transition-all duration-300 ease-in-out" 
                   style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }}
                 />
@@ -108,7 +108,7 @@ const Footer = () => {
 
               <button
                 onClick={() => navigate('/contact')}
-                className="bg-[#7a29c2] hover:bg-[#6d28d9] text-white w-full py-3 rounded-xl text-[13px] font-bold flex items-center justify-center gap-2 mb-3 transition-all shadow-lg shadow-purple-500/25 border border-white/10 hover:scale-[1.02] active:scale-[0.98]"
+                className="bg-primary hover:bg-[#6d28d9] text-white w-full py-3 rounded-xl text-[13px] font-bold flex items-center justify-center gap-2 mb-3 transition-all shadow-lg shadow-purple-500/25 border border-white/10 hover:scale-[1.02] active:scale-[0.98]"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                   <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
@@ -120,19 +120,19 @@ const Footer = () => {
                 <p className="text-[11px] text-gray-500 font-bold uppercase tracking-widest mb-3">Contact</p>
                 <div className="space-y-2">
                   <a href={`tel:${CONTACTS.support.phoneSecondary}`} className="flex items-center gap-2 text-[12px] text-gray-400 hover:text-white transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-[#7a29c2]"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.273-3.973-6.869-6.869l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-primary"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.273-3.973-6.869-6.869l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
                     {CONTACTS.support.phoneSecondary}
                   </a>
                   <a href={`tel:${CONTACTS.support.phone}`} className="flex items-center gap-2 text-[12px] text-gray-400 hover:text-white transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-[#7a29c2]"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-primary"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
                     {CONTACTS.support.phone}
                   </a>
                   <a href={`mailto:${CONTACTS.support.email}`} className="flex items-center gap-2 text-[12px] text-gray-400 hover:text-white transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-[#7a29c2]"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-primary"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
                     {CONTACTS.support.email}
                   </a>
                   <p className="flex items-start gap-2 text-[12px] text-gray-500 leading-relaxed">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-[#7a29c2] shrink-0 mt-0.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
                     {CONTACTS.support.address}
                   </p>
                 </div>
@@ -141,7 +141,7 @@ const Footer = () => {
 
             {/* Company */}
             <div>
-              <h4 className="text-[11px] font-extrabold tracking-widest text-[#7a29c2] uppercase mb-6">Company</h4>
+              <h4 className="text-[11px] font-extrabold tracking-widest text-primary uppercase mb-6">Company</h4>
               <ul className="space-y-3.5">
                 {companyLinks.map(link => <li key={link.name}>{renderLink(link)}</li>)}
               </ul>
@@ -149,7 +149,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-[11px] font-extrabold tracking-widest text-[#7a29c2] uppercase mb-6">Our Services</h4>
+              <h4 className="text-[11px] font-extrabold tracking-widest text-primary uppercase mb-6">Our Services</h4>
               <ul className="space-y-3.5">
                 {servicesLinks.map(link => <li key={link.name}>{renderLink(link)}</li>)}
               </ul>
@@ -157,7 +157,7 @@ const Footer = () => {
 
             {/* Resources */}
             <div>
-              <h4 className="text-[11px] font-extrabold tracking-widest text-[#7a29c2] uppercase mb-6">Resources</h4>
+              <h4 className="text-[11px] font-extrabold tracking-widest text-primary uppercase mb-6">Resources</h4>
               <ul className="space-y-3.5">
                 {resourcesLinks.map(link => <li key={link.name}>{renderLink(link)}</li>)}
               </ul>
@@ -165,7 +165,7 @@ const Footer = () => {
 
             {/* Quick Access */}
             <div>
-              <h4 className="text-[11px] font-extrabold tracking-widest text-[#7a29c2] uppercase mb-6">Quick Access</h4>
+              <h4 className="text-[11px] font-extrabold tracking-widest text-primary uppercase mb-6">Quick Access</h4>
               <ul className="space-y-3.5">
                 {quickLinks.map(link => <li key={link.name}>{renderLink(link)}</li>)}
               </ul>
@@ -176,8 +176,8 @@ const Footer = () => {
           {/* ─── Countries row ─── */}
           <div className="py-10 border-b border-white/[0.06]">
             <div className="flex items-center justify-between mb-5">
-              <h4 className="text-[11px] font-extrabold tracking-widest text-[#7a29c2] uppercase">Study Destinations</h4>
-              <Link to="/countries" className="text-[11px] font-bold text-white/40 hover:text-[#7a29c2] transition-colors inline-flex items-center gap-1 group">
+              <h4 className="text-[11px] font-extrabold tracking-widest text-primary uppercase">Study Destinations</h4>
+              <Link to="/countries" className="text-[11px] font-bold text-white/40 hover:text-primary transition-colors inline-flex items-center gap-1 group">
                 View all
                 <span className="material-symbols-outlined text-[13px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </Link>
@@ -187,7 +187,7 @@ const Footer = () => {
                 <Link
                   key={dest.code}
                   to={`/country/${dest.code}`}
-                  className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.07] hover:border-[#7a29c2]/40 transition-all group"
+                  className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.07] hover:border-primary/40 transition-all group"
                 >
                   <img
                     src={`https://flagcdn.com/w40/${dest.code.toLowerCase()}.webp`}
@@ -211,8 +211,8 @@ const Footer = () => {
                   href={social === 'whatsapp' ? getWhatsAppLink() : CONTACTS.socials[social as keyof typeof CONTACTS.socials] || FALLBACK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-white/5 border border-white/10 text-gray-400 flex items-center justify-center hover:bg-[#7a29c2] hover:text-white hover:border-[#7a29c2] transition-all"
-                  aria-label={`Follow EAOverseas on ${social}`}
+                  className="w-8 h-8 rounded-full bg-white/5 border border-white/10 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all"
+                  aria-label={`Follow Eduwoy on ${social}`}
                 >
                   <div className="w-[13px] h-[13px] bg-current" style={{ maskImage: `url(https://unpkg.com/simple-icons@v9/icons/${social}.svg)`, WebkitMaskImage: `url(https://unpkg.com/simple-icons@v9/icons/${social}.svg)`, maskSize: 'contain', maskRepeat: 'no-repeat', maskPosition: 'center' }} aria-hidden="true"></div>
                 </a>
@@ -229,7 +229,7 @@ const Footer = () => {
             </div>
 
             <p className="text-[12px] text-gray-500 font-medium whitespace-nowrap">
-              © 2026 EAOverseas. All rights reserved
+              © 2026 Eduwoy. All rights reserved
             </p>
           </div>
 

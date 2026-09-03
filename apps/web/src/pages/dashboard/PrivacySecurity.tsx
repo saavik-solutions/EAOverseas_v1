@@ -19,7 +19,7 @@ const PrivacySecurity = () => {
                     <div className="flex justify-between items-end border-b border-gray-200 pb-4 md:pb-6">
                         <div>
                             <h1 className="text-[#111418] text-xl md:text-3xl font-bold tracking-tight mb-2">Privacy & Security</h1>
-                            <p className="text-slate-500 text-xs md:text-base max-w-2xl">Manage how your data is used, document permissions, and account security settings. Your privacy is paramount to EAOverseas.</p>
+                            <p className="text-slate-500 text-xs md:text-base max-w-2xl">Manage how your data is used, document permissions, and account security settings. Your privacy is paramount to Eduwoy.</p>
                         </div>
                         <div className="hidden sm:block">
                             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 border border-green-200 text-green-700 text-xs font-medium">
@@ -254,7 +254,7 @@ const PrivacySecurity = () => {
                     </section>
 
                     <footer className="mt-8 text-center">
-                        <p className="text-xs text-slate-400">© 2026 EAOverseas. All rights reserved.</p>
+                        <p className="text-xs text-slate-400">© 2026 Eduwoy. All rights reserved.</p>
                     </footer>
                 </div>
             </div>

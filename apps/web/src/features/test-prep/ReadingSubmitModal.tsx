@@ -72,7 +72,7 @@ const ReadingSubmitModal = ({ isOpen, onClose, onConfirm, summary }) => {
                 {/* Footer */}
                 <div className="bg-slate-50 p-4 border-t border-slate-100 flex items-center justify-center gap-2 text-xs font-medium text-slate-500">
                     <span className="material-symbols-outlined text-sm">lock</span>
-                    Your progress is automatically saved to the EAOverseas cloud.
+                    Your progress is automatically saved to the Eduwoy cloud.
                 </div>
             </div>
         </div>

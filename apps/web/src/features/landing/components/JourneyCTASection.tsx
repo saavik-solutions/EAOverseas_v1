@@ -10,7 +10,7 @@ const JourneyCTASection = () => {
           
           {/* Background decorative wavy lines */}
           <div className="absolute inset-0 pointer-events-none opacity-20">
-            <svg className="absolute w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#7a29c2" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="8 8">
+            <svg className="absolute w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" fill="none" stroke="var(--color-primary)" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="8 8">
               <path d="M-100,50 C200,-50 300,350 700,150 C1100,-50 1200,250 1400,100" />
               <path d="M-100,200 C150,400 350,-50 800,250 C1200,550 1250,50 1400,200" />
               <path d="M-100,350 C200,550 400,150 750,350 C1100,550 1200,150 1400,300" />
@@ -27,7 +27,7 @@ const JourneyCTASection = () => {
                 <span className="relative inline-block mt-2 font-bold">
                   Your Journey
                   {/* Purple scribble underline */}
-                  <svg className="absolute -bottom-4 left-0 w-full h-[18px] text-[#7a29c2] -translate-x-2" viewBox="0 0 300 18" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round">
+                  <svg className="absolute -bottom-4 left-0 w-full h-[18px] text-primary -translate-x-2" viewBox="0 0 300 18" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round">
                     <path d="M10,10 Q100,0 200,12 T290,5 M30,15 Q120,5 230,16" />
                   </svg>
                 </span>
@@ -53,7 +53,7 @@ const JourneyCTASection = () => {
               
               {/* Map pin */}
               <div className="absolute top-[10%] left-[10%] lg:left-[20%] text-transparent z-20 animate-[bounce_4s_infinite]">
-                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7a29c2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm opacity-80">
+                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm opacity-80">
                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                    <circle cx="12" cy="10" r="3"></circle>
                  </svg>
@@ -61,7 +61,7 @@ const JourneyCTASection = () => {
 
                {/* Grad Cap */}
                <div className="absolute -top-10 lg:-top-16 right-[10%] lg:right-[30%] text-transparent z-20 animate-[bounce_5s_infinite_1s]">
-                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#7a29c2" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm text-purple-900 opacity-90 -rotate-12">
+                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm text-purple-900 opacity-90 -rotate-12">
                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                  </svg>
@@ -69,7 +69,7 @@ const JourneyCTASection = () => {
 
                {/* Certificate */}
                <div className="absolute bottom-[0%] right-[5%] lg:-right-4 text-transparent z-20 animate-[bounce_4.5s_infinite_0.5s]">
-                 <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#7a29c2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm text-purple-900 opacity-90 rotate-[15deg]">
+                 <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm text-purple-900 opacity-90 rotate-[15deg]">
                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
                    <path d="M14.5 13.5 16 19l-4-1.5L8 19l1.5-5.5"></path>
                    <path d="m15 5-3-3-3 3"></path>

@@ -22,7 +22,7 @@ const NotFound = () => {
                             404
                         </h1>
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-4xl md:text-5xl font-black text-[#7a29c2] font-bricolage tracking-tight">
+                            <span className="text-4xl md:text-5xl font-black text-primary font-bricolage tracking-tight">
                                 Lost in Space
                             </span>
                         </div>
@@ -38,7 +38,7 @@ const NotFound = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                         <button
                             onClick={() => navigate('/')}
-                            className="px-8 py-4 bg-[#7a29c2] text-white font-bold rounded-2xl hover:bg-[#6a24aa] transition-all hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/20"
+                            className="px-8 py-4 bg-primary text-white font-bold rounded-2xl hover:bg-primary-hover transition-all hover:translate-y-[-2px] active:translate-y-[0px] shadow-xl shadow-purple-900/20"
                         >
                             Back to Safety
                         </button>

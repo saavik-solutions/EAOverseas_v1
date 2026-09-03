@@ -67,7 +67,7 @@ const UniversityProfile = () => {
 
     const copyToClipboard = () => {
         if (shareData) {
-            navigator.clipboard.writeText(`https://eaoverseas.com/feed/${shareData.id}`);
+            navigator.clipboard.writeText(`https://eduwoy.com/feed/${shareData.id}`);
             setCopyBtnText('Copied!');
             setTimeout(() => setCopyBtnText('Copy Link'), 2000);
         }
@@ -206,7 +206,7 @@ const UniversityProfile = () => {
                         </div>
                         <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-xl border border-gray-200">
                             <span className="material-symbols-outlined text-gray-400">link</span>
-                            <input type="text" readOnly value={`https://eaoverseas.com/feed/${shareData?.id}`} className="bg-transparent text-sm text-gray-600 flex-1 outline-none" />
+                            <input type="text" readOnly value={`https://eduwoy.com/feed/${shareData?.id}`} className="bg-transparent text-sm text-gray-600 flex-1 outline-none" />
                             <button onClick={copyToClipboard} className="px-4 py-1.5 bg-gray-900 text-white text-xs font-bold rounded-lg hover:bg-gray-800 transition-colors">{copyBtnText}</button>
                         </div>
                     </div>

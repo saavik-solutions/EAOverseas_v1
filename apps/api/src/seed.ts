@@ -12,7 +12,7 @@ const SEED_USERS = [
     {
         firebaseUid: 'USER_ADMIN_001',
         fullName: 'Admin User',
-        email: 'admin@eaoverseas.com',
+        email: 'admin@eduwoy.com',
         avatarUrl: 'https://i.pravatar.cc/150?u=admin',
         role: 'admin',
         trustScore: 99,
@@ -20,7 +20,7 @@ const SEED_USERS = [
     {
         firebaseUid: 'USER_COUNSELLOR_001',
         fullName: 'Dr. Sarah Smith',
-        email: 'sarah.s@eaoverseas.com',
+        email: 'sarah.s@eduwoy.com',
         avatarUrl: 'https://i.pravatar.cc/150?u=sarah',
         role: 'counsellor',
         trustScore: 95,

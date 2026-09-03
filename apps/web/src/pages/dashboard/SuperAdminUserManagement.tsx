@@ -172,7 +172,7 @@ const SuperAdminUserManagement = () => {
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                             className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#2b6cee]/20 focus:border-[#2b6cee] transition-all"
-                                            placeholder="john@eaoverseas.com"
+                                            placeholder="john@eduwoy.com"
                                         />
                                     </div>
                                     <div>

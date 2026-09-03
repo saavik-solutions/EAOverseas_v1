@@ -141,12 +141,12 @@ const GlobalTestimonialsSection = () => {
 
         {/* ── Header ── */}
         <div className="flex flex-col items-center justify-center text-center space-y-4 mb-14 mt-4">
-          <div className="bg-[#f3e8ff] text-[#7a29c2] px-6 py-1.5 rounded-full font-bold text-sm">
-            EAOverseas Alumni
+          <div className="bg-[#f3e8ff] text-primary px-6 py-1.5 rounded-full font-bold text-sm">
+            Eduwoy Alumni
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#0e121b]">
             Student testimonials from all{' '}
-            <span className="text-[#7a29c2]">Around The Globe</span>
+            <span className="text-primary">Around The Globe</span>
           </h2>
           <p className="text-[#4d6599] max-w-2xl text-lg mt-2">
             Read testimonials from our very own alumni to know how they turned
@@ -197,7 +197,7 @@ const GlobalTestimonialsSection = () => {
                       />
                       <div>
                         <h4 className="font-bold text-[#0e121b] text-[15px]">{testimonial.name}</h4>
-                        <p className="text-[#7a29c2] text-xs font-semibold">{testimonial.course}</p>
+                        <p className="text-primary text-xs font-semibold">{testimonial.course}</p>
                       </div>
                     </div>
                     <div className="flex space-x-1">
@@ -212,14 +212,14 @@ const GlobalTestimonialsSection = () => {
             <div className="flex flex-col space-y-4 absolute right-0 translate-x-1/2 z-20">
               <button
                 onClick={scrollUp}
-                className="w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgba(122,41,194,0.15)] border border-[#f3e8ff] flex items-center justify-center text-[#7a29c2] hover:bg-[#7a29c2] hover:text-white transition-colors"
+                className="w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgba(122,41,194,0.15)] border border-[#f3e8ff] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
                 aria-label="Scroll up"
               >
                 <ChevronUpIcon />
               </button>
               <button
                 onClick={scrollDown}
-                className="w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgba(122,41,194,0.15)] border border-[#f3e8ff] flex items-center justify-center text-[#7a29c2] hover:bg-[#7a29c2] hover:text-white transition-colors"
+                className="w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgba(122,41,194,0.15)] border border-[#f3e8ff] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
                 aria-label="Scroll down"
               >
                 <ChevronDownIcon />
@@ -233,7 +233,7 @@ const GlobalTestimonialsSection = () => {
             {/* Section label */}
             <div className="flex items-center justify-between">
               <div>
-                <span className="inline-flex items-center gap-2 bg-[#f3e8ff] text-[#7a29c2] px-4 py-1.5 rounded-full font-bold text-sm">
+                <span className="inline-flex items-center gap-2 bg-[#f3e8ff] text-primary px-4 py-1.5 rounded-full font-bold text-sm">
                   <span className="material-symbols-outlined text-base">play_circle</span>
                   Alumni Reels
                 </span>
@@ -242,7 +242,7 @@ const GlobalTestimonialsSection = () => {
               <div className="flex gap-2">
                 <button
                   onClick={scrollReelsLeft}
-                  className="w-9 h-9 rounded-full bg-white border border-[#f3e8ff] shadow-sm flex items-center justify-center text-[#7a29c2] hover:bg-[#7a29c2] hover:text-white transition-all duration-200"
+                  className="w-9 h-9 rounded-full bg-white border border-[#f3e8ff] shadow-sm flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200"
                   aria-label="Scroll left"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
@@ -251,7 +251,7 @@ const GlobalTestimonialsSection = () => {
                 </button>
                 <button
                   onClick={scrollReelsRight}
-                  className="w-9 h-9 rounded-full bg-white border border-[#f3e8ff] shadow-sm flex items-center justify-center text-[#7a29c2] hover:bg-[#7a29c2] hover:text-white transition-all duration-200"
+                  className="w-9 h-9 rounded-full bg-white border border-[#f3e8ff] shadow-sm flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200"
                   aria-label="Scroll right"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
@@ -284,7 +284,7 @@ const GlobalTestimonialsSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
 
                   {/* Purple glow on hover */}
-                  <div className="absolute inset-0 bg-[#7a29c2]/0 group-hover:bg-[#7a29c2]/20 transition-colors duration-300 rounded-[20px]" />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 rounded-[20px]" />
 
                   {/* Top: Duration badge */}
                   <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -317,7 +317,7 @@ const GlobalTestimonialsSection = () => {
                   </div>
 
                   {/* Purple border glow on hover */}
-                  <div className="absolute inset-0 rounded-[20px] ring-0 group-hover:ring-2 group-hover:ring-[#7a29c2]/60 transition-all duration-300 pointer-events-none" />
+                  <div className="absolute inset-0 rounded-[20px] ring-0 group-hover:ring-2 group-hover:ring-primary/60 transition-all duration-300 pointer-events-none" />
                 </div>
               ))}
             </div>

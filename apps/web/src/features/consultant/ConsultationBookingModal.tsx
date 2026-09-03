@@ -176,7 +176,7 @@ const ConsultationBookingModal = ({ isOpen, onClose, onConfirm }) => {
                 {/* Left Side: Summary / Branding */}
                 <div className="w-full md:w-1/3 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-100 p-6 md:p-8 flex flex-col shrink-0">
                     <div className="mb-6">
-                        <img src={logo} alt="EAOverseas" className="h-8 md:h-10 w-auto object-contain mb-4" />
+                        <img src={logo} alt="Eduwoy" className="h-8 md:h-10 w-auto object-contain mb-4" />
                         <h2 className="text-2xl font-bold text-gray-900 mt-1">Discovery Call</h2>
                         <div className="flex items-center gap-2 mt-4 text-gray-500 text-sm font-medium">
                             <span className="material-symbols-outlined !text-[20px]">schedule</span>

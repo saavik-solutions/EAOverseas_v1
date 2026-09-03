@@ -47,7 +47,7 @@ const SuperAdminPostDetails = () => {
                         labelColor: TYPE_COLORS[p.category || 'Article'],
                         title: p.title,
                         about: p.content,
-                        institution: p.authorId?.fullName || p.universityName || 'EA Overseas',
+                        institution: p.authorId?.fullName || p.universityName || 'Eduwoy',
                         logo: p.authorId?.profilePicture || p.universityLogo || 'https://images.unsplash.com/photo-1594322436404-5a0526db4d13?w=100&h=100&fit=crop',
                         banner: p.mediaUrls?.[0] || 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?w=800&h=400&fit=crop',
                         location: p.location || 'Global',
@@ -289,7 +289,7 @@ const SuperAdminPostDetails = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs font-black text-slate-900">Public URL</p>
-                                    <p className="text-[10px] text-blue-600 font-medium truncate max-w-[150px]">eaoverseas.com/feed/{post.id}</p>
+                                    <p className="text-[10px] text-blue-600 font-medium truncate max-w-[150px]">eduwoy.com/feed/{post.id}</p>
                                 </div>
                                 <button className="ml-auto size-8 bg-white border border-blue-200 rounded-lg flex items-center justify-center text-[#2b6cee] hover:bg-blue-100 transition">
                                     <span className="material-symbols-outlined text-[18px]">content_copy</span>

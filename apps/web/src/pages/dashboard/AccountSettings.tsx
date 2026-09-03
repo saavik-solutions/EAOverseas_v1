@@ -41,9 +41,9 @@ const AccountSettings = () => {
 
             // 1. Remove user from "Database" if it's a real user
             if (user && user.email !== 'alex.j@example.com') {
-                const registeredUsers = JSON.parse(localStorage.getItem('eaoverseas_registered_users') || '[]');
+                const registeredUsers = JSON.parse(localStorage.getItem('eduwoy_registered_users') || localStorage.getItem('eaoverseas_registered_users') || '[]');
                 const updatedUsers = registeredUsers.filter(u => u.email !== user.email);
-                localStorage.setItem('eaoverseas_registered_users', JSON.stringify(updatedUsers));
+                localStorage.setItem('eduwoy_registered_users', JSON.stringify(updatedUsers));
             }
 
             // 2. Clear Session
@@ -52,6 +52,7 @@ const AccountSettings = () => {
             // 3. Clear other local storage items if needed, but NOT all if we want to preserve other users (though in this mock app, clearing all might be safer for "fresh start")
             // For this specific request "fix it properly", we should probably just clear the session and let logout handle the rest. 
             // However, to ensure "permanently delete" experience for the user:
+            localStorage.removeItem('eduwoy_user');
             localStorage.removeItem('eaoverseas_user'); // Double check
 
             // 4. Redirect
@@ -249,7 +250,7 @@ const AccountSettings = () => {
 
                     {/* Footer */}
                     <div className="mt-8 border-t border-slate-200 pt-8 dark:border-slate-800">
-                        <p className="text-center text-xs text-slate-400">© 2026 EAOverseas. All rights reserved.</p>
+                        <p className="text-center text-xs text-slate-400">© 2026 Eduwoy. All rights reserved.</p>
                     </div>
                 </div>
             </main>

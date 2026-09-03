@@ -272,7 +272,7 @@ const ListeningTest = () => {
                             </svg>
                         </div>
                         <div>
-                            <h1 className="text-lg font-bold leading-tight">EAOverseas Listening Test</h1>
+                            <h1 className="text-lg font-bold leading-tight">Eduwoy Listening Test</h1>
                             <p className="text-xs text-slate-500">Mock Exam #104 • Section 1</p>
                         </div>
                     </div>

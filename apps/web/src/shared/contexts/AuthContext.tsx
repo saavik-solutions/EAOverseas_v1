@@ -38,7 +38,7 @@ const MOCK_USER: User = {
     id: 'mock-admin-id',
     name: 'Mock Admin',
     fullName: 'Mock Administrator',
-    email: 'admin@eaoverseas.com',
+    email: 'admin@eduwoy.com',
     role: 'admin',
     avatarUrl: 'https://ui-avatars.com/api/?name=Mock+Admin&background=0D8ABC&color=fff',
     emailVerified: true,
@@ -54,8 +54,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     // ── Restore session from storage ────────────────────────────────────
     useEffect(() => {
-        const storedUser = localStorage.getItem('eaoverseas_user');
-        const storedRefresh = localStorage.getItem('eaoverseas_refresh_token');
+        const storedUser = localStorage.getItem('eduwoy_user') || localStorage.getItem('eaoverseas_user');
+        const storedRefresh = localStorage.getItem('eduwoy_refresh_token') || localStorage.getItem('eaoverseas_refresh_token');
         const storedToken = localStorage.getItem('token');
         if (storedUser) {
             try {
@@ -77,7 +77,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         // Sync across tabs
         const handleStorage = (e: StorageEvent) => {
-            if (e.key === 'eaoverseas_user') {
+            if (e.key === 'eduwoy_user' || e.key === 'eaoverseas_user') {
                 if (e.newValue) {
                     try { setUser(JSON.parse(e.newValue)); } catch { }
                 } else {
@@ -134,7 +134,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                         isDemo: true,
                     };
                     setUser(createdUser);
-                    localStorage.setItem('eaoverseas_user', JSON.stringify(createdUser));
+                    localStorage.setItem('eduwoy_user', JSON.stringify(createdUser));
                     return createdUser;
                 }
             }
@@ -167,7 +167,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                         isDemo: true,
                     };
                     setUser(mockUniUser);
-                    localStorage.setItem('eaoverseas_user', JSON.stringify(mockUniUser));
+                    localStorage.setItem('eduwoy_user', JSON.stringify(mockUniUser));
                     return mockUniUser;
                 }
 
@@ -189,8 +189,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             setUser(loggedInUser);
             setAccessToken(data.accessToken);
             setRefreshTokenValue(data.refreshToken);
-            localStorage.setItem('eaoverseas_user', JSON.stringify(loggedInUser));
-            localStorage.setItem('eaoverseas_refresh_token', data.refreshToken);
+            localStorage.setItem('eduwoy_user', JSON.stringify(loggedInUser));
+            localStorage.setItem('eduwoy_refresh_token', data.refreshToken);
             localStorage.setItem('token', data.accessToken);
 
             return loggedInUser;
@@ -211,7 +211,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 isDemo: true,
             };
             setUser(mockUser);
-            localStorage.setItem('eaoverseas_user', JSON.stringify(mockUser));
+            localStorage.setItem('eduwoy_user', JSON.stringify(mockUser));
             return mockUser;
         }
     };
@@ -315,6 +315,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setUser(null);
         setAccessToken(null);
         setRefreshTokenValue(null);
+        localStorage.removeItem('eduwoy_user');
+        localStorage.removeItem('eduwoy_refresh_token');
         localStorage.removeItem('eaoverseas_user');
         localStorage.removeItem('eaoverseas_refresh_token');
         localStorage.removeItem('token');

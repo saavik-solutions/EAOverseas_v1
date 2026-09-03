@@ -129,7 +129,7 @@ const Countries = () => {
     return (
         <>
             <SEOHead 
-                title="Study Destinations | EAOverseas"
+                title="Study Destinations | Eduwoy"
                 description="Explore top global study destinations and find your perfect academic home with AI-powered insights."
                 image="/assets/destinations_hero.webp"
             />
@@ -139,18 +139,18 @@ const Countries = () => {
                     {/* Abstract Map Background Decoration */}
                     <div className="absolute inset-0 opacity-20 pointer-events-none" data-location="world">
                         <svg className="w-full h-full" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-                            <circle className="map-pin text-[#7a29c2] animate-[float_3s_ease-in-out_infinite]" cx="200" cy="150" fill="currentColor" r="2" style={{ animationDelay: '0s' }}></circle>
-                            <circle className="map-pin text-[#7a29c2] animate-[float_3s_ease-in-out_infinite]" cx="450" cy="280" fill="currentColor" r="2" style={{ animationDelay: '0.5s' }}></circle>
-                            <circle className="map-pin text-[#7a29c2] animate-[float_3s_ease-in-out_infinite]" cx="700" cy="120" fill="currentColor" r="2" style={{ animationDelay: '1.2s' }}></circle>
-                            <circle className="map-pin text-[#7a29c2] animate-[float_3s_ease-in-out_infinite]" cx="850" cy="350" fill="currentColor" r="2" style={{ animationDelay: '0.8s' }}></circle>
-                            <path className="text-[#7a29c2]/30" d="M150 100 Q 300 50 450 150 T 800 100" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
-                            <path className="text-[#7a29c2]/30" d="M100 300 Q 400 350 700 250 T 900 400" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
+                            <circle className="map-pin text-primary animate-[float_3s_ease-in-out_infinite]" cx="200" cy="150" fill="currentColor" r="2" style={{ animationDelay: '0s' }}></circle>
+                            <circle className="map-pin text-primary animate-[float_3s_ease-in-out_infinite]" cx="450" cy="280" fill="currentColor" r="2" style={{ animationDelay: '0.5s' }}></circle>
+                            <circle className="map-pin text-primary animate-[float_3s_ease-in-out_infinite]" cx="700" cy="120" fill="currentColor" r="2" style={{ animationDelay: '1.2s' }}></circle>
+                            <circle className="map-pin text-primary animate-[float_3s_ease-in-out_infinite]" cx="850" cy="350" fill="currentColor" r="2" style={{ animationDelay: '0.8s' }}></circle>
+                            <path className="text-primary/30" d="M150 100 Q 300 50 450 150 T 800 100" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
+                            <path className="text-primary/30" d="M100 300 Q 400 350 700 250 T 900 400" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
                         </svg>
                     </div>
                     <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
-                        <span className="px-4 py-1.5 rounded-full bg-[#7a29c2]/10 text-[#7a29c2] text-xs font-bold uppercase tracking-widest mb-4 md:mb-6">Discover the World</span>
+                        <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4 md:mb-6">Discover the World</span>
                         <h1 className="text-3xl md:text-6xl font-black leading-tight tracking-[-0.033em] mb-4 md:mb-6 text-[#111218]">
-                            Choose Your <span className="text-[#7a29c2]">Study Destination</span>
+                            Choose Your <span className="text-primary">Study Destination</span>
                         </h1>
                         <p className="text-sm md:text-lg text-slate-600 mb-6 md:mb-10 max-w-2xl">
                             AI-powered insights to help you find your perfect academic home. Compare tuition, lifestyle, and career outcomes in one place.
@@ -168,7 +168,7 @@ const Countries = () => {
                                 {/* Desktop Button */}
                                 <button
                                     onClick={() => navigate('/all-destinations')}
-                                    className="hidden md:flex bg-white text-[#7a29c2] px-6 py-3 rounded-full font-bold text-base items-center gap-2 shadow-sm hover:shadow-md hover:gap-3 transition-all"
+                                    className="hidden md:flex bg-white text-primary px-6 py-3 rounded-full font-bold text-base items-center gap-2 shadow-sm hover:shadow-md hover:gap-3 transition-all"
                                 >
                                     View more countries <span className="material-symbols-outlined text-xl">arrow_forward</span>
                                 </button>
@@ -178,7 +178,7 @@ const Countries = () => {
                             {/* Mobile Button - Below Text */}
                             <button
                                 onClick={() => navigate('/all-destinations')}
-                                className="md:hidden w-full bg-white text-[#7a29c2] px-4 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm border border-slate-100"
+                                className="md:hidden w-full bg-white text-primary px-4 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm border border-slate-100"
                             >
                                 View more countries <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </button>
@@ -200,8 +200,8 @@ const Countries = () => {
                                                     <feComposite in="SourceGraphic" in2="blur" operator="over" />
                                                 </filter>
                                             </defs>
-                                            <path d="M0,100 C100,150 200,50 400,100" fill="none" stroke="#7a29c2" strokeWidth="2" opacity="0.4" filter="url(#glow)" />
-                                            <path d="M0,200 C150,250 250,150 400,200" fill="none" stroke="#7a29c2" strokeWidth="2" opacity="0.2" filter="url(#glow)" />
+                                            <path d="M0,100 C100,150 200,50 400,100" fill="none" stroke="var(--color-primary)" strokeWidth="2" opacity="0.4" filter="url(#glow)" />
+                                            <path d="M0,200 C150,250 250,150 400,200" fill="none" stroke="var(--color-primary)" strokeWidth="2" opacity="0.2" filter="url(#glow)" />
                                         </svg>
                                     </div>
 
@@ -218,7 +218,7 @@ const Countries = () => {
                                     </div>
 
                                     {/* View Insights - Visible on Mobile, Hover on Desktop */}
-                                    <div className="relative z-10 mt-2 md:mt-6 flex items-center gap-1 md:gap-2 text-[#7a29c2] font-bold text-[10px] md:text-sm opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 group-hover:md:opacity-100 group-hover:md:translate-x-0 transition-all duration-300">
+                                    <div className="relative z-10 mt-2 md:mt-6 flex items-center gap-1 md:gap-2 text-primary font-bold text-[10px] md:text-sm opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 group-hover:md:opacity-100 group-hover:md:translate-x-0 transition-all duration-300">
                                         View Insights <span className="material-symbols-outlined text-sm md:text-lg">arrow_forward</span>
                                     </div>
 
@@ -241,17 +241,17 @@ const Countries = () => {
                             {/* Flowing Lines SVG */}
                             <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
                                 <svg className="w-full h-full" viewBox="0 0 800 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0,100 C150,200 350,0 500,100 C650,200 750,50 800,150" stroke="#7a29c2" strokeWidth="2" fill="none" />
-                                    <path d="M0,200 C200,100 300,300 500,200 C700,100 800,250 800,250" stroke="#7a29c2" strokeWidth="2" fill="none" />
-                                    <path d="M0,300 C100,200 400,400 600,300 C750,200 800,350 800,350" stroke="#7a29c2" strokeWidth="1.5" fill="none" />
+                                    <path d="M0,100 C150,200 350,0 500,100 C650,200 750,50 800,150" stroke="var(--color-primary)" strokeWidth="2" fill="none" />
+                                    <path d="M0,200 C200,100 300,300 500,200 C700,100 800,250 800,250" stroke="var(--color-primary)" strokeWidth="2" fill="none" />
+                                    <path d="M0,300 C100,200 400,400 600,300 C750,200 800,350 800,350" stroke="var(--color-primary)" strokeWidth="1.5" fill="none" />
                                 </svg>
                             </div>
 
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_0%,transparent_100%)] pointer-events-none"></div>
 
                             <div className="relative z-10 flex flex-col items-center">
-                                <div className="size-12 md:size-16 rounded-2xl bg-gradient-to-br from-[#7a29c2]/10 to-[#7a29c2]/5 flex items-center justify-center mb-4 md:mb-8 ring-1 ring-[#7a29c2]/20 shadow-lg shadow-purple-500/10 group-hover:scale-110 transition-transform duration-500">
-                                    <span className="material-symbols-outlined text-[#7a29c2] text-2xl md:text-3xl">auto_awesome</span>
+                                <div className="size-12 md:size-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4 md:mb-8 ring-1 ring-primary/20 shadow-lg shadow-purple-500/10 group-hover:scale-110 transition-transform duration-500">
+                                    <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">auto_awesome</span>
                                 </div>
 
                                 <h2 className="text-2xl md:text-4xl font-black mb-3 md:mb-6 tracking-tight text-slate-900 leading-tight">
@@ -264,7 +264,7 @@ const Countries = () => {
 
                                 <button
                                     onClick={handleAIAssistant}
-                                    className="group relative overflow-hidden rounded-xl md:rounded-2xl bg-[#7a29c2] px-6 py-3 md:px-10 md:py-4 text-white font-bold shadow-xl shadow-purple-600/20 transition-all hover:scale-105 hover:shadow-purple-600/40"
+                                    className="group relative overflow-hidden rounded-xl md:rounded-2xl bg-primary px-6 py-3 md:px-10 md:py-4 text-white font-bold shadow-xl shadow-purple-600/20 transition-all hover:scale-105 hover:shadow-purple-600/40"
                                 >
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:animate-[shimmer_1.5s_infinite]"></div>
                                     <span className="relative flex items-center gap-2 md:gap-3 text-sm md:text-base">

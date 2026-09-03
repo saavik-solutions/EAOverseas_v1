@@ -14,15 +14,15 @@ const transporter = nodemailer.createTransport({
 export const sendOtpEmail = async (email: string, otp: string): Promise<boolean> => {
     try {
         await transporter.sendMail({
-            from: `"EA Overseas" <${process.env.SMTP_FROM || 'otp@saaviksolutions.in'}>`,
+            from: `"Eduwoy" <${process.env.SMTP_FROM || 'otp@saaviksolutions.in'}>`,
             to: email,
-            subject: 'Verify your EA Overseas account',
+            subject: 'Verify your Eduwoy account',
             html: `
                 <div style="font-family: 'Inter', Arial, sans-serif; max-width: 480px; margin: 0 auto; padding: 32px; background: #f8fafc; border-radius: 16px;">
                     <div style="text-align: center; margin-bottom: 24px;">
                         <div style="display: inline-flex; align-items: center; gap: 8px;">
                             <div style="width: 36px; height: 36px; background: #0d6cf2; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px;">E</div>
-                            <span style="font-size: 20px; font-weight: 800; color: #0f172a;">EAOverseas</span>
+                            <span style="font-size: 20px; font-weight: 800; color: #0f172a;">Eduwoy</span>
                         </div>
                     </div>
                     <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
@@ -48,15 +48,15 @@ export const sendOtpEmail = async (email: string, otp: string): Promise<boolean>
 export const sendPasswordResetEmail = async (email: string, resetLink: string): Promise<boolean> => {
     try {
         await transporter.sendMail({
-            from: `"EA Overseas" <${process.env.SMTP_FROM || 'otp@saaviksolutions.in'}>`,
+            from: `"Eduwoy" <${process.env.SMTP_FROM || 'otp@saaviksolutions.in'}>`,
             to: email,
-            subject: 'Reset your EA Overseas password',
+            subject: 'Reset your Eduwoy password',
             html: `
                 <div style="font-family: 'Inter', Arial, sans-serif; max-width: 480px; margin: 0 auto; padding: 32px; background: #f8fafc; border-radius: 16px;">
                     <div style="text-align: center; margin-bottom: 24px;">
                         <div style="display: inline-flex; align-items: center; gap: 8px;">
                             <div style="width: 36px; height: 36px; background: #0d6cf2; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px;">E</div>
-                            <span style="font-size: 20px; font-weight: 800; color: #0f172a;">EAOverseas</span>
+                            <span style="font-size: 20px; font-weight: 800; color: #0f172a;">Eduwoy</span>
                         </div>
                     </div>
                     <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">

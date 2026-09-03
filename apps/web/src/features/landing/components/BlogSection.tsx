@@ -112,7 +112,7 @@ const BlogCard: React.FC<{ blog: ExternalBlog; index: number; isVisible: boolean
                     </span>
                     <div className="flex items-center gap-1 text-gray-300 text-[10px] font-bold uppercase tracking-wide">
                         <span className="material-symbols-outlined text-[13px]">auto_stories</span>
-                        EAOverseas
+                        Eduwoy
                     </div>
                 </div>
             </div>

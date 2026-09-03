@@ -60,7 +60,7 @@ const SuperAdminPostFeedDashboard = () => {
                 label: p.category || 'Article',
                 title: p.title,
                 about: p.content,
-                institution: p.universityName || p.authorId?.name || 'EA Overseas',
+                institution: p.universityName || p.authorId?.name || 'Eduwoy',
                 logo: p.universityLogo || p.authorId?.avatarUrl || 'https://images.unsplash.com/photo-1594322436404-5a0526db4d13?w=100&h=100&fit=crop',
                 banner: p.mediaUrls?.[0] || 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?w=800&h=400&fit=crop',
                 location: p.location || 'Global',

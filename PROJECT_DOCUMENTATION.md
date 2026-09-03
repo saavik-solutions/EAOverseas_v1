@@ -1,6 +1,6 @@
-# EA Overseas Platform Documentation
+# Eduwoy Platform Documentation
 
-Formal registry of all modules, navigation paths, and development statuses for the EA Overseas application.
+Formal registry of all modules, navigation paths, and development statuses for the Eduwoy application.
 
 ---
 

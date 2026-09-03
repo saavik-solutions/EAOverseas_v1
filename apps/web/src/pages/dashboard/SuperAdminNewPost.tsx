@@ -437,7 +437,7 @@ const SuperAdminNewPost = () => {
                                 <div className="border border-slate-200 rounded-xl p-4 bg-white">
                                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Google Preview</p>
                                     <p className="text-blue-700 font-semibold text-base hover:underline cursor-pointer truncate">{form.seoTitle || form.title || 'Your Post Title'}</p>
-                                    <p className="text-emerald-700 text-xs">eaoverseas.com › university-portal › posts</p>
+                                    <p className="text-emerald-700 text-xs">eduwoy.com › university-portal › posts</p>
                                     <p className="text-slate-600 text-sm mt-1 line-clamp-2">{form.seoDescription || form.summary || 'Your meta description will appear here...'}</p>
                                 </div>
                             </Section>

@@ -4,7 +4,7 @@ export function CookieConsentBanner() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const consent = localStorage.getItem('eaoverseas_cookie_consent');
+        const consent = localStorage.getItem('eduwoy_cookie_consent') || localStorage.getItem('eaoverseas_cookie_consent');
         if (!consent) {
             // Slight delay so it doesn't jarringly block initial LCP render
             const timer = setTimeout(() => setIsVisible(true), 1500);
@@ -14,7 +14,7 @@ export function CookieConsentBanner() {
 
     const handleAccept = () => {
         const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
-        localStorage.setItem('eaoverseas_cookie_consent', 'accepted');
+        localStorage.setItem('eduwoy_cookie_consent', 'accepted');
         setIsVisible(false);
 
         // Dynamically load GA4
@@ -40,7 +40,7 @@ export function CookieConsentBanner() {
     };
 
     const handleDecline = () => {
-        localStorage.setItem('eaoverseas_cookie_consent', 'declined');
+        localStorage.setItem('eduwoy_cookie_consent', 'declined');
         setIsVisible(false);
     };
 
@@ -58,14 +58,14 @@ export function CookieConsentBanner() {
             <div className="mb-4 pr-6">
                 <h3 className="text-[#111218] font-bold text-sm mb-1">We value your privacy</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">
-                    EAOverseas uses strictly necessary cookies to run this site and analytics cookies to improve your experience. 
+                    Eduwoy uses strictly necessary cookies to run this site and analytics cookies to improve your experience. 
                     By clicking "Accept", you agree to our <a href="/privacy-policy" className="text-purple-600 hover:underline">Privacy Policy</a>.
                 </p>
             </div>
             <div className="flex gap-3">
                 <button 
                     onClick={handleAccept}
-                    className="flex-1 bg-[#7a29c2] hover:bg-[#6824a6] text-white text-xs font-bold py-2.5 px-4 rounded-lg transition-colors"
+                    className="flex-1 bg-primary hover:bg-primary-hover text-white text-xs font-bold py-2.5 px-4 rounded-lg transition-colors"
                 >
                     Accept
                 </button>

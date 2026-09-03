@@ -17,7 +17,7 @@ export const submitLead = async (leadData: LeadData): Promise<{ success: boolean
         
         const data = await response.json();
         if (response.ok) {
-            console.log('Lead vaulted successfully in EAOverseas Admin Panel.');
+            console.log('Lead vaulted successfully in Eduwoy Admin Panel.');
         }
         return { success: response.ok, ...data };
     } catch (error) {

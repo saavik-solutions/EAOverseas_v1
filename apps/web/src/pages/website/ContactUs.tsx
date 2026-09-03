@@ -49,7 +49,7 @@ const ContactUs = () => {
     return (
         <div className="relative min-h-[900px] w-full overflow-hidden bg-white">
             <SEOHead 
-                title="Contact Us | EAOverseas"
+                title="Contact Us | Eduwoy"
                 description="Get in touch with our global education strategists to start architecting your global future."
                 image="/assets/visa_success_hero.webp"
             />
@@ -64,7 +64,7 @@ const ContactUs = () => {
                     {/* ── Left Column: Institutional Info ── */}
                     <div className="space-y-12 animate-fade-in-up">
                         <div className="space-y-6">
-                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-[#7a29c2] font-bold text-[11px] tracking-[0.2em] uppercase">
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-primary font-bold text-[11px] tracking-[0.2em] uppercase">
                                 <span className="relative flex h-2 w-2">
                                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                                   <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-600"></span>
@@ -73,7 +73,7 @@ const ContactUs = () => {
                             </div>
                             <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-[1.05] tracking-tight font-bricolage">
                                 Let's Architect Your <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7a29c2] to-violet-600">Global Future.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-600">Global Future.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-medium max-w-xl">
                                 Our global strategists provide the elite-level clarity and institutional expertise you need to navigate international education.
@@ -82,7 +82,7 @@ const ContactUs = () => {
 
                         <div className="grid gap-10">
                             {[
-                                { icon: 'mail', label: 'Institutional Email', value: CONTACTS.support.email, color: 'bg-purple-50 text-[#7a29c2]' },
+                                { icon: 'mail', label: 'Institutional Email', value: CONTACTS.support.email, color: 'bg-purple-50 text-primary' },
                                 { icon: 'call', label: 'Strategic Hotline', value: CONTACTS.support.phone, color: 'bg-indigo-50 text-indigo-600' },
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-start gap-6 group">
@@ -106,7 +106,7 @@ const ContactUs = () => {
                                         href="https://maps.app.goo.gl/wpGfQLZSgCT2c2X49" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="block text-xl font-black text-gray-900 leading-snug hover:text-[#7a29c2] transition-colors tracking-tight"
+                                        className="block text-xl font-black text-gray-900 leading-snug hover:text-primary transition-colors tracking-tight"
                                     >
                                         6250 West Park Dr Ste 319,<br />Houston, TX 77057 United States
                                     </a>
@@ -150,7 +150,7 @@ const ContactUs = () => {
                                             value={formData.name}
                                             onChange={(e) => setFormData({...formData, name: e.target.value})}
                                             placeholder="Full Name" 
-                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-[#7a29c2]/20 focus:border-[#7a29c2]/50 outline-none transition-all font-bold text-sm shadow-sm"
+                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all font-bold text-sm shadow-sm"
                                         />
                                     </div>
                                     <div className="space-y-2.5">
@@ -161,7 +161,7 @@ const ContactUs = () => {
                                             value={formData.email}
                                             onChange={(e) => setFormData({...formData, email: e.target.value})}
                                             placeholder="Email Address" 
-                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-[#7a29c2]/20 focus:border-[#7a29c2]/50 outline-none transition-all font-bold text-sm shadow-sm"
+                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all font-bold text-sm shadow-sm"
                                         />
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@ const ContactUs = () => {
                                             value={formData.phone}
                                             onChange={(e) => setFormData({...formData, phone: e.target.value})}
                                             placeholder="Mobile Number" 
-                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-[#7a29c2]/20 focus:border-[#7a29c2]/50 outline-none transition-all font-bold text-sm shadow-sm"
+                                            className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all font-bold text-sm shadow-sm"
                                         />
                                     </div>
                                     <div className="space-y-2.5">
@@ -183,7 +183,7 @@ const ContactUs = () => {
                                             <select 
                                                 value={formData.subject}
                                                 onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                                                className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 focus:ring-2 focus:ring-[#7a29c2]/20 focus:border-[#7a29c2]/50 outline-none transition-all font-bold text-sm appearance-none cursor-pointer shadow-sm"
+                                                className="w-full bg-white/80 border border-gray-100 rounded-[1.25rem] px-6 py-4.5 text-gray-900 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all font-bold text-sm appearance-none cursor-pointer shadow-sm"
                                             >
                                                 <option value="">Select Domain</option>
                                                 <option value="Undergraduate">Undergraduate Strategy</option>
@@ -207,14 +207,14 @@ const ContactUs = () => {
                                         value={formData.message}
                                         onChange={(e) => setFormData({...formData, message: e.target.value})}
                                         placeholder="Outline your requirements..."
-                                        className="w-full bg-white/80 border border-gray-100 rounded-[1.5rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-[#7a29c2]/20 focus:border-[#7a29c2]/50 outline-none transition-all font-bold text-sm resize-none shadow-sm"
+                                        className="w-full bg-white/80 border border-gray-100 rounded-[1.5rem] px-6 py-4.5 text-gray-900 placeholder-gray-300 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all font-bold text-sm resize-none shadow-sm"
                                     ></textarea>
                                 </div>
 
                                 <button 
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`group relative w-full bg-[#7a29c2] hover:bg-purple-700 text-white font-black text-xl py-6 rounded-[1.5rem] transition-all shadow-[0_20px_50px_rgba(122,41,194,0.25)] hover:shadow-[0_25px_60px_rgba(122,41,194,0.35)] hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3 overflow-hidden ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    className={`group relative w-full bg-primary hover:bg-purple-700 text-white font-black text-xl py-6 rounded-[1.5rem] transition-all shadow-[0_20px_50px_rgba(122,41,194,0.25)] hover:shadow-[0_25px_60px_rgba(122,41,194,0.35)] hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3 overflow-hidden ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 >
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                                     {isSubmitting ? (
@@ -244,7 +244,7 @@ const ContactUs = () => {
                 <div className="mt-24 md:mt-32 animate-fade-in-up">
                     <div className="relative rounded-[4rem] overflow-hidden h-[450px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.2)] border-8 border-white/50 backdrop-blur-3xl group">
                         <iframe 
-                            title="EAOverseas Headquarters"
+                            title="Eduwoy Headquarters"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.851321609353!2d-95.49440849999999!3d29.724065699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3cb76c7e067%3A0x7d366f36e70be664!2s6250%20Westpark%20Dr%20%23319%2C%20Houston%2C%20TX%2077057%2C%20USA!5e0!3m2!1sen!2sin!4v1774251384681!5m2!1sen!2sin" 
                             width="100%" 
                             height="100%" 

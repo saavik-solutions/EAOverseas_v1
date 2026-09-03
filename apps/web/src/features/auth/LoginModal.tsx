@@ -43,7 +43,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                         <span className="material-symbols-outlined text-xl lg:text-3xl">lock</span>
                     </div>
                     <h2 className="text-xl lg:text-3xl font-bold font-display text-slate-900 mb-1 lg:mb-2">Welcome back</h2>
-                    <p className="text-slate-500 text-xs lg:text-base text-center px-4">Sign in to continue to EAOverseas.</p>
+                    <p className="text-slate-500 text-xs lg:text-base text-center px-4">Sign in to continue to Eduwoy.</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-3 lg:space-y-5">
@@ -116,7 +116,7 @@ const LoginModal = ({ isOpen, onClose }) => {
 
                 <div className="mt-4 lg:mt-6 text-center">
                     <p className="text-slate-500 text-xs lg:text-sm">
-                        New to EAOverseas?{' '}
+                        New to Eduwoy?{' '}
                         <button onClick={handleCreateAccount} className="text-[#0d6cf2] font-bold hover:underline">
                             Create Account
                         </button>

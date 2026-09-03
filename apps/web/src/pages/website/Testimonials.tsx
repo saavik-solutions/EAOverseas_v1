@@ -23,7 +23,7 @@ const Testimonials = () => {
                 {/* Page Heading */}
                 <section className="mb-12">
                     <div className="max-w-3xl">
-                        <h1 className="text-5xl font-black leading-tight tracking-[-0.033em] mb-4">Real Stories, <span className="text-[#7a29c2]">Real Success</span></h1>
+                        <h1 className="text-5xl font-black leading-tight tracking-[-0.033em] mb-4">Real Stories, <span className="text-primary">Real Success</span></h1>
                         <p className="text-lg text-gray-600 leading-relaxed">Discover authentic experiences from our global community of students and parents who turned their international education dreams into reality.</p>
                     </div>
                 </section>
@@ -40,7 +40,7 @@ const Testimonials = () => {
                             image: "/images/testimonials/aarav_mehta_portrait_1769769634237.webp"
                         },
                         {
-                            quote: "As a parent, I was worried about the visa process. EAOverseas was professional, transparent, and kept us updated every single day.",
+                            quote: "As a parent, I was worried about the visa process. Eduwoy was professional, transparent, and kept us updated every single day.",
                             name: "Sarah Jenkins",
                             role: "Parent of Graduate",
                             image: "/images/testimonials/sarah_jenkins_portrait_1769769651144.webp"
@@ -64,7 +64,7 @@ const Testimonials = () => {
                             image: "/images/testimonials/david_miller_portrait_1769769667933.webp"
                         },
                         {
-                            quote: "Finding a scholarship felt impossible until I joined EAOverseas. They found opportunities I didn't even know existed.",
+                            quote: "Finding a scholarship felt impossible until I joined Eduwoy. They found opportunities I didn't even know existed.",
                             name: "Elena Rossi",
                             role: "Scholarship Recipient, EU",
                             image: "/images/testimonials/elena_rossi_portrait_1769769684028.webp"
@@ -92,7 +92,7 @@ const Testimonials = () => {
                                 : 'opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0'
                                 }`}>
                                 <div>
-                                    <div className="text-[#7a29c2] mb-4">
+                                    <div className="text-primary mb-4">
                                         <span className="material-symbols-outlined text-[40px]">format_quote</span>
                                     </div>
                                     <p className="text-gray-700 italic leading-relaxed text-lg">"{item.quote}"</p>
@@ -115,7 +115,7 @@ const Testimonials = () => {
                 {/* In Their Own Words: Long-Form Stories */}
                 <section className="mb-24">
                     <div className="flex items-center justify-between mb-6 md:mb-10 px-4">
-                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">In Their Own Words: <span className="text-[#7a29c2]">Journey Highlights</span></h2>
+                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">In Their Own Words: <span className="text-primary">Journey Highlights</span></h2>
                         {/* View All Stories link removed as requested */}
                     </div>
                     <div className="space-y-6 md:space-y-12">
@@ -124,13 +124,13 @@ const Testimonials = () => {
                                 <div className="w-full md:w-1/3 min-h-[220px] md:min-h-[300px] bg-cover bg-center" style={{ backgroundImage: `url('${story.heroImage}')` }}></div>
                                 <div className="p-5 md:p-10 flex-1">
                                     <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-                                        <span className="px-2.5 md:px-3 py-1 bg-[#7a29c2]/10 text-[#7a29c2] text-[10px] md:text-[11px] font-bold uppercase tracking-wider rounded-full">{story.badge}</span>
+                                        <span className="px-2.5 md:px-3 py-1 bg-primary/10 text-primary text-[10px] md:text-[11px] font-bold uppercase tracking-wider rounded-full">{story.badge}</span>
                                         <span className="text-gray-400 text-xs md:text-sm">• {story.readTime}</span>
                                     </div>
                                     <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">{story.title}</h3>
                                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
                                         <div>
-                                            <h4 className="text-xs md:text-sm font-bold text-[#7a29c2] uppercase tracking-widest mb-2 flex items-center gap-1.5 md:gap-2">
+                                            <h4 className="text-xs md:text-sm font-bold text-primary uppercase tracking-widest mb-2 flex items-center gap-1.5 md:gap-2">
                                                 <span className="material-symbols-outlined text-[14px] md:text-[16px]">{story.challenge.icon}</span> {story.challenge.title}
                                             </h4>
                                             <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
@@ -154,7 +154,7 @@ const Testimonials = () => {
                                                 <p className="text-[10px] md:text-xs text-gray-500">{story.student.role}</p>
                                             </div>
                                         </div>
-                                        <Link to={`/testimonials/${story.id}`} className="text-[#7a29c2] font-bold text-xs md:text-sm hover:translate-x-1 transition-transform flex items-center gap-1">
+                                        <Link to={`/testimonials/${story.id}`} className="text-primary font-bold text-xs md:text-sm hover:translate-x-1 transition-transform flex items-center gap-1">
                                             Read Full Narrative <span className="material-symbols-outlined text-base md:text-lg">chevron_right</span>
                                         </Link>
                                     </div>
@@ -168,7 +168,7 @@ const Testimonials = () => {
                         <div className="flex justify-center mt-12">
                                 <button
                                 onClick={handleLoadMore}
-                                className="group relative px-8 py-3 bg-white border-2 border-[#7a29c2] text-[#7a29c2] font-bold rounded-full hover:bg-[#7a29c2] hover:text-white transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg"
+                                className="group relative px-8 py-3 bg-white border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg"
                             >
                                 <span>Load More Stories</span>
                                 <span className="material-symbols-outlined group-hover:translate-y-1 transition-transform duration-300">expand_more</span>

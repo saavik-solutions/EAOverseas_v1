@@ -79,7 +79,7 @@ const UniversityDetails = ({ isEmbedded = false }: { isEmbedded?: boolean }) => 
             // Disclaimer
             doc.setFontSize(8);
             doc.setTextColor(150);
-            doc.text("Disclaimer: This brochure is generated for informational purposes by EAOverseas.", 20, 280);
+            doc.text("Disclaimer: This brochure is generated for informational purposes by Eduwoy.", 20, 280);
 
             doc.save(`${university.name.replace(/\s+/g, '_')}_Brochure.pdf`);
         });
@@ -338,7 +338,7 @@ const UniversityDetails = ({ isEmbedded = false }: { isEmbedded?: boolean }) => 
             {/* BEGIN: FooterSimple */}
             <footer className="bg-white border-t border-gray-100 py-4 md:py-8 shrink-0">
                 <div className="max-w-7xl mx-auto px-4 text-center">
-                    <p className="text-[10px] md:text-sm text-gray-400">© 2023 EAOverseas Education Platform. All rights reserved.</p>
+                    <p className="text-[10px] md:text-sm text-gray-400">© 2023 Eduwoy Education Platform. All rights reserved.</p>
                 </div>
             </footer>
             {/* END: FooterSimple */}

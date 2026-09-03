@@ -8,7 +8,7 @@ const TermsAndConditions = () => {
                     <div className="flex min-w-72 flex-col gap-2 md:gap-3 max-w-2xl">
                         <h1 className="text-[#1e293b] text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Terms & Conditions</h1>
                         <p className="text-[#475569] text-base md:text-lg font-normal leading-relaxed">
-                            Welcome to EAOverseas. By accessing or using our website and platform, you agree to comply with and be bound by these Terms of Service.
+                            Welcome to Eduwoy. By accessing or using our website and platform, you agree to comply with and be bound by these Terms of Service.
                         </p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const TermsAndConditions = () => {
                                 <p className="text-[#475569] text-xs font-medium">Quick Jump to Section</p>
                             </div>
                             <nav className="flex flex-col gap-1">
-                                <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 transition-all text-[#7a29c2] font-semibold bg-slate-50" href="#acceptance">
+                                <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 transition-all text-primary font-semibold bg-slate-50" href="#acceptance">
                                     <span className="material-symbols-outlined text-[20px]">info</span>
                                     <span className="text-sm">Acceptance of Terms</span>
                                 </a>
@@ -71,10 +71,10 @@ const TermsAndConditions = () => {
                         {/* Section 1: Acceptance of Terms */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="acceptance">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">01.</span> Acceptance of Terms
+                                <span className="text-primary/40 text-lg md:text-2xl">01.</span> Acceptance of Terms
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
-                                <p>By visiting, registering, or using EAOverseas, you confirm that you have read, understood, and agreed to these Terms of Service, along with any applicable policies referenced on the platform.</p>
+                                <p>By visiting, registering, or using Eduwoy, you confirm that you have read, understood, and agreed to these Terms of Service, along with any applicable policies referenced on the platform.</p>
                                 <p>These terms apply to all users, including students, parents, counsellors, partners, and visitors.</p>
                                 <p className="text-sm italic text-slate-500">If you do not agree with these terms, please refrain from using the platform.</p>
                             </div>
@@ -83,7 +83,7 @@ const TermsAndConditions = () => {
                         {/* Section 2: Eligibility and Use of the Platform */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="eligibility">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">02.</span> Eligibility and Use of the Platform
+                                <span className="text-primary/40 text-lg md:text-2xl">02.</span> Eligibility and Use of the Platform
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
                                 <div>
@@ -92,11 +92,11 @@ const TermsAndConditions = () => {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-[#1e293b] mb-2">Acceptable Use</p>
-                                    <p>You agree to use EAOverseas only for lawful purposes and in a manner that does not disrupt, damage, or misuse the platform.</p>
+                                    <p>You agree to use Eduwoy only for lawful purposes and in a manner that does not disrupt, damage, or misuse the platform.</p>
                                 </div>
-                                <div className="bg-[#7a29c2]/5 border-l-4 border-[#7a29c2] p-3 md:p-4 rounded-r-lg">
-                                    <p className="font-semibold text-[#7a29c2] mb-2 text-sm md:text-base">You must not:</p>
-                                    <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-[#7a29c2] text-sm md:text-base">
+                                <div className="bg-primary/5 border-l-4 border-primary p-3 md:p-4 rounded-r-lg">
+                                    <p className="font-semibold text-primary mb-2 text-sm md:text-base">You must not:</p>
+                                    <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-primary text-sm md:text-base">
                                         <li>Attempt unauthorized access to any part of the platform</li>
                                         <li>Upload malicious code, viruses, or harmful data</li>
                                         <li>Misrepresent your identity or provide false information</li>
@@ -109,10 +109,10 @@ const TermsAndConditions = () => {
                         {/* Section 3: Platform Content and Intellectual Property */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="content">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">03.</span> Platform Content and Intellectual Property
+                                <span className="text-primary/40 text-lg md:text-2xl">03.</span> Platform Content and Intellectual Property
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
-                                <p>All content available on EAOverseas — including text, designs, logos, graphics, illustrations, software, and platform features — is owned by EAOverseas or its licensed partners and is protected under applicable intellectual property laws.</p>
+                                <p>All content available on Eduwoy — including text, designs, logos, graphics, illustrations, software, and platform features — is owned by Eduwoy or its licensed partners and is protected under applicable intellectual property laws.</p>
                                 <p>You may not copy, reproduce, modify, distribute, or use any content without prior written permission, except for personal and non-commercial use.</p>
                             </div>
                         </section>
@@ -120,10 +120,10 @@ const TermsAndConditions = () => {
                         {/* Section 4: Educational Information Disclaimer */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="disclaimer">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">04.</span> Educational Information Disclaimer
+                                <span className="text-primary/40 text-lg md:text-2xl">04.</span> Educational Information Disclaimer
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
-                                <p>EAOverseas provides informational and guidance-based content related to overseas education, exams, universities, and processes.</p>
+                                <p>Eduwoy provides informational and guidance-based content related to overseas education, exams, universities, and processes.</p>
                                 <div className="bg-amber-50 border-l-4 border-amber-500 p-3 md:p-4 rounded-r-lg">
                                     <p className="font-semibold text-amber-700 mb-2">Important Notice:</p>
                                     <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-amber-600 text-sm md:text-base text-amber-900">
@@ -139,13 +139,13 @@ const TermsAndConditions = () => {
                         {/* Section 5: Limitation of Liability */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="liability">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">05.</span> Limitation of Liability
+                                <span className="text-primary/40 text-lg md:text-2xl">05.</span> Limitation of Liability
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] bg-slate-50 p-4 md:p-6 rounded-lg md:rounded-xl border border-slate-200 text-sm md:text-base">
                                 <p className="font-bold text-[#1e293b] uppercase text-xs md:text-sm tracking-wide mb-2">Notice of Exclusion of Liability</p>
-                                <p>EAOverseas is provided on an "as is" and "as available" basis.</p>
-                                <p className="font-semibold text-[#1e293b]">To the fullest extent permitted by law, EAOverseas shall not be liable for:</p>
-                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-[#7a29c2] text-sm md:text-base">
+                                <p>Eduwoy is provided on an "as is" and "as available" basis.</p>
+                                <p className="font-semibold text-[#1e293b]">To the fullest extent permitted by law, Eduwoy shall not be liable for:</p>
+                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-primary text-sm md:text-base">
                                     <li>Any direct or indirect losses</li>
                                     <li>Data loss or service interruptions</li>
                                     <li>Decisions made based on platform information</li>
@@ -158,27 +158,27 @@ const TermsAndConditions = () => {
                         {/* Section 6: User Responsibilities */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="responsibilities">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">06.</span> User Responsibilities
+                                <span className="text-primary/40 text-lg md:text-2xl">06.</span> User Responsibilities
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
                                 <p>You are responsible for:</p>
-                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-[#7a29c2] text-sm md:text-base">
+                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-primary text-sm md:text-base">
                                     <li>Maintaining the confidentiality of your account credentials</li>
                                     <li>Providing accurate and updated information</li>
                                     <li>All activities conducted under your account</li>
                                 </ul>
-                                <p className="font-semibold text-[#1e293b] mt-4">EAOverseas reserves the right to suspend or terminate access if these terms are violated.</p>
+                                <p className="font-semibold text-[#1e293b] mt-4">Eduwoy reserves the right to suspend or terminate access if these terms are violated.</p>
                             </div>
                         </section>
 
                         {/* Section 7: Indemnification */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="indemnification">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">07.</span> Indemnification
+                                <span className="text-primary/40 text-lg md:text-2xl">07.</span> Indemnification
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
-                                <p>You agree to indemnify and hold harmless EAOverseas, its team members, partners, and affiliates from any claims, losses, damages, or expenses arising from:</p>
-                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-[#7a29c2] text-sm md:text-base">
+                                <p>You agree to indemnify and hold harmless Eduwoy, its team members, partners, and affiliates from any claims, losses, damages, or expenses arising from:</p>
+                                <ul className="list-disc pl-5 md:pl-6 space-y-1.5 md:space-y-2 marker:text-primary text-sm md:text-base">
                                     <li>Your misuse of the platform</li>
                                     <li>Violation of these Terms</li>
                                     <li>Infringement of any third-party rights</li>
@@ -189,10 +189,10 @@ const TermsAndConditions = () => {
                         {/* Section 8: Modifications to These Terms */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="modifications">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">08.</span> Modifications to These Terms
+                                <span className="text-primary/40 text-lg md:text-2xl">08.</span> Modifications to These Terms
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
-                                <p>EAOverseas may update or revise these Terms of Service at any time. Any changes will be reflected on this page with an updated revision date.</p>
+                                <p>Eduwoy may update or revise these Terms of Service at any time. Any changes will be reflected on this page with an updated revision date.</p>
                                 <p className="font-semibold text-[#1e293b]">Continued use of the platform after updates constitutes acceptance of the revised terms.</p>
                             </div>
                         </section>
@@ -200,29 +200,29 @@ const TermsAndConditions = () => {
                         {/* Section 9: Governing Law and Jurisdiction */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="law">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">09.</span> Governing Law and Jurisdiction
+                                <span className="text-primary/40 text-lg md:text-2xl">09.</span> Governing Law and Jurisdiction
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
                                 <p>These Terms shall be governed by and interpreted in accordance with the laws of India.</p>
-                                <p>Any disputes arising from the use of EAOverseas shall be subject to the exclusive jurisdiction of courts located in India.</p>
+                                <p>Any disputes arising from the use of Eduwoy shall be subject to the exclusive jurisdiction of courts located in India.</p>
                             </div>
                         </section>
 
                         {/* Section 10: Contact Information */}
                         <section className="scroll-mt-32 bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-slate-100 shadow-sm transition-all hover:shadow-md" id="contact">
                             <h2 className="text-[#1e293b] text-xl md:text-2xl font-bold leading-tight mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                                <span className="text-[#7a29c2]/40 text-lg md:text-2xl">10.</span> Contact Information
+                                <span className="text-primary/40 text-lg md:text-2xl">10.</span> Contact Information
                             </h2>
                             <div className="space-y-3 md:space-y-4 leading-relaxed text-[#475569] text-sm md:text-base">
                                 <p>If you have any questions or concerns regarding these Terms of Service, you may contact us at:</p>
-                                <div className="bg-[#7a29c2]/5 border border-[#7a29c2]/20 p-4 md:p-5 rounded-lg">
+                                <div className="bg-primary/5 border border-primary/20 p-4 md:p-5 rounded-lg">
                                     <ul className="space-y-2 text-sm md:text-base">
                                         <li className="flex items-center gap-3">
-                                            <span className="material-symbols-outlined text-[#7a29c2] text-[20px]">mail</span>
-                                            <span><span className="font-semibold">Email:</span> edu@eaoverseas.com</span>
+                                            <span className="material-symbols-outlined text-primary text-[20px]">mail</span>
+                                            <span><span className="font-semibold">Email:</span> edu@eduwoy.com</span>
                                         </li>
                                         <li className="flex items-center gap-3">
-                                            <span className="material-symbols-outlined text-[#7a29c2] text-[20px]">phone</span>
+                                            <span className="material-symbols-outlined text-primary text-[20px]">phone</span>
                                             <span><span className="font-semibold">Phone:</span> +1 (408) 741 6166</span>
                                         </li>
                                     </ul>
@@ -233,11 +233,11 @@ const TermsAndConditions = () => {
                         {/* Important Note - Highlighted Box */}
                         <section className="bg-gradient-to-br from-purple-50 to-violet-50 p-5 md:p-8 rounded-xl md:rounded-2xl border-2 border-purple-200 shadow-lg">
                             <div className="flex items-start gap-3 md:gap-4">
-                                <span className="material-symbols-outlined text-[#7a29c2] text-3xl md:text-4xl mt-1">info</span>
+                                <span className="material-symbols-outlined text-primary text-3xl md:text-4xl mt-1">info</span>
                                 <div className="space-y-2 md:space-y-3">
                                     <h3 className="text-[#1e293b] text-lg md:text-xl font-bold">Important Note</h3>
                                     <p className="text-[#475569] text-sm md:text-base leading-relaxed">
-                                        EAOverseas is a guidance and information platform. We aim to support informed decision-making, not replace official authorities or institutions.
+                                        Eduwoy is a guidance and information platform. We aim to support informed decision-making, not replace official authorities or institutions.
                                     </p>
                                 </div>
                             </div>

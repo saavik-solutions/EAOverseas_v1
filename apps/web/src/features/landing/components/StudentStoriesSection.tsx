@@ -15,7 +15,7 @@ const StudentStoriesSection = () => {
         {
             name: "Avneet Kaur",
             image: avneetCard,
-            review: "EAOverseas made my dream of studying in USA a reality. The visa process was incredibly smooth and the support was always there when I needed it.",
+            review: "Eduwoy made my dream of studying in USA a reality. The visa process was incredibly smooth and the support was always there when I needed it.",
             theme: { bg: "bg-purple-50", border: "border-purple-200", iconBg: "bg-purple-100", iconText: "text-purple-600", nameText: "text-purple-700" }
         },
         {
@@ -27,13 +27,13 @@ const StudentStoriesSection = () => {
         {
             name: "Manish Gupta",
             image: manishCard,
-            review: "From university application to finding accommodation, EAOverseas handled everything. Studying at University of Winnipeg has been a life-changing experience.",
+            review: "From university application to finding accommodation, Eduwoy handled everything. Studying at University of Winnipeg has been a life-changing experience.",
             theme: { bg: "bg-indigo-50", border: "border-indigo-200", iconBg: "bg-indigo-100", iconText: "text-indigo-600", nameText: "text-indigo-700" }
         },
         {
             name: "Manisha Rani",
             image: manishaCard,
-            review: "The counseling sessions were very detailed. They helped me secure admission at Arizona State University with a scholarship. Thank you EAOverseas!",
+            review: "The counseling sessions were very detailed. They helped me secure admission at Arizona State University with a scholarship. Thank you Eduwoy!",
             theme: { bg: "bg-pink-50", border: "border-pink-200", iconBg: "bg-pink-100", iconText: "text-pink-600", nameText: "text-pink-700" }
         }
     ];

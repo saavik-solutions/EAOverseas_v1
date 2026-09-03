@@ -47,7 +47,7 @@ const BlogManagement = () => {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                 <div className="space-y-2">
                     <h1 className="text-2xl md:text-3xl font-black text-gray-900 uppercase tracking-tighter">Blog Management</h1>
-                    <p className="text-gray-500 font-medium text-sm md:text-base">Create and refine EAOverseas global insights with AI assistance.</p>
+                    <p className="text-gray-500 font-medium text-sm md:text-base">Create and refine Eduwoy global insights with AI assistance.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row w-full md:w-auto gap-4">
                     <button 

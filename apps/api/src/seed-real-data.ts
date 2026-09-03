@@ -131,7 +131,7 @@ const seedRealData = async () => {
         if (!admin) {
             admin = await User.create({
                 fullName: 'Super Admin',
-                email: 'admin@eaoverseas.com',
+                email: 'admin@eduwoy.com',
                 passwordHash: 'seeded_hash', // In a real app, use a real hash
                 role: 'admin',
                 emailVerified: true

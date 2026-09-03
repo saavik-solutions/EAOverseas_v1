@@ -625,11 +625,11 @@ const CommunityFeed = () => {
                     <div className="bg-white px-6 py-6 z-20 sticky top-0 border-b border-gray-100">
                         <div className="max-w-4xl mx-auto flex items-center gap-4">
                             <div className="flex-1 relative group">
-                                <span className={`material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[22px] transition-colors ${isSemanticSearching ? 'text-[#7a29c2]' : 'text-slate-400 group-focus-within:text-[#7a29c2]'}`}>
+                                <span className={`material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[22px] transition-colors ${isSemanticSearching ? 'text-primary' : 'text-slate-400 group-focus-within:text-primary'}`}>
                                     search
                                 </span>
                                 <input
-                                    className="w-full h-12 pl-12 pr-12 rounded-xl bg-[#f0f2f5] border-none outline-none text-[15px] placeholder:text-slate-500 focus:bg-white focus:ring-2 focus:ring-[#7a29c2]/10 transition-all"
+                                    className="w-full h-12 pl-12 pr-12 rounded-xl bg-[#f0f2f5] border-none outline-none text-[15px] placeholder:text-slate-500 focus:bg-white focus:ring-2 focus:ring-primary/10 transition-all"
                                     placeholder="Search posts, topics or questions..."
                                     value={searchQuery}
                                     onChange={handleSearchChange}
@@ -648,8 +648,8 @@ const CommunityFeed = () => {
                             <button
                                 onClick={() => setChatSidebarOpen(prev => !prev)}
                                 className={`shrink-0 size-11 rounded-xl flex items-center justify-center transition-all border ${chatSidebarOpen
-                                    ? 'bg-[#7a29c2] text-white border-[#7a29c2] shadow-[0px_4px_12px_rgba(122,41,194,0.3)]'
-                                    : 'bg-white border-slate-200 text-slate-500 hover:text-[#7a29c2] hover:border-[#7a29c2]'
+                                    ? 'bg-primary text-white border-primary shadow-[0px_4px_12px_rgba(122,41,194,0.3)]'
+                                    : 'bg-white border-slate-200 text-slate-500 hover:text-primary hover:border-primary'
                                     }`}
                                 title="Toggle Chat"
                             >
@@ -697,7 +697,7 @@ const CommunityFeed = () => {
                                             disabled={!newPostText.trim() || isPosting}
                                             className={`px-8 py-2.5 rounded-xl text-[14px] font-bold transition-all flex items-center gap-2 ${
                                                 newPostText.trim() && !isPosting 
-                                                ? 'bg-[#7a29c2] text-white hover:bg-[#6a24a8] shadow-md shadow-[#7a29c2]/20' 
+                                                ? 'bg-primary text-white hover:bg-[#6a24a8] shadow-md shadow-primary/20' 
                                                 : 'bg-[#f0f2f5] text-[#bcc7d4] cursor-not-allowed'
                                             }`}
                                         >
@@ -828,7 +828,7 @@ const CommunityFeed = () => {
 
                                                 <button
                                                     onClick={() => toggleComments(post._id)}
-                                                    className={`flex items-center gap-2 transition-colors ${visibleComments[post._id] ? 'text-[#7a29c2]' : 'hover:text-[#7a29c2]'}`}
+                                                    className={`flex items-center gap-2 transition-colors ${visibleComments[post._id] ? 'text-primary' : 'hover:text-primary'}`}
                                                 >
                                                     <span className="material-symbols-outlined text-[20px]">
                                                         chat_bubble
@@ -838,7 +838,7 @@ const CommunityFeed = () => {
 
                                                 <button
                                                     onClick={() => { setShareData(post); setIsShareModalOpen(true); }}
-                                                    className="flex items-center gap-2 hover:text-[#7a29c2] transition-colors"
+                                                    className="flex items-center gap-2 hover:text-primary transition-colors"
                                                 >
                                                     <span className="material-symbols-outlined text-[20px]">share</span>
                                                     <span className="uppercase tracking-wider">Share</span>
@@ -853,7 +853,7 @@ const CommunityFeed = () => {
                                                             const target = currentLang === 'en' ? 'hi' : 'en';
                                                             handleTranslate(post._id, post.title, post.content, target);
                                                         }}
-                                                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-100 hover:bg-gray-50 transition-all ${translations[post._id]?.lang && translations[post._id]?.lang !== 'en' ? 'text-[#7a29c2] bg-indigo-50 border-indigo-100' : 'text-slate-500'}`}
+                                                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-100 hover:bg-gray-50 transition-all ${translations[post._id]?.lang && translations[post._id]?.lang !== 'en' ? 'text-primary bg-indigo-50 border-indigo-100' : 'text-slate-500'}`}
                                                     >
                                                         <span className="material-symbols-outlined text-[18px]">language</span>
                                                         <span className="text-[11px] font-black uppercase tracking-widest">Translate</span>
@@ -1049,8 +1049,8 @@ const CommunityFeed = () => {
                                     onClick={() => setSelectedFilter(t.label)}
                                     className="py-3 px-3 text-left hover:bg-gray-50 rounded-xl transition-all group"
                                 >
-                                    <p className="text-[10px] font-black text-[#7a29c2] uppercase tracking-wider mb-0.5">{t.label}</p>
-                                    <p className="text-[14px] font-bold text-slate-800 leading-tight group-hover:text-[#7a29c2] transition-colors">{t.topic}</p>
+                                    <p className="text-[10px] font-black text-primary uppercase tracking-wider mb-0.5">{t.label}</p>
+                                    <p className="text-[14px] font-bold text-slate-800 leading-tight group-hover:text-primary transition-colors">{t.topic}</p>
                                     <p className="text-[11px] text-slate-400 mt-1 font-medium">{t.activityCount} mentions</p>
                                 </button>
                             ))}
@@ -1058,7 +1058,7 @@ const CommunityFeed = () => {
                     </div>
 
                     <div className="mt-auto pt-6 text-center">
-                        <p className="text-[11px] text-slate-300 font-bold tracking-widest uppercase mb-2">© 2024 EAOverseas Community v2</p>
+                        <p className="text-[11px] text-slate-300 font-bold tracking-widest uppercase mb-2">© 2024 Eduwoy Community v2</p>
                     </div>
                 </aside>
             </div>
@@ -1072,7 +1072,7 @@ const CommunityFeed = () => {
                     shareUrl={`${window.location.origin}/community-feed?post=${shareData._id}`}
                     preview={{
                         title: shareData.title,
-                        subtitle: "EAOverseas Community",
+                        subtitle: "Eduwoy Community",
                         image: "https://cdn-icons-png.flaticon.com/512/1256/1256650.webp"
                     }}
                 />

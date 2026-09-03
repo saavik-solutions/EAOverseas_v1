@@ -52,7 +52,7 @@ const Navbar = () => {
         { name: 'About', path: '/about' },
         { name: 'Countries', path: '/countries', hasDropdown: true },
         { name: 'Blogs', path: '/blogs' },
-        { name: 'Dashboard', path: 'https://student.eaoverseas.com', external: true },
+        { name: 'Dashboard', path: 'https://student.eduwoy.com', external: true },
         { name: 'Contact Us', path: '/contact' },
         { name: 'Our Experts', sectionId: 'our-experts' },
         { name: 'FAQ', sectionId: 'faq' },
@@ -81,11 +81,11 @@ const Navbar = () => {
                 <Link
                     to="/landing"
                     className="flex-shrink-0 cursor-pointer select-none pointer-events-auto"
-                    aria-label="EAOverseas Home"
+                    aria-label="Eduwoy Home"
                 >
                     <img 
                         src={logo} 
-                        alt="EAOverseas Logo" 
+                        alt="Eduwoy Logo" 
                         className="h-12 lg:h-14 w-auto object-contain transition-all duration-300 ease-in-out" 
                         style={{ filter: 'brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(6011%) hue-rotate(272deg) brightness(83%) contrast(98%)' }}
                     />
@@ -114,10 +114,10 @@ const Navbar = () => {
                                     relative inline-flex items-center gap-0.5 px-3 py-2 rounded-lg
                                     text-[14px] font-semibold transition-all duration-200
                                     ${link.name === 'Dashboard' 
-                                        ? 'bg-[#7a29c2] text-white hover:bg-[#6d28d9] px-4 shadow-[0_4px_12px_rgba(122,41,194,0.2)]' 
+                                        ? 'bg-primary text-white hover:bg-[#6d28d9] px-4 shadow-[0_4px_12px_rgba(122,41,194,0.2)]' 
                                         : ('path' in link && isActive(link.path!)
-                                            ? 'text-[#7a29c2] bg-purple-50'
-                                            : 'text-[#7a29c2]/80 hover:text-[#7a29c2] hover:bg-purple-50/60')}
+                                            ? 'text-primary bg-purple-50'
+                                            : 'text-primary/80 hover:text-primary hover:bg-purple-50/60')}
                                 `}
                             >
                                 {link.name}
@@ -133,7 +133,7 @@ const Navbar = () => {
                                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[480px] z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                                     <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 grid grid-cols-2 gap-2">
                                         <div className="col-span-2 pb-2 mb-2 border-b border-gray-50">
-                                            <p className="text-[10px] font-black uppercase tracking-widest text-[#7a29c2] opacity-70">Popular Destinations</p>
+                                            <p className="text-[10px] font-black uppercase tracking-widest text-primary opacity-70">Popular Destinations</p>
                                         </div>
                                         {destinations.map((dest) => (
                                             <div 
@@ -148,7 +148,7 @@ const Navbar = () => {
                                                     <img src={`https://flagcdn.com/w160/${dest.code.toLowerCase()}.webp`} alt="" aria-hidden="true" className="w-full h-full object-cover" />
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-[13px] font-bold text-gray-900 group-hover/item:text-[#7a29c2] transition-colors">{dest.name}</span>
+                                                    <span className="text-[13px] font-bold text-gray-900 group-hover/item:text-primary transition-colors">{dest.name}</span>
                                                     <span className="text-[10px] text-gray-500 font-medium line-clamp-1">{dest.tag}</span>
                                                 </div>
                                             </div>
@@ -156,7 +156,7 @@ const Navbar = () => {
                                         <div className="col-span-2 pt-2 mt-2 border-t border-gray-50 text-center">
                                             <button 
                                                 onClick={() => navigate('/countries')}
-                                                className="text-[11px] font-extrabold text-[#7a29c2] hover:underline"
+                                                className="text-[11px] font-extrabold text-primary hover:underline"
                                             >
                                                 View all 30+ destinations
                                             </button>
@@ -173,7 +173,7 @@ const Navbar = () => {
 
                     {/* Check Eligibility Button (Figma) */}
                     <button
-                        onClick={() => window.open('https://student.eaoverseas.com/auth/login', '_blank', 'noopener,noreferrer')}
+                        onClick={() => window.open('https://student.eduwoy.com/auth/login', '_blank', 'noopener,noreferrer')}
                         className="group relative hidden lg:flex items-center justify-center px-6 py-2.5 min-w-[130px] rounded-xl border-none shadow-[inset_0px_1px_4px_rgba(255,236,218,0.2),0px_4px_12px_rgba(234,88,12,0.3)] hover:shadow-[0px_8px_25px_rgba(234,88,12,0.5)] transition-all hover:scale-105 active:scale-95"
                         style={{ background: 'linear-gradient(180deg, #f97316 0%, #c2410c 100%)' }}
                     >
@@ -184,7 +184,7 @@ const Navbar = () => {
 
                     {/* Join Community Button → external student portal (Hidden on mobile to save space) */}
                     <button
-                        onClick={() => window.open('https://student.eaoverseas.com/auth/signup', '_blank', 'noopener,noreferrer')}
+                        onClick={() => window.open('https://student.eduwoy.com/auth/signup', '_blank', 'noopener,noreferrer')}
                         className="group relative hidden lg:flex items-center justify-center px-6 py-2.5 min-w-[130px] rounded-xl border border-white/30 shadow-[0px_4px_20px_rgba(88,28,135,0.4)] hover:shadow-[0px_6px_25px_rgba(88,28,135,0.6)] transition-all hover:scale-105 active:scale-95"
                         style={{ background: 'linear-gradient(212deg, rgba(124,58,237,0.4) 0%, rgba(88,28,135,0.9) 54%, rgba(124,58,237,0.4) 100%)' }}
                     >
@@ -199,7 +199,7 @@ const Navbar = () => {
                     <div className="lg:hidden">
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="p-2 transition-colors rounded-lg text-gray-700 hover:text-[#7a29c2] hover:bg-purple-50"
+                            className="p-2 transition-colors rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50"
                             aria-label="Toggle menu"
                         >
                             <span className="material-symbols-outlined text-[26px]" aria-hidden="true">
@@ -233,10 +233,10 @@ const Navbar = () => {
                                 className={`
                                     w-full text-left px-4 py-2.5 rounded-xl text-[15px] font-semibold transition-all flex items-center justify-between
                                     ${link.name === 'Dashboard' 
-                                        ? 'bg-[#7a29c2] text-white' 
+                                        ? 'bg-primary text-white' 
                                         : ('path' in link && isActive(link.path!)
-                                            ? 'text-[#7a29c2] bg-purple-50'
-                                            : 'text-gray-700 hover:text-[#7a29c2] hover:bg-purple-50/60')}
+                                            ? 'text-primary bg-purple-50'
+                                            : 'text-gray-700 hover:text-primary hover:bg-purple-50/60')}
                                 `}
                             >
                                 {link.name}
@@ -273,7 +273,7 @@ const Navbar = () => {
                                     </div>
                                     <button 
                                         onClick={() => { navigate('/countries'); setIsMobileMenuOpen(false); }}
-                                        className="w-full py-3 text-[12px] font-bold text-[#7a29c2] hover:bg-purple-50 transition-colors mt-2"
+                                        className="w-full py-3 text-[12px] font-bold text-primary hover:bg-purple-50 transition-colors mt-2"
                                     >
                                         View all destinations →
                                     </button>
@@ -285,8 +285,8 @@ const Navbar = () => {
                     <div className="pt-4 mt-2 border-t border-gray-100 flex flex-col gap-3">
                         {/* Mobile Join Community */}
                         <button
-                            onClick={() => window.open('https://student.eaoverseas.com/auth/signup', '_blank', 'noopener,noreferrer')}
-                            className="w-full bg-[#7a29c2] text-white font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-purple-200"
+                            onClick={() => window.open('https://student.eduwoy.com/auth/signup', '_blank', 'noopener,noreferrer')}
+                            className="w-full bg-primary text-white font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-purple-200"
                         >
                             <span className="material-symbols-outlined text-[18px]">person_add</span>
                             Sign Up
@@ -294,7 +294,7 @@ const Navbar = () => {
 
                         {/* Mobile Check Eligibility */}
                         <button
-                            onClick={() => window.open('https://student.eaoverseas.com/auth/login', '_blank', 'noopener,noreferrer')}
+                            onClick={() => window.open('https://student.eduwoy.com/auth/login', '_blank', 'noopener,noreferrer')}
                             className="w-full bg-gradient-to-r from-[#f97316] to-[#ea580c] text-white font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-orange-200"
                         >
                             <span className="material-symbols-outlined text-[18px]">login</span>
@@ -314,7 +314,7 @@ const Navbar = () => {
                         {/* Mobile Phone */}
                         <a
                             href="tel:+919701563362"
-                            className="flex items-center justify-center gap-2 text-[#7a29c2] font-semibold text-sm py-2"
+                            className="flex items-center justify-center gap-2 text-primary font-semibold text-sm py-2"
                         >
                             <span className="material-symbols-outlined text-[17px]">call</span>
                             +91 97015 63362

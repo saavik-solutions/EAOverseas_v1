@@ -13,7 +13,7 @@ const CoverImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => {
                     className="absolute inset-0 opacity-10"
                     style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '36px 36px' }}
                 />
-                <img src={logo} alt="EAOverseas" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src={logo} alt="Eduwoy" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" style={{ filter: 'brightness(0) invert(1)' }} />
             </div>
         );
     }
@@ -75,8 +75,8 @@ const BlogDetails = () => {
 
     const handleShare = async () => {
         const shareData = {
-            title: blog?.title || 'EAOverseas Strategy',
-            text: blog?.excerpt || 'Check out this strategy from EAOverseas!',
+            title: blog?.title || 'Eduwoy Strategy',
+            text: blog?.excerpt || 'Check out this strategy from Eduwoy!',
             url: window.location.href,
         };
 
@@ -167,7 +167,7 @@ const BlogDetails = () => {
                                     {blog.author?.charAt(0) || 'E'}
                                 </div>
                                 <div>
-                                    <p className="font-black text-gray-900">{blog.author || 'EAOverseas Expert'}</p>
+                                    <p className="font-black text-gray-900">{blog.author || 'Eduwoy Expert'}</p>
                                     <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Strategy Lead</p>
                                 </div>
                             </div>

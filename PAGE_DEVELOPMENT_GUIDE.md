@@ -1,11 +1,11 @@
 # Page Development Guide: Admin & Partner Modules
 
-This guide outlines the structure, features, and technical approach for the administrative and partner-facing modules of the EA Overseas platform.
+This guide outlines the structure, features, and technical approach for the administrative and partner-facing modules of the Eduwoy platform.
 
 ---
 
 ## 1. Superadmin Module (In Progress)
-The central nervous system of the platform, used by EA Overseas internal staff.
+The central nervous system of the platform, used by Eduwoy internal staff.
 
 ### 👤 Personas
 - **Product Manager**: Needs high-level oversight of all applications, consultant performance, and platform growth.
@@ -70,5 +70,5 @@ The interface for service providers (Insurance, Accommodation, Test Centers).
 
 ## General Development Rules
 1.  **Layered Architecture**: Keep UI pure, logic in Behavior, and API calls in Services.
-2.  **Aesthetics**: Use the "EA Overseas Blue" (`#0d6cf2`) for primaries and high-quality Unsplash images for role-specific banners.
+2.  **Aesthetics**: Use the "Eduwoy Blue" (`#0d6cf2`) for primaries and high-quality Unsplash images for role-specific banners.
 3.  **Routing**: All new subpages must be added to `App.tsx` and protected by the appropriate authentication context.

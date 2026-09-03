@@ -26,7 +26,7 @@ const ProfileLayout = () => {
                 <div className="flex items-center justify-between p-4 bg-white border-b border-gray-200 md:hidden">
                     <div className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-[#0d6cf2]">school</span>
-                        <span className="font-bold text-slate-900">EAOverseas</span>
+                        <span className="font-bold text-slate-900">Eduwoy</span>
                     </div>
                     <button className="p-2 text-slate-600">
                         <span className="material-symbols-outlined">menu</span>
@@ -39,7 +39,7 @@ const ProfileLayout = () => {
                         <div className="bg-[#0d6cf2]/10 rounded-lg flex items-center justify-center size-8 text-[#0d6cf2]">
                             <span className="material-symbols-outlined text-[20px]">school</span>
                         </div>
-                        <span className="font-bold text-slate-900">EAOverseas</span>
+                        <span className="font-bold text-slate-900">Eduwoy</span>
                     </div>
                 </div>
 
@@ -105,7 +105,7 @@ const ProfileLayout = () => {
 
                     {currentPath !== 'completed' && (
                         <div className="text-center text-xs text-slate-400 pb-8">
-                            © 2024 EAOverseas Inc. • <a className="hover:underline" href="#">Privacy Policy</a> • <a className="hover:underline" href="#">Terms of Service</a>
+                            © 2024 Eduwoy Inc. • <a className="hover:underline" href="#">Privacy Policy</a> • <a className="hover:underline" href="#">Terms of Service</a>
                         </div>
                     )}
                 </div>

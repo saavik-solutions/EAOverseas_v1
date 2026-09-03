@@ -37,7 +37,7 @@ const EnquireModal = ({ isOpen, onClose, accommodation }) => {
             const formDataData = new FormData(formRef.current);
             const formDataObj = Object.fromEntries(formDataData.entries());
             await submitLead({
-                source: 'EAOverseas_Main_Website',
+                source: 'Eduwoy_Main_Website',
                 data: {
                     ...formDataObj,
                     accommodationTitle: accommodation?.title,

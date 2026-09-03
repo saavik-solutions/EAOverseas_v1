@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/data/blogs.ts","./src/data/experts.ts","./src/data/mockaccommodationdata.ts","./src/data/mockfeeddata.ts","./src/data/readingtestcontent.ts","./src/data/studentstories.ts","./src/data/universities.ts","./src/types/assets.d.ts"],"version":"5.9.3"}

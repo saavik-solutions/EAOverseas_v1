@@ -78,7 +78,7 @@ const AdminLayout = () => {
                     <div className="flex items-center gap-6">
                         <div className="text-right">
                             <p className="text-sm font-black text-gray-900">Administrator</p>
-                            <p className="text-xs text-blue-600 font-bold">EAOverseas Hub</p>
+                            <p className="text-xs text-blue-600 font-bold">Eduwoy Hub</p>
                         </div>
                         <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 font-black">
                             AD

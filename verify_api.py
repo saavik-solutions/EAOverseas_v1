@@ -3,7 +3,7 @@ import json
 import time
 
 BASE_URL = "http://localhost:3001/api"
-ADMIN_EMAIL = "admin@eaoverseas.com"
+ADMIN_EMAIL = "admin@eduwoy.com"
 ADMIN_PASSWORD = "Admin@2026!"
 
 def test_inquiry_flow():

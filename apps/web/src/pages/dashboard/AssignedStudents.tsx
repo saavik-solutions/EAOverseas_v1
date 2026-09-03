@@ -108,7 +108,7 @@ const AssignedStudents = ({ isEmbedded = false }: { isEmbedded?: boolean }) => {
                     </div>
 
                     <div className="pb-10 text-center">
-                        <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">© 2024 EAOverseas Counsellor Portfolio Manager. All data is synchronized.</p>
+                        <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">© 2024 Eduwoy Counsellor Portfolio Manager. All data is synchronized.</p>
                     </div>
                 </div>
             </main>

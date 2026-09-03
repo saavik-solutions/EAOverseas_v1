@@ -1,7 +1,7 @@
 /**
  * ImageWithFallback
  * -----------------
- * Drop-in replacement for <img> that automatically shows the EAOverseas logo
+ * Drop-in replacement for <img> that automatically shows the Eduwoy logo
  * whenever the real image fails to load (network error, 404, broken URL, etc.).
  *
  * Usage:
@@ -55,7 +55,7 @@ const ImageWithFallback: React.FC<Props> = ({
       >
         <img
           src={logo}
-          alt="EAOverseas"
+          alt="Eduwoy"
           className="h-16 w-auto object-contain"
           style={{ filter: 'brightness(0) saturate(100%) invert(18%) sepia(96%) saturate(2000%) hue-rotate(272deg) brightness(80%)' }}
         />

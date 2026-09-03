@@ -119,7 +119,7 @@ const ReadingTest = () => {
                             </svg>
                         </div>
                         <div>
-                            <h1 className="text-lg font-bold leading-tight">EAOverseas Reading Test</h1>
+                            <h1 className="text-lg font-bold leading-tight">Eduwoy Reading Test</h1>
                             <p className="text-xs text-slate-500">Mock Exam #104 • Reading Section</p>
                         </div>
                     </div>

@@ -30,8 +30,8 @@ export const experts = [
             yearsExperience: "20+"
         },
         journey: [
-            "David founded EAOverseas with a singular mission: to democratize access to world-class education. His journey from a student immigrant to an ed-tech pioneer inspires our entire team.",
-            "Under his leadership, EAOverseas has grown from a small consultancy to a global platform.",
+            "David founded Eduwoy with a singular mission: to democratize access to world-class education. His journey from a student immigrant to an ed-tech pioneer inspires our entire team.",
+            "Under his leadership, Eduwoy has grown from a small consultancy to a global platform.",
             "He focuses on strategic partnerships and technological innovation to keep us ahead of the curve."
         ],
         expertise: [
@@ -56,7 +56,7 @@ export const experts = [
             yearsExperience: "10+"
         },
         journey: [
-            "With over a decade of dedicated experience in international education, Riya Mehta has become one of EAOverseas' most sought-after consultants. Her journey began with a passion for bridging the gap between Indian students' potential and global academic opportunities.",
+            "With over a decade of dedicated experience in international education, Riya Mehta has become one of Eduwoy' most sought-after consultants. Her journey began with a passion for bridging the gap between Indian students' potential and global academic opportunities.",
             "Riya specializes specifically in UK and Canada admissions, having successfully placed students in prestigious institutions like the University of Oxford, LSE, and the University of Toronto. Her approach is holistic, focusing not just on the application, but on building a narrative that resonates with admission committees.",
             "She holds an Advanced Certification in Global Career Counselling and has personally visited over 50 campuses worldwide to provide first-hand insights to her students. Her expertise extends into complex visa compliance and high-stakes interview preparation."
         ],
@@ -108,7 +108,7 @@ export const experts = [
             yearsExperience: "9+"
         },
         journey: [
-            "Sneha Kapoor is the architect behind EAOverseas' global network. With a background in International Relations, she has spent the last decade building strategic partnerships with top-tier universities.",
+            "Sneha Kapoor is the architect behind Eduwoy' global network. With a background in International Relations, she has spent the last decade building strategic partnerships with top-tier universities.",
             "Her work ensures that our students have access to exclusive scholarships and priority application processing at partner institutions.",
             "Sneha frequently travels to the UK and USA to meet with admissions deans and stay ahead of the curve on evolving admission trends."
         ],
@@ -188,7 +188,7 @@ export const experts = [
         journey: [
             "Kabir Malhotra is the strategic brain behind complex student profiles. He excels at helping students with non-traditional backgrounds or career gaps find their path to top universities.",
             "His data-driven approach ensures that every application is optimized for success.",
-            "Kabir also mentors our junior counsellors, setting the standard for excellence at EAOverseas."
+            "Kabir also mentors our junior counsellors, setting the standard for excellence at Eduwoy."
         ],
         expertise: [
             { title: "Gap Year Strategy", icon: "timelapse", desc: "Turning career breaks into compelling application assets." },
@@ -254,7 +254,7 @@ export const experts = [
         role: "Lead Graphic Designer",
         image: graphicImg,
         tags: ["Design", "Branding"],
-        bio: "Creating visual narratives that define the EAOverseas brand and user experience.",
+        bio: "Creating visual narratives that define the Eduwoy brand and user experience.",
         category: "Tech & Design",
         color: "#FF6384",
         tagBg: "#FFE6EA",
@@ -264,7 +264,7 @@ export const experts = [
             yearsExperience: "5+"
         },
         journey: [
-            "Lara is the creative eye behind everything at EAOverseas. With a background in fine arts and digital design, she ensures our brand resonates with students.",
+            "Lara is the creative eye behind everything at Eduwoy. With a background in fine arts and digital design, she ensures our brand resonates with students.",
             "She leads the design team in creating intuitive and beautiful interfaces."
         ],
         expertise: [

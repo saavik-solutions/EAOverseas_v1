@@ -19,19 +19,19 @@ interface Counsellor {
 
 // ── Mock Data ─────────────────────────────────────────────────────────────────
 const ALL_COUNSELLORS: Counsellor[] = [
-    { id: 1, name: 'Dr. Sarah Johnson', avatar: 'https://i.pravatar.cc/150?u=201', specialization: 'UK Universities', country: 'United Kingdom', studentsToday: 8, status: 'active', activeHours: '9:00 AM – 5:00 PM', email: 'sarah.j@eaoverseas.com' },
-    { id: 2, name: 'Raj Mehta', avatar: 'https://i.pravatar.cc/150?u=202', specialization: 'Canada, Australia', country: 'Canada', studentsToday: 5, status: 'break', nextAvailable: '2:30 PM', activeHours: '10:00 AM – 6:00 PM', email: 'raj.m@eaoverseas.com' },
-    { id: 3, name: 'Emily Chen', avatar: 'https://i.pravatar.cc/150?u=203', specialization: 'USA Graduate Programs', country: 'United States', studentsToday: 12, status: 'active', activeHours: '8:00 AM – 4:00 PM', email: 'emily.c@eaoverseas.com' },
-    { id: 4, name: 'James Okonkwo', avatar: 'https://i.pravatar.cc/150?u=204', specialization: 'Germany, Netherlands', country: 'Germany', studentsToday: 3, status: 'active', activeHours: '9:30 AM – 5:30 PM', email: 'james.o@eaoverseas.com' },
-    { id: 5, name: 'Priya Sharma', avatar: 'https://i.pravatar.cc/150?u=205', specialization: 'Engineering & STEM', country: 'India', studentsToday: 9, status: 'active', activeHours: '8:30 AM – 4:30 PM', email: 'priya.s@eaoverseas.com' },
-    { id: 6, name: 'Lucas Fernandez', avatar: 'https://i.pravatar.cc/150?u=206', specialization: 'Spain, Portugal, Europe', country: 'Spain', studentsToday: 6, status: 'break', nextAvailable: '3:00 PM', activeHours: '10:00 AM – 7:00 PM', email: 'lucas.f@eaoverseas.com' },
-    { id: 7, name: 'Amira Hassan', avatar: 'https://i.pravatar.cc/150?u=207', specialization: 'MBA & Business', country: 'UAE', studentsToday: 4, status: 'active', activeHours: '9:00 AM – 6:00 PM', email: 'amira.h@eaoverseas.com' },
-    { id: 8, name: 'David Park', avatar: 'https://i.pravatar.cc/150?u=208', specialization: 'South Korea, Japan', country: 'South Korea', studentsToday: 7, status: 'active', activeHours: '8:00 AM – 5:00 PM', email: 'david.p@eaoverseas.com' },
+    { id: 1, name: 'Dr. Sarah Johnson', avatar: 'https://i.pravatar.cc/150?u=201', specialization: 'UK Universities', country: 'United Kingdom', studentsToday: 8, status: 'active', activeHours: '9:00 AM – 5:00 PM', email: 'sarah.j@eduwoy.com' },
+    { id: 2, name: 'Raj Mehta', avatar: 'https://i.pravatar.cc/150?u=202', specialization: 'Canada, Australia', country: 'Canada', studentsToday: 5, status: 'break', nextAvailable: '2:30 PM', activeHours: '10:00 AM – 6:00 PM', email: 'raj.m@eduwoy.com' },
+    { id: 3, name: 'Emily Chen', avatar: 'https://i.pravatar.cc/150?u=203', specialization: 'USA Graduate Programs', country: 'United States', studentsToday: 12, status: 'active', activeHours: '8:00 AM – 4:00 PM', email: 'emily.c@eduwoy.com' },
+    { id: 4, name: 'James Okonkwo', avatar: 'https://i.pravatar.cc/150?u=204', specialization: 'Germany, Netherlands', country: 'Germany', studentsToday: 3, status: 'active', activeHours: '9:30 AM – 5:30 PM', email: 'james.o@eduwoy.com' },
+    { id: 5, name: 'Priya Sharma', avatar: 'https://i.pravatar.cc/150?u=205', specialization: 'Engineering & STEM', country: 'India', studentsToday: 9, status: 'active', activeHours: '8:30 AM – 4:30 PM', email: 'priya.s@eduwoy.com' },
+    { id: 6, name: 'Lucas Fernandez', avatar: 'https://i.pravatar.cc/150?u=206', specialization: 'Spain, Portugal, Europe', country: 'Spain', studentsToday: 6, status: 'break', nextAvailable: '3:00 PM', activeHours: '10:00 AM – 7:00 PM', email: 'lucas.f@eduwoy.com' },
+    { id: 7, name: 'Amira Hassan', avatar: 'https://i.pravatar.cc/150?u=207', specialization: 'MBA & Business', country: 'UAE', studentsToday: 4, status: 'active', activeHours: '9:00 AM – 6:00 PM', email: 'amira.h@eduwoy.com' },
+    { id: 8, name: 'David Park', avatar: 'https://i.pravatar.cc/150?u=208', specialization: 'South Korea, Japan', country: 'South Korea', studentsToday: 7, status: 'active', activeHours: '8:00 AM – 5:00 PM', email: 'david.p@eduwoy.com' },
     // Not working today
-    { id: 9, name: 'Nina Patel', avatar: 'https://i.pravatar.cc/150?u=209', specialization: 'Scholarships & Funding', country: 'India', studentsToday: 0, status: 'offline', activeHours: '—', email: 'nina.p@eaoverseas.com' },
-    { id: 10, name: 'Carlos Rivera', avatar: 'https://i.pravatar.cc/150?u=210', specialization: 'Latin America', country: 'Mexico', studentsToday: 0, status: 'offline', activeHours: '—', email: 'carlos.r@eaoverseas.com' },
-    { id: 11, name: 'Sophie Laurent', avatar: 'https://i.pravatar.cc/150?u=211', specialization: 'France, Belgium', country: 'France', studentsToday: 0, status: 'offline', activeHours: '—', email: 'sophie.l@eaoverseas.com' },
-    { id: 12, name: 'Yuki Tanaka', avatar: 'https://i.pravatar.cc/150?u=212', specialization: 'Japan, South-East Asia', country: 'Japan', studentsToday: 0, status: 'offline', activeHours: '—', email: 'yuki.t@eaoverseas.com' },
+    { id: 9, name: 'Nina Patel', avatar: 'https://i.pravatar.cc/150?u=209', specialization: 'Scholarships & Funding', country: 'India', studentsToday: 0, status: 'offline', activeHours: '—', email: 'nina.p@eduwoy.com' },
+    { id: 10, name: 'Carlos Rivera', avatar: 'https://i.pravatar.cc/150?u=210', specialization: 'Latin America', country: 'Mexico', studentsToday: 0, status: 'offline', activeHours: '—', email: 'carlos.r@eduwoy.com' },
+    { id: 11, name: 'Sophie Laurent', avatar: 'https://i.pravatar.cc/150?u=211', specialization: 'France, Belgium', country: 'France', studentsToday: 0, status: 'offline', activeHours: '—', email: 'sophie.l@eduwoy.com' },
+    { id: 12, name: 'Yuki Tanaka', avatar: 'https://i.pravatar.cc/150?u=212', specialization: 'Japan, South-East Asia', country: 'Japan', studentsToday: 0, status: 'offline', activeHours: '—', email: 'yuki.t@eduwoy.com' },
 ];
 
 const STATUS_COLORS: Record<string, { bg: string; dot: string; label: string }> = {

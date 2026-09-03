@@ -81,7 +81,7 @@ const CounsellorProfile = ({ isEmbedded = false }: { isEmbedded?: boolean }) => 
                                 </div>
                                 <div>
                                     <p className="text-[#60728a] text-[10px] font-bold uppercase tracking-wider">Email Address</p>
-                                    <p className="text-[#111418] text-base font-semibold mt-1">elena.rodriguez@eaoverseas.com</p>
+                                    <p className="text-[#111418] text-base font-semibold mt-1">elena.rodriguez@eduwoy.com</p>
                                 </div>
                                 <div>
                                     <p className="text-[#60728a] text-[10px] font-bold uppercase tracking-wider">Phone</p>

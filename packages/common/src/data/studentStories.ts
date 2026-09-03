@@ -23,10 +23,10 @@ export const longFormStories = [
         content: `
             <p>Growing up, I always knew I wanted to be an engineer. But when it came time to apply to universities in the UK, I hit a wall. The UCAS system was completely foreign to me, and the sheer number of engineering specializations left me paralyzed with indecision.</p>
             <p>I spent hours on forums, reading contradictory advice. Some said "General Engineering" was the best path; others swore by specialized courses. I was drowning in information but starving for wisdom.</p>
-            <p>That's when I found EAOverseas. From our very first meeting, my counselor, Sarah, didn't just tell me what to do—she listened. She dug deep into my projects, my interests in robotics, and my academic strengths.</p>
+            <p>That's when I found Eduwoy. From our very first meeting, my counselor, Sarah, didn't just tell me what to do—she listened. She dug deep into my projects, my interests in robotics, and my academic strengths.</p>
             <h3>The Turning Point</h3>
             <p>Sarah helped me realize that my passion wasn't just "building things," but specifically in <em>autonomous systems</em>. This clarity was a game-changer. We targeted universities known for their robotics research.</p>
-            <p>The personal statement was another beast. I had a draft, but it was dry and technical. The team at EAOverseas helped me weave my experiences into a compelling narrative using the "Show, Don't Tell" principle.</p>
+            <p>The personal statement was another beast. I had a draft, but it was dry and technical. The team at Eduwoy helped me weave my experiences into a compelling narrative using the "Show, Don't Tell" principle.</p>
             <h3>The Result</h3>
             <p>I applied to Cambridge, Imperial, Warwick, and Bristol. I expected maybe one offer. I got four. Choosing Cambridge was a dream come true, and I walked into my first term with confidence, knowing I was on the right path.</p>
         `
@@ -54,7 +54,7 @@ export const longFormStories = [
         },
         content: `
             <p>International education comes with a hefty price tag. For my family, it seemed out of reach. I had the grades—top of my class in History and Political Science—but the tuition fees in Canada were daunting.</p>
-            <p>I was about to give up and enroll locally when I spoke to EAOverseas. They didn't see my budget as a barrier; they saw it as a challenge to be solved.</p>
+            <p>I was about to give up and enroll locally when I spoke to Eduwoy. They didn't see my budget as a barrier; they saw it as a challenge to be solved.</p>
             <h3>The "Scholarship-First" Approach</h3>
             <p>Instead of picking universities and <em>then</em> looking for money, we reversed the process. We identified universities in Canada with specific endowments for international students from my region.</p>
             <p>The application essays were intense. We went through six iterations of my "Diversity Statement." My counselor pushed me to be vulnerable, to talk about my community work not just as a list of achievements, but as a window into my values.</p>
@@ -88,7 +88,7 @@ export const longFormStories = [
             <p>Coding was my first language; English was a distant second. I could write complex algorithms in Python, but writing an essay in English felt like decoding an alien script.</p>
             <p>My dream was to study AI in the US, but my IELTS score was the gatekeeper I couldn't pass. I took the test three times, stuck at 6.0. I was ready to settle for a lower-tier university.</p>
             <h3>Targeted Training</h3>
-            <p>EAOverseas identified my specific weaknesses: pronunciation and essay structure. They didn't just give me practice tests; they gave me a personalized curriculum. My tutor, Mr. Evans, used tech analogies to explain grammar rules, which finally clicked for me.</p>
+            <p>Eduwoy identified my specific weaknesses: pronunciation and essay structure. They didn't just give me practice tests; they gave me a personalized curriculum. My tutor, Mr. Evans, used tech analogies to explain grammar rules, which finally clicked for me.</p>
             <h3>The 8.0 Moment</h3>
             <p>When I opened my results and saw an 8.0, I stared at the screen for five minutes. It wasn't just a score; it was my ticket to Georgia Tech. Now, I'm working on research that could change how AI understands human language.</p>
         `
@@ -118,7 +118,7 @@ export const longFormStories = [
             <p>My sketchbook was chaos. Sketches of dresses, buildings, and abstract shapes were all jumbled together. I knew I had talent, but I didn't know how to present it.</p>
             <p>The application requirements for design schools are rigorous. They don't just want to see that you can draw; they want to see how you <em>think</em>.</p>
             <h3>Curating the Narrative</h3>
-            <p>My mentor at EAOverseas looked through hundreds of my sketches. She helped me find a common thread: "Urban decay and rebirth." We built my entire portfolio around this theme.</p>
+            <p>My mentor at Eduwoy looked through hundreds of my sketches. She helped me find a common thread: "Urban decay and rebirth." We built my entire portfolio around this theme.</p>
             <p>We selected 15 pieces, refined them, and wrote artist statements for each. It transformed from a pile of drawings into a professional-grade portfolio.</p>
             <h3>New York State of Mind</h3>
             <p>Getting into Parsons was a long shot, or so I thought. When the acceptance letter came (with scholarship details!), I cried. I'm now in NYC, surrounded by inspiration every day.</p>

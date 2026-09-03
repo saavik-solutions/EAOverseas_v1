@@ -286,7 +286,7 @@ const ConfirmAdmission = () => {
 
                 {/* Footer (Simple) */}
                 <footer className="mt-12 p-8 border-t border-[#f0f2f4] text-center">
-                    <p className="text-[#616f89] text-xs font-normal">© 2024 EAOverseas Platform. All rights reserved. Secure government-standard encryption enabled.</p>
+                    <p className="text-[#616f89] text-xs font-normal">© 2024 Eduwoy Platform. All rights reserved. Secure government-standard encryption enabled.</p>
                 </footer>
             </div>
         </div>

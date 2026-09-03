@@ -90,7 +90,7 @@ const IntelligentSearchSection = () => {
                         Transform Your Future with{' '}
                         <br className="hidden lg:block" />
                         <span className="relative inline-block">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-fuchsia-600">EAOverseas</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-fuchsia-600">Eduwoy</span>
                             <div className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-purple-600/20 to-fuchsia-600/20 rounded-full blur-[2px]"></div>
                         </span>
                         <span className="block mt-4 text-xl md:text-2xl font-semibold text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -202,11 +202,11 @@ const IntelligentSearchSection = () => {
                                     onClick={() => setActiveCourseTab(tab.key)}
                                     className={`px-4 py-2.5 rounded-xl font-bold flex items-center gap-2.5 text-sm transition-all border ${
                                         activeCourseTab === tab.key
-                                            ? 'bg-[#f3e8ff] text-[#7a29c2] border-[#d8b4fe] shadow-sm'
+                                            ? 'bg-[#f3e8ff] text-primary border-[#d8b4fe] shadow-sm'
                                             : 'bg-white text-slate-500 border-slate-200 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200'
                                     }`}
                                 >
-                                    <span className={`material-symbols-outlined text-[18px] ${activeCourseTab === tab.key ? 'text-[#7a29c2]' : 'text-slate-400'}`}>{tab.icon}</span>
+                                    <span className={`material-symbols-outlined text-[18px] ${activeCourseTab === tab.key ? 'text-primary' : 'text-slate-400'}`}>{tab.icon}</span>
                                     <div className="text-left leading-tight">
                                         <span className="block text-[10px] font-normal opacity-70">Search by</span>
                                         {tab.label}
@@ -298,7 +298,7 @@ const IntelligentSearchSection = () => {
                     <div className="mt-6 flex justify-center">
                         <button
                             onClick={handleFindCourses}
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-[#7a29c2] text-[#7a29c2] font-bold text-sm hover:bg-[#7a29c2] hover:text-white transition-all duration-200"
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all duration-200"
                         >
                             View All Courses
                             <span className="material-symbols-outlined text-[18px]">open_in_new</span>
@@ -329,11 +329,11 @@ const IntelligentSearchSection = () => {
                                     onClick={() => setActiveUniTab(tab.key)}
                                     className={`px-4 py-2.5 rounded-xl font-bold flex items-center gap-2.5 text-sm transition-all border ${
                                         activeUniTab === tab.key
-                                            ? 'bg-[#f3e8ff] text-[#7a29c2] border-[#d8b4fe] shadow-sm'
+                                            ? 'bg-[#f3e8ff] text-primary border-[#d8b4fe] shadow-sm'
                                             : 'bg-white text-slate-500 border-slate-200 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200'
                                     }`}
                                 >
-                                    <span className={`material-symbols-outlined text-[18px] ${activeUniTab === tab.key ? 'text-[#7a29c2]' : 'text-slate-400'}`}>{tab.icon}</span>
+                                    <span className={`material-symbols-outlined text-[18px] ${activeUniTab === tab.key ? 'text-primary' : 'text-slate-400'}`}>{tab.icon}</span>
                                     <div className="text-left leading-tight">
                                         <span className="block text-[10px] font-normal opacity-70">Sort by</span>
                                         {tab.label}
@@ -360,7 +360,7 @@ const IntelligentSearchSection = () => {
                                 onClick={() => { setCompareMode(m => !m); setCompareList([]); }}
                                 className={`px-4 py-2.5 rounded-xl font-bold text-sm border transition-all flex items-center gap-2 ${
                                     compareMode
-                                        ? 'bg-[#7a29c2] text-white border-[#7a29c2] shadow-md'
+                                        ? 'bg-primary text-white border-primary shadow-md'
                                         : 'bg-white text-slate-500 border-slate-200 hover:bg-purple-50 hover:text-purple-700'
                                 }`}
                             >
@@ -392,8 +392,8 @@ const IntelligentSearchSection = () => {
                     {compareMode && (
                         <div className="mb-5 p-4 bg-[#f3e8ff] border border-[#d8b4fe] rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                             <div className="flex items-center gap-3">
-                                <span className="material-symbols-outlined text-[#7a29c2] text-[22px]">info</span>
-                                <p className="text-sm text-[#7a29c2] font-semibold">
+                                <span className="material-symbols-outlined text-primary text-[22px]">info</span>
+                                <p className="text-sm text-primary font-semibold">
                                     {compareList.length === 0 && 'Select 2 universities to compare them side by side.'}
                                     {compareList.length === 1 && 'Great! Select 1 more university.'}
                                     {compareList.length === 2 && 'Ready to compare!'}
@@ -402,7 +402,7 @@ const IntelligentSearchSection = () => {
                             {compareList.length === 2 && (
                                 <button
                                     onClick={() => navigate('/contact')}
-                                    className="flex-shrink-0 px-5 py-2 bg-[#7a29c2] text-white font-bold rounded-xl text-sm flex items-center gap-2 hover:bg-[#6a24aa] transition-colors"
+                                    className="flex-shrink-0 px-5 py-2 bg-primary text-white font-bold rounded-xl text-sm flex items-center gap-2 hover:bg-primary-hover transition-colors"
                                 >
                                     <span className="material-symbols-outlined text-[18px]">compare_arrows</span>
                                     Compare Now
@@ -414,8 +414,8 @@ const IntelligentSearchSection = () => {
                     {/* Results count */}
                     <p className="text-xs text-slate-400 font-semibold mb-4">
                         Showing {filteredUniversities.length} universities
-                        {selectedCountry && <span> in <span className="text-[#7a29c2]">{selectedCountry}</span></span>}
-                        {uniSearch && <span> matching "<span className="text-[#7a29c2]">{uniSearch}</span>"</span>}
+                        {selectedCountry && <span> in <span className="text-primary">{selectedCountry}</span></span>}
+                        {uniSearch && <span> matching "<span className="text-primary">{uniSearch}</span>"</span>}
                         <span className="ml-2 text-slate-300">• Sorted by {activeUniTab === 'ranking' ? 'Global Ranking ↑' : 'Location A–Z'}</span>
                     </p>
 
@@ -428,7 +428,7 @@ const IntelligentSearchSection = () => {
                                     onClick={() => compareMode ? toggleCompare(uni.id) : handleCardClick({ country: uni.country })}
                                     className={`cursor-pointer bg-white rounded-2xl border overflow-hidden shadow-sm transition-all group flex flex-col hover:-translate-y-1 ${
                                         compareMode && compareList.includes(uni.id)
-                                            ? 'border-[#7a29c2] ring-2 ring-[#7a29c2]/30 shadow-purple-200'
+                                            ? 'border-primary ring-2 ring-primary/30 shadow-purple-200'
                                             : 'border-purple-100 hover:shadow-xl hover:shadow-purple-100'
                                     }`}
                                 >
@@ -443,14 +443,14 @@ const IntelligentSearchSection = () => {
                                         {compareMode && (
                                             <div className={`absolute top-2 right-2 w-6 h-6 rounded-md flex items-center justify-center border-2 transition-all ${
                                                 compareList.includes(uni.id)
-                                                    ? 'bg-[#7a29c2] border-[#7a29c2]'
+                                                    ? 'bg-primary border-primary'
                                                     : 'bg-white/80 border-white'
                                             }`}>
                                                 {compareList.includes(uni.id) && <span className="material-symbols-outlined text-white text-[14px]">check</span>}
                                             </div>
                                         )}
                                         <div className="absolute bottom-2 left-3 flex items-center gap-2">
-                                            <span className="px-2 py-0.5 bg-[#7a29c2]/90 text-white text-[10px] font-bold rounded flex items-center gap-1 backdrop-blur-sm">
+                                            <span className="px-2 py-0.5 bg-primary/90 text-white text-[10px] font-bold rounded flex items-center gap-1 backdrop-blur-sm">
                                                 <span className="material-symbols-outlined text-[10px]">military_tech</span>
                                                 {uni.rank}
                                             </span>
@@ -462,11 +462,11 @@ const IntelligentSearchSection = () => {
                                     <div className="p-4 flex-1 flex flex-col justify-between">
                                         <div>
                                             <div className="flex items-start justify-between gap-1 mb-1">
-                                                <h4 className="font-bold text-slate-800 text-sm leading-tight group-hover:text-[#7a29c2] transition-colors flex-1">{uni.name}</h4>
+                                                <h4 className="font-bold text-slate-800 text-sm leading-tight group-hover:text-primary transition-colors flex-1">{uni.name}</h4>
                                                 <span className="text-[10px] font-bold px-1.5 py-0.5 bg-purple-50 text-purple-600 rounded flex-shrink-0">{uni.type}</span>
                                             </div>
                                             <p className="text-slate-500 flex items-center gap-1 text-xs mb-3">
-                                                <span className="material-symbols-outlined text-[12px] text-[#7a29c2]">location_on</span>
+                                                <span className="material-symbols-outlined text-[12px] text-primary">location_on</span>
                                                 {uni.location}
                                             </p>
                                             <div className="grid grid-cols-3 gap-1.5 mb-3">
@@ -485,14 +485,14 @@ const IntelligentSearchSection = () => {
                                             </div>
                                         </div>
                                         <div className="flex items-center justify-between border-t border-purple-50 pt-3">
-                                            <span className="font-bold text-xs text-[#7a29c2] uppercase tracking-wide">{compareMode ? (compareList.includes(uni.id) ? '✓ Selected' : 'Select') : 'View University'}</span>
+                                            <span className="font-bold text-xs text-primary uppercase tracking-wide">{compareMode ? (compareList.includes(uni.id) ? '✓ Selected' : 'Select') : 'View University'}</span>
                                             <div className={`w-7 h-7 rounded-full flex items-center justify-center transition-all group-hover:scale-110 ${
                                                 compareMode && compareList.includes(uni.id)
-                                                    ? 'bg-[#7a29c2]'
-                                                    : 'bg-purple-50 group-hover:bg-[#7a29c2]'
+                                                    ? 'bg-primary'
+                                                    : 'bg-purple-50 group-hover:bg-primary'
                                             }`}>
                                                 <span className={`material-symbols-outlined text-[13px] font-bold transition-colors ${
-                                                    compareMode && compareList.includes(uni.id) ? 'text-white' : 'text-[#7a29c2] group-hover:text-white'
+                                                    compareMode && compareList.includes(uni.id) ? 'text-white' : 'text-primary group-hover:text-white'
                                                 }`}>{compareMode ? 'check' : 'arrow_forward'}</span>
                                             </div>
                                         </div>
@@ -507,8 +507,8 @@ const IntelligentSearchSection = () => {
                                 <div key={country}>
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="flex items-center gap-2 px-3 py-1.5 bg-[#f3e8ff] border border-[#d8b4fe] rounded-full">
-                                            <span className="material-symbols-outlined text-[#7a29c2] text-[16px]">location_on</span>
-                                            <span className="text-sm font-bold text-[#7a29c2]">{country}</span>
+                                            <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
+                                            <span className="text-sm font-bold text-primary">{country}</span>
                                         </div>
                                         <span className="text-xs text-slate-400 font-medium">{unis.length} universities</span>
                                         <div className="flex-1 h-px bg-purple-100"></div>
@@ -528,18 +528,18 @@ const IntelligentSearchSection = () => {
                                                     />
                                                     <div className="absolute inset-0 bg-gradient-to-t from-purple-950/70 to-transparent"></div>
                                                     <div className="absolute bottom-2 left-2 flex gap-1.5">
-                                                        <span className="px-1.5 py-0.5 bg-[#7a29c2]/90 text-white text-[9px] font-bold rounded backdrop-blur-sm">{uni.rank}</span>
+                                                        <span className="px-1.5 py-0.5 bg-primary/90 text-white text-[9px] font-bold rounded backdrop-blur-sm">{uni.rank}</span>
                                                         {uni.scholarships && <span className="px-1.5 py-0.5 bg-emerald-600/90 text-white text-[9px] font-bold rounded backdrop-blur-sm">🎓</span>}
                                                     </div>
                                                 </div>
                                                 <div className="p-3 flex-1 flex flex-col justify-between">
                                                     <div>
-                                                        <h4 className="font-bold text-slate-800 text-sm leading-tight mb-0.5 group-hover:text-[#7a29c2] transition-colors">{uni.name}</h4>
+                                                        <h4 className="font-bold text-slate-800 text-sm leading-tight mb-0.5 group-hover:text-primary transition-colors">{uni.name}</h4>
                                                         <p className="text-slate-400 text-[11px] mb-2">{uni.tuition} · {uni.acceptRate} accept rate</p>
                                                     </div>
                                                     <div className="flex items-center justify-between pt-2 border-t border-purple-50">
-                                                        <span className="text-[10px] font-bold text-[#7a29c2] uppercase tracking-wide">Explore</span>
-                                                        <span className="material-symbols-outlined text-[#7a29c2] text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                                        <span className="text-[10px] font-bold text-primary uppercase tracking-wide">Explore</span>
+                                                        <span className="material-symbols-outlined text-primary text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -560,7 +560,7 @@ const IntelligentSearchSection = () => {
                     <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
                         <button
                             onClick={() => navigate('/contact')}
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-[#7a29c2] text-[#7a29c2] font-bold text-sm hover:bg-[#7a29c2] hover:text-white transition-all duration-200"
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all duration-200"
                         >
                             View All Universities
                             <span className="material-symbols-outlined text-[18px]">open_in_new</span>

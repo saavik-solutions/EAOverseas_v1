@@ -176,7 +176,7 @@ const ApplicationsContext = createContext<ApplicationsContextType | undefined>(u
 export const ApplicationsProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [applications, setApplications] = useState<Application[]>(() => {
         try {
-            const saved = localStorage.getItem('eaoverseas_applications');
+            const saved = localStorage.getItem('eduwoy_applications') || localStorage.getItem('eaoverseas_applications');
             return saved ? JSON.parse(saved) : INITIAL_POOL;
         } catch (err) {
             console.error('Error loading applications:', err);
@@ -188,7 +188,7 @@ export const ApplicationsProvider: React.FC<{ children: ReactNode }> = ({ childr
     const isInternalUpdate = React.useRef(false);
 
     useEffect(() => {
-        const channel = new BroadcastChannel('eaoverseas_applications_channel');
+        const channel = new BroadcastChannel('eduwoy_applications_channel');
         channelRef.current = channel;
 
         channel.onmessage = (event) => {
@@ -202,7 +202,7 @@ export const ApplicationsProvider: React.FC<{ children: ReactNode }> = ({ childr
     }, []);
 
     useEffect(() => {
-        localStorage.setItem('eaoverseas_applications', JSON.stringify(applications));
+        localStorage.setItem('eduwoy_applications', JSON.stringify(applications));
 
         if (isInternalUpdate.current) {
             isInternalUpdate.current = false;

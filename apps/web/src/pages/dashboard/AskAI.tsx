@@ -101,7 +101,7 @@ const AskAI = () => {
             ].join('\n');
 
             const systemContext = `
-You are "Guide Buddy", the helpful AI assistant for the EAOverseas Platform.
+You are "Guide Buddy", the helpful AI assistant for the Eduwoy Platform.
 Your goal is to help users navigate and use the features of THIS website.
 You do NOT know about the outside world, general trivia, or features not listed below.
 
@@ -320,7 +320,7 @@ ${docsList || "None"}
                                 </h1>
                                 <p className="text-slate-500 text-sm md:text-lg font-normal max-w-lg leading-relaxed px-4">
                                     uncover insights, check eligibility, and get personalized roadmaps leveraging
-                                    <span className="font-semibold text-slate-700 mx-1">EAOverseas Intelligence</span>.
+                                    <span className="font-semibold text-slate-700 mx-1">Eduwoy Intelligence</span>.
                                 </p>
                             </div>
                         </div>
@@ -454,7 +454,7 @@ ${docsList || "None"}
                     {/* Footer */}
                     <div className={`${messages.length > 0 ? 'hidden' : 'pt-2'} text-center`}>
                         <p className="text-slate-400 text-[9px] max-w-sm mx-auto leading-normal">
-                            EAOverseas AI can make mistakes.
+                            Eduwoy AI can make mistakes.
                         </p>
                     </div>
 

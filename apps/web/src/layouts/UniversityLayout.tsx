@@ -65,7 +65,7 @@ const UniversityLayout: React.FC<UniversityLayoutProps> = ({ children, title }) 
             {/* Mobile Header */}
             <header className="lg:hidden bg-white px-4 py-3 flex items-center justify-between border-b border-slate-200 z-50 sticky top-0">
                 <div className="flex items-center gap-2">
-                    <img src={logo} alt="EAOverseas" className="h-8 w-auto object-contain" />
+                    <img src={logo} alt="Eduwoy" className="h-8 w-auto object-contain" />
                 </div>
                 <div className="flex items-center gap-3">
                     <button className="relative p-2 text-slate-500">
@@ -97,7 +97,7 @@ const UniversityLayout: React.FC<UniversityLayoutProps> = ({ children, title }) 
             `}>
                 <div className="px-6 py-5 border-b border-slate-50">
                     <div className="flex items-center justify-between mb-2">
-                        <img src={logo} alt="EAOverseas" className="h-8 w-auto object-contain" />
+                        <img src={logo} alt="Eduwoy" className="h-8 w-auto object-contain" />
                         <button
                             onClick={() => setIsSidebarOpen(false)}
                             className="lg:hidden p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100"

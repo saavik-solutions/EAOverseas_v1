@@ -57,7 +57,7 @@ const MainLayout = () => {
 
             {/* Mobile Header */}
             <div className="lg:hidden bg-white px-4 py-3 flex items-center justify-between z-30 shrink-0">
-                <img src={logo} alt="EAOverseas" className="h-8 w-auto object-contain" />
+                <img src={logo} alt="Eduwoy" className="h-8 w-auto object-contain" />
 
                 <div className="flex items-center gap-2">
                     {/* Enter Website Button for Guests (Mobile) */}

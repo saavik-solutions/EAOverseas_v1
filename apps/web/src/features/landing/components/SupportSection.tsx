@@ -38,7 +38,7 @@ const SupportSection = ({ onScheduleClick }: { onScheduleClick?: () => void }) =
 
     return (
         <section className="flex flex-col items-center px-8 pb-16 max-w-[1600px] w-full mx-auto font-sans max-sm:px-4">
-            <div className="inline-block bg-[#f3e8ff] text-[#7a29c2] py-1.5 px-5 rounded-full text-[13px] font-medium uppercase tracking-wider mb-6">Our Services</div>
+            <div className="inline-block bg-[#f3e8ff] text-primary py-1.5 px-5 rounded-full text-[13px] font-medium uppercase tracking-wider mb-6">Our Services</div>
             <h2 className="font-bold text-[40px] max-sm:text-[20px] text-center text-black mb-16 max-sm:mb-8 leading-tight">
                 Comprehensive Support for Your Study <br className="hidden md:block" /> Abroad Journey
             </h2>
@@ -52,7 +52,7 @@ const SupportSection = ({ onScheduleClick }: { onScheduleClick?: () => void }) =
                             <button
                                 key={index}
                                 onClick={() => setCurrentStep(index)}
-                                className={`p-0 border-none cursor-pointer transition-all duration-300 ${index === currentStep ? 'relative w-2 h-10 bg-[#7a29c2] rounded-[10px] block' : 'w-2 h-2 bg-[#d8b4fe] rounded-full'}`}
+                                className={`p-0 border-none cursor-pointer transition-all duration-300 ${index === currentStep ? 'relative w-2 h-10 bg-primary rounded-[10px] block' : 'w-2 h-2 bg-[#d8b4fe] rounded-full'}`}
                                 aria-label={`Go to step ${index + 1}`}
                             />
                         ))}

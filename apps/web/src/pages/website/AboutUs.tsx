@@ -63,11 +63,11 @@ const AboutUs = () => {
     const { user } = useAuth();
 
     const handleExplore = () => {
-        window.location.href = 'https://student.eaoverseas.com';
+        window.location.href = 'https://student.eduwoy.com';
     };
 
     const handleBrowseCourses = () => {
-        window.location.href = 'https://student.eaoverseas.com';
+        window.location.href = 'https://student.eduwoy.com';
     };
 
     useEffect(() => {
@@ -78,7 +78,7 @@ const AboutUs = () => {
     return (
         <div className="max-w-[1440px] mx-auto px-6 md:px-12">
             <SEOHead 
-                title="About Us | EAOverseas"
+                title="About Us | Eduwoy"
                 description="Learn about our mission to empower global scholars through data-driven insights and ethical guidance."
                 image="/assets/student_story_hero.webp"
             />
@@ -90,22 +90,22 @@ const AboutUs = () => {
                     <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
                         <div className="flex flex-col gap-6 md:gap-8">
                             <div className="space-y-6 md:space-y-8">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100/50 text-[#7a29c2] text-xs font-bold tracking-widest uppercase">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100/50 text-primary text-xs font-bold tracking-widest uppercase">
                                     <span className="relative flex h-2 w-2">
                                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7a29c2]"></span>
+                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                                     </span>
                                     Empowering Global Scholars
                                 </div>
                                 <h1 className="text-4xl md:text-7xl font-[900] leading-[1.05] tracking-tight text-[#111418]">
-                                    Shaping Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7a29c2] to-violet-600">Education</span> Decisions
+                                    Shaping Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-600">Education</span> Decisions
                                 </h1>
                                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-[540px]">
                                     We are building a platform where students make informed study-abroad decisions backed by <span className="text-gray-900 font-semibold">real-world data</span> and <span className="text-gray-900 font-semibold">ethical guidance</span>.
                                 </p>
                             </div>
                             <div className="flex flex-wrap gap-4 mt-2">
-                                <button onClick={handleExplore} className="bg-[#7a29c2] hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-2xl shadow-xl shadow-purple-500/20 transition-all hover:-translate-y-1">
+                                <button onClick={handleExplore} className="bg-primary hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-2xl shadow-xl shadow-purple-500/20 transition-all hover:-translate-y-1">
                                     Get Started
                                 </button>
                                 <button onClick={handleBrowseCourses} className="bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 px-10 rounded-2xl border border-gray-200 transition-all">
@@ -116,11 +116,11 @@ const AboutUs = () => {
                         <div className="relative group">
                             <div className="aspect-[4/5] md:aspect-[4/3] bg-gray-100 rounded-[3rem] overflow-hidden relative shadow-2xl">
                                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop')" }}></div>
-                                <div className="absolute inset-0 bg-gradient-to-tr from-[#7a29c2]/20 to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                             </div>
                             {/* Floating Stats Card */}
                             <div className="absolute -bottom-8 -left-6 md:-bottom-12 md:-left-12 bg-white/90 backdrop-blur-2xl p-6 md:p-10 rounded-[2rem] shadow-2xl border border-white/50 max-w-[220px] md:max-w-[300px] animate-float">
-                                <p className="text-[#7a29c2] text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-2 md:mb-3">Our Core Promise</p>
+                                <p className="text-primary text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-2 md:mb-3">Our Core Promise</p>
                                 <p className="text-lg md:text-2xl font-black text-[#111418] leading-tight">
                                     Quality education for every student.
                                 </p>
@@ -130,7 +130,7 @@ const AboutUs = () => {
                                             <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" />
                                         </div>
                                     ))}
-                                    <div className="w-8 h-8 rounded-full border-2 border-white bg-[#7a29c2] flex items-center justify-center text-[10px] text-white font-bold">+10k</div>
+                                    <div className="w-8 h-8 rounded-full border-2 border-white bg-primary flex items-center justify-center text-[10px] text-white font-bold">+10k</div>
                                 </div>
                             </div>
                         </div>
@@ -147,12 +147,12 @@ const AboutUs = () => {
  
                     <div className="relative z-10 space-y-16 md:space-y-24">
                         <div className="text-center max-w-4xl mx-auto space-y-8">
-                            <h2 className="text-[#7a29c2] font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Foundation</h2>
+                            <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Foundation</h2>
                             <h3 className="text-4xl md:text-6xl font-black text-gray-900 leading-[1.05]">
-                                We Bridge the Gap Between <span className="text-[#7a29c2]">Ambition</span> and <span className="text-violet-600">Reality</span>
+                                We Bridge the Gap Between <span className="text-primary">Ambition</span> and <span className="text-violet-600">Reality</span>
                             </h3>
-                            <p className="text-xl md:text-3xl text-gray-700 font-medium leading-relaxed italic border-l-4 border-[#7a29c2] pl-8 py-2 inline-block text-left">
-                                "EAOverseas is more than a platform; it's a commitment to clarity in global education."
+                            <p className="text-xl md:text-3xl text-gray-700 font-medium leading-relaxed italic border-l-4 border-primary pl-8 py-2 inline-block text-left">
+                                "Eduwoy is more than a platform; it's a commitment to clarity in global education."
                             </p>
                         </div>
  
@@ -242,12 +242,12 @@ const AboutUs = () => {
 
                 {/* Our Impact - Sophisticated Counter Strip */}
                 <section className="py-12 md:py-20 relative px-4 md:px-0">
-                    <div className="absolute inset-0 bg-[#7a29c2] rounded-[2.5rem] md:rounded-[4rem] -rotate-1 scale-[1.02] opacity-5"></div>
+                    <div className="absolute inset-0 bg-primary rounded-[2.5rem] md:rounded-[4rem] -rotate-1 scale-[1.02] opacity-5"></div>
                     <div className="relative bg-white text-[#111418] rounded-[2.5rem] md:rounded-[4rem] shadow-2xl border border-gray-100 overflow-hidden px-8 md:px-16 py-12 md:py-20">
                         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-purple-50/50 to-transparent"></div>
                         <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 items-center">
                             {[
-                                { count: 10000, suffix: '+', label: 'Global Scholars', color: 'text-[#7a29c2]' },
+                                { count: 10000, suffix: '+', label: 'Global Scholars', color: 'text-primary' },
                                 { count: 500, suffix: '+', label: 'Partner Institutions', color: 'text-violet-600' },
                                 { count: 25, suffix: '+', label: 'Study Destinations', color: 'text-purple-500' },
                                 { count: 98, suffix: '%', label: 'Success Rate', color: 'text-violet-500' }
@@ -269,9 +269,9 @@ const AboutUs = () => {
                     <div className="grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
                         <div className="lg:col-span-7 space-y-16">
                             <div className="space-y-6">
-                                <h2 className="text-[#7a29c2] font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Philosophy</h2>
+                                <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Philosophy</h2>
                                 <h3 className="text-4xl md:text-7xl font-black text-gray-900 leading-[1.05]">
-                                    Why Scholars Trust <span className="text-[#7a29c2]">EAOverseas</span>
+                                    Why Scholars Trust <span className="text-primary">Eduwoy</span>
                                 </h3>
                                 <p className="text-xl text-gray-600 max-w-2xl leading-relaxed font-medium">
                                     Our methodology is defined by <span className="text-gray-900">academic rigor</span> and <span className="text-gray-900">modern transparency</span>. We don't just process files; we architect global careers.
@@ -354,7 +354,7 @@ const AboutUs = () => {
                     <div className="group relative bg-[#0f172a] p-12 md:p-20 rounded-[3rem] overflow-hidden shadow-2xl hover:-translate-y-4 transition-all duration-700">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/20 rounded-full blur-[100px]"></div>
                         <div className="relative z-10 space-y-8">
-                            <div className="w-16 h-16 bg-[#7a29c2] text-white rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
+                            <div className="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
                                 <span className="material-symbols-outlined text-4xl">rocket_launch</span>
                             </div>
                             <h3 className="text-3xl md:text-5xl font-black text-white">Our Mission</h3>
@@ -366,7 +366,7 @@ const AboutUs = () => {
                     <div className="group relative bg-white p-12 md:p-20 rounded-[3rem] border border-gray-100 shadow-xl hover:-translate-y-4 transition-all duration-700">
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-violet-50 rounded-full blur-[100px]"></div>
                         <div className="relative z-10 space-y-8">
-                            <div className="w-16 h-16 bg-purple-50 text-[#7a29c2] rounded-2xl flex items-center justify-center group-hover:-rotate-12 transition-transform">
+                            <div className="w-16 h-16 bg-purple-50 text-primary rounded-2xl flex items-center justify-center group-hover:-rotate-12 transition-transform">
                                 <span className="material-symbols-outlined text-4xl">visibility</span>
                             </div>
                             <h3 className="text-3xl md:text-5xl font-black text-gray-900">Our Vision</h3>
@@ -381,13 +381,13 @@ const AboutUs = () => {
                 <section className="py-24 md:py-40 px-4 md:px-0">
                     <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20 md:mb-24">
                         <div className="space-y-6 max-w-2xl">
-                            <h2 className="text-[#7a29c2] font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">Knowledge Hub</h2>
-                            <h3 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight">Insights from our <span className="text-[#7a29c2] underline underline-offset-8">Global Experts</span></h3>
+                            <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">Knowledge Hub</h2>
+                            <h3 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight">Insights from our <span className="text-primary underline underline-offset-8">Global Experts</span></h3>
                             <p className="text-xl text-gray-600 leading-relaxed font-medium">
-                                Stay ahead of the curve with the latest global education trends, ethical insights, and comprehensive guides curated by the EAOverseas team.
+                                Stay ahead of the curve with the latest global education trends, ethical insights, and comprehensive guides curated by the Eduwoy team.
                             </p>
                         </div>
-                        <button onClick={() => navigate('/blogs')} className="group flex items-center gap-3 text-[#7a29c2] font-black text-lg hover:gap-5 transition-all">
+                        <button onClick={() => navigate('/blogs')} className="group flex items-center gap-3 text-primary font-black text-lg hover:gap-5 transition-all">
                             View All Insights
                             <span className="material-symbols-outlined font-black">arrow_forward</span>
                         </button>

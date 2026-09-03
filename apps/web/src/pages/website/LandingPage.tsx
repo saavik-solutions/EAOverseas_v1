@@ -55,7 +55,7 @@ const LandingPage = () => {
     return (
         <div className="min-h-screen bg-white relative font-sans text-[#111418] overflow-x-hidden">
             <SEOHead 
-                title="EAOverseas | Best Overseas Education Consultants"
+                title="Eduwoy | Best Overseas Education Consultants"
                 description="Your trusted strategic partner for global education. Expert university matching, scholarship guidance, and visa success."
                 image="/assets/hero_mobile_cartoon.webp"
             />
@@ -113,7 +113,7 @@ const LandingPage = () => {
                                     '🤝 Trusted by Early Students',
                                 ];
                                 return [...items, ...items].map((item, i) => (
-                                    <span key={i} className="inline-flex items-center px-5 py-2 bg-white border border-[#7a29c2]/10 rounded-full text-[13px] font-semibold text-gray-700 shadow-sm shrink-0">{item}</span>
+                                    <span key={i} className="inline-flex items-center px-5 py-2 bg-white border border-primary/10 rounded-full text-[13px] font-semibold text-gray-700 shadow-sm shrink-0">{item}</span>
                                 ));
                             })()}
                         </div>

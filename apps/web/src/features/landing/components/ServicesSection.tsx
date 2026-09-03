@@ -124,11 +124,11 @@ const ServicesSection = () => {
                         {/* Right: Subtitle + Trust Badges */}
                         <div className="flex flex-col gap-5 max-w-md">
                             {/* Accent line + Subtitle */}
-                            <div className="relative pl-5 border-l-4 border-[#7a29c2] rounded-sm">
+                            <div className="relative pl-5 border-l-4 border-primary rounded-sm">
                                 <p className="text-base md:text-lg text-[#4d6599] leading-relaxed">
                                     From{' '}
-                                    <span className="font-semibold text-[#7a29c2]">test prep</span> to{' '}
-                                    <span className="font-semibold text-[#7a29c2]">education loans</span>,
+                                    <span className="font-semibold text-primary">test prep</span> to{' '}
+                                    <span className="font-semibold text-primary">education loans</span>,
                                     we simplify every step — so your journey abroad feels{' '}
                                     <span className="font-bold text-[#0e121b]">effortless.</span>
                                 </p>
@@ -143,9 +143,9 @@ const ServicesSection = () => {
                                 ].map((stat, i) => (
                                     <div
                                         key={i}
-                                        className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#f3e8ff] rounded-full shadow-sm text-xs font-semibold text-[#0e121b] hover:border-[#7a29c2] hover:shadow-purple-100 transition-all duration-200"
+                                        className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-[#f3e8ff] rounded-full shadow-sm text-xs font-semibold text-[#0e121b] hover:border-primary hover:shadow-purple-100 transition-all duration-200"
                                     >
-                                        <span className="material-symbols-outlined text-[#7a29c2] text-[14px]">{stat.icon}</span>
+                                        <span className="material-symbols-outlined text-primary text-[14px]">{stat.icon}</span>
                                         {stat.label}
                                     </div>
                                 ))}
@@ -154,7 +154,7 @@ const ServicesSection = () => {
                     </div>
 
                     {/* Gradient Divider */}
-                    <div className="mt-10 h-px w-full bg-gradient-to-r from-[#7a29c2]/30 via-[#d8b4fe]/60 to-transparent rounded-full" />
+                    <div className="mt-10 h-px w-full bg-gradient-to-r from-primary/30 via-[#d8b4fe]/60 to-transparent rounded-full" />
                 </div>
 
                 {/* ── Service Cards Grid ── */}

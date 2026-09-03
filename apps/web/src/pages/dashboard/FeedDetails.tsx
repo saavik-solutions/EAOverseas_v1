@@ -54,7 +54,7 @@ const FeedDetails = () => {
 
     const downloadGuide = () => {
         const guideContent = `
-EAOverseas Scholarship Guide
+Eduwoy Scholarship Guide
 ============================
 
 Program: ${data.title}
@@ -69,7 +69,7 @@ Step-by-Step Application Process:
 3. Complete the Online Application Form via the "Apply Now" button.
 4. Ensure submission before the deadline.
 
-For further assistance, please reach out to our support team at edu@eaoverseas.com.
+For further assistance, please reach out to our support team at edu@eduwoy.com.
 
 Good luck!
         `;
@@ -434,7 +434,7 @@ Good luck!
                 isOpen={isShareModalOpen}
                 onClose={() => setIsShareModalOpen(false)}
                 title="Share Post"
-                shareUrl={`https://eaoverseas.com/feed-details/${data.id}`}
+                shareUrl={`https://eduwoy.com/feed-details/${data.id}`}
                 preview={{
                     title: data.title,
                     subtitle: data.institution,

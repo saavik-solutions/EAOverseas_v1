@@ -176,17 +176,17 @@ const CoreStrengthSection: React.FC = () => {
 
                 {/* ── Header ── */}
                 <div className="text-center max-w-[700px] flex flex-col items-center gap-5">
-                    <div className="inline-flex items-center gap-2 bg-[#7a29c2]/[0.08] border-[1.5px] border-[#7a29c2]/[0.18] text-[#7a29c2] text-xs font-bold tracking-[0.1em] uppercase py-1.5 px-4 rounded-full">
-                        <span className="w-[7px] h-[7px] rounded-full bg-[#7a29c2] shrink-0 animate-pulse" />
+                    <div className="inline-flex items-center gap-2 bg-primary/[0.08] border-[1.5px] border-primary/[0.18] text-primary text-xs font-bold tracking-[0.1em] uppercase py-1.5 px-4 rounded-full">
+                        <span className="w-[7px] h-[7px] rounded-full bg-primary shrink-0 animate-pulse" />
                         Our Core Strength
                     </div>
                     <h2 className="text-[42px] md:text-[48px] max-sm:text-[28px] font-extrabold text-[#0d0d0d] leading-[1.12] tracking-tight m-0">
                         Why{' '}
-                        <span className="bg-gradient-to-br from-[#9333ea] to-[#7a29c2] text-transparent bg-clip-text">
+                        <span className="bg-gradient-to-br from-[#9333ea] to-primary text-transparent bg-clip-text">
                             100+ Students
                         </span>{' '}
                         <br className="hidden sm:block" />
-                        Choose EAOverseas
+                        Choose Eduwoy
                     </h2>
                     <p className="text-[16px] text-gray-400 leading-relaxed max-w-[520px] m-0">
                         Fresh, focused, and results-driven — we combine AI-powered technology
@@ -275,7 +275,7 @@ const CoreStrengthSection: React.FC = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-[16px] font-extrabold text-gray-900 m-0 leading-snug group-hover:text-[#7a29c2] transition-colors duration-200">
+                            <h3 className="text-[16px] font-extrabold text-gray-900 m-0 leading-snug group-hover:text-primary transition-colors duration-200">
                                 {pillar.title}
                             </h3>
 
@@ -285,7 +285,7 @@ const CoreStrengthSection: React.FC = () => {
                             </p>
 
                             {/* CTA arrow */}
-                            <div className="flex items-center gap-1.5 text-[#7a29c2] text-[13px] font-bold opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 mt-1">
+                            <div className="flex items-center gap-1.5 text-primary text-[13px] font-bold opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 mt-1">
                                 <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
                                 Learn more
                             </div>

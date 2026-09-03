@@ -1,5 +1,5 @@
 /**
- * AI Service for EA Overseas
+ * AI Service for Eduwoy
  * Integrates with our backend to provide context-aware assistance.
  */
 

@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     /* Sitemap({
-      hostname: 'https://eaoverseas.com',
+      hostname: 'https://eduwoy.com',
       generateRobotsTxt: true,
       dynamicRoutes: [
         '/about',

@@ -80,13 +80,13 @@ const TeamSection: React.FC = () => {
                 {/* ─── Header ─── */}
                 <div className={`flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-14 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <div className="flex flex-col gap-4 max-w-[560px]">
-                        <div className="inline-flex items-center gap-2 bg-[#7a29c2]/[0.08] border border-[#7a29c2]/20 text-[#7a29c2] text-xs font-bold tracking-[0.1em] uppercase py-1.5 px-4 rounded-full w-fit">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#7a29c2] animate-pulse" />
+                        <div className="inline-flex items-center gap-2 bg-primary/[0.08] border border-primary/20 text-primary text-xs font-bold tracking-[0.1em] uppercase py-1.5 px-4 rounded-full w-fit">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                             Our Team
                         </div>
                         <h2 className="text-[36px] md:text-[44px] max-sm:text-[26px] font-extrabold text-[#0d0d0d] leading-[1.12] tracking-tight m-0">
                             Meet the{' '}
-                            <span className="bg-gradient-to-r from-[#7a29c2] to-[#9333ea] bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-primary to-[#9333ea] bg-clip-text text-transparent">
                                 Experts
                             </span>{' '}
                             Behind Your Success
@@ -98,7 +98,7 @@ const TeamSection: React.FC = () => {
 
                     <button
                         onClick={() => navigate('/team')}
-                        className="hidden sm:inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-[#7a29c2] to-[#9333ea] text-white text-sm font-bold rounded-full shadow-lg shadow-purple-200 hover:scale-105 active:scale-95 transition-all duration-200 flex-shrink-0"
+                        className="hidden sm:inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-primary to-[#9333ea] text-white text-sm font-bold rounded-full shadow-lg shadow-purple-200 hover:scale-105 active:scale-95 transition-all duration-200 flex-shrink-0"
                     >
                         <span className="material-symbols-outlined text-[17px]">groups</span>
                         Meet Our Team
@@ -113,7 +113,7 @@ const TeamSection: React.FC = () => {
                         onClick={() => scroll('left')}
                         disabled={activeIdx === 0}
                         aria-label="Previous team member"
-                        className="hidden md:flex absolute -left-5 top-[110px] z-20 w-11 h-11 rounded-full bg-white border border-gray-100 shadow-lg items-center justify-center text-gray-500 hover:border-[#7a29c2] hover:text-[#7a29c2] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+                        className="hidden md:flex absolute -left-5 top-[110px] z-20 w-11 h-11 rounded-full bg-white border border-gray-100 shadow-lg items-center justify-center text-gray-500 hover:border-primary hover:text-primary transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
                     >
                         <span className="material-symbols-outlined text-[20px]" aria-hidden="true">chevron_left</span>
                     </button>
@@ -170,7 +170,7 @@ const TeamSection: React.FC = () => {
                                 {/* ── Info ── */}
                                 <div className="flex flex-col gap-3 p-5 flex-1">
                                     <div>
-                                        <h3 className="text-[17px] font-extrabold text-gray-900 m-0 leading-tight group-hover:text-[#7a29c2] transition-colors duration-200">
+                                        <h3 className="text-[17px] font-extrabold text-gray-900 m-0 leading-tight group-hover:text-primary transition-colors duration-200">
                                             {member.name}
                                         </h3>
                                         <p className="text-[12.5px] font-semibold text-gray-400 m-0 mt-0.5">{member.role}</p>
@@ -218,7 +218,7 @@ const TeamSection: React.FC = () => {
                         onClick={() => scroll('right')}
                         disabled={activeIdx === team.length - 1}
                         aria-label="Next team member"
-                        className="hidden md:flex absolute -right-5 top-[110px] z-20 w-11 h-11 rounded-full bg-white border border-gray-100 shadow-lg items-center justify-center text-gray-500 hover:border-[#7a29c2] hover:text-[#7a29c2] transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+                        className="hidden md:flex absolute -right-5 top-[110px] z-20 w-11 h-11 rounded-full bg-white border border-gray-100 shadow-lg items-center justify-center text-gray-500 hover:border-primary hover:text-primary transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
                     >
                         <span className="material-symbols-outlined text-[20px]" aria-hidden="true">chevron_right</span>
                     </button>
@@ -231,7 +231,7 @@ const TeamSection: React.FC = () => {
                             <button
                                 key={i}
                                 onClick={() => scrollTo(i)}
-                                className={`rounded-full transition-all duration-300 ${i === activeIdx ? 'w-6 h-2 bg-[#7a29c2]' : 'w-2 h-2 bg-gray-200 hover:bg-purple-200'}`}
+                                className={`rounded-full transition-all duration-300 ${i === activeIdx ? 'w-6 h-2 bg-primary' : 'w-2 h-2 bg-gray-200 hover:bg-purple-200'}`}
                                 aria-label={`Go to ${team[i].name}`}
                             />
                         ))}
@@ -239,7 +239,7 @@ const TeamSection: React.FC = () => {
 
                     <button
                         onClick={() => navigate('/team')}
-                        className="sm:hidden inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-[#7a29c2] to-[#9333ea] text-white text-sm font-bold rounded-full shadow-lg shadow-purple-200"
+                        className="sm:hidden inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-primary to-[#9333ea] text-white text-sm font-bold rounded-full shadow-lg shadow-purple-200"
                     >
                         <span className="material-symbols-outlined text-[17px]">groups</span>
                         Meet Our Team

@@ -22,7 +22,7 @@ const NotificationPreferences = () => {
                     {/* Page Heading */}
                     <div className="flex flex-col gap-2 mb-4 md:mb-8">
                         <h2 className="text-[#111418] text-xl md:text-3xl font-bold tracking-tight">Notification Preferences</h2>
-                        <p className="text-slate-500 text-xs md:text-base max-w-2xl">Manage how and when EAOverseas communicates with you. We recommend keeping critical alerts on for your application timeline.</p>
+                        <p className="text-slate-500 text-xs md:text-base max-w-2xl">Manage how and when Eduwoy communicates with you. We recommend keeping critical alerts on for your application timeline.</p>
                     </div>
 
                     {/* Main Settings Card */}

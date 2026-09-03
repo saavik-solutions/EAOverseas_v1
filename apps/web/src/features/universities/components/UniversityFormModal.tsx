@@ -89,7 +89,7 @@ const UniversityFormModal: React.FC<UniversityFormModalProps> = ({ isOpen, onClo
 
             // Capture in Institutional Lead Vault
             await submitLead({
-                source: 'EAOverseas_Main_Website',
+                source: 'Eduwoy_Main_Website',
                 data: {
                     type: 'University Onboarding',
                     action: isEdit ? 'Edit' : 'Create',

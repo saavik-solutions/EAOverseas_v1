@@ -79,7 +79,7 @@ const SuperAdminLayout: React.FC<SuperAdminLayoutProps> = ({ children, title }) 
             {/* Mobile Header */}
             <header className="lg:hidden bg-white px-4 py-3 flex items-center justify-between border-b border-slate-200 z-50 sticky top-0">
                 <div className="flex items-center gap-2">
-                    <img src={logo} alt="EAOverseas" className="h-8 w-auto object-contain" />
+                    <img src={logo} alt="Eduwoy" className="h-8 w-auto object-contain" />
                 </div>
                 <button
                     onClick={() => setIsSidebarOpen(true)}
@@ -105,7 +105,7 @@ const SuperAdminLayout: React.FC<SuperAdminLayoutProps> = ({ children, title }) 
             `}>
                 <div className="p-6">
                     <div className="flex flex-col gap-4">
-                        <img src={logo} alt="EAOverseas" className="h-9 w-auto object-contain self-start" />
+                        <img src={logo} alt="Eduwoy" className="h-9 w-auto object-contain self-start" />
                         <div className="flex flex-col">
                             <h1 className="text-[#111318] text-sm font-black leading-none uppercase tracking-tighter">Super Admin</h1>
                             <p className="text-[#2b6cee] text-[10px] font-black uppercase tracking-[0.15em] mt-1">Management</p>

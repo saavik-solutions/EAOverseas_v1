@@ -37,7 +37,7 @@ const PAISidebar = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void 
                 `}
             >
                 <div className="px-6 py-5 flex items-center justify-between border-b border-slate-800 bg-slate-950">
-                    <img src={logo} alt="EAOverseas" className="h-10 w-auto object-contain bg-white rounded-md p-1" />
+                    <img src={logo} alt="Eduwoy" className="h-10 w-auto object-contain bg-white rounded-md p-1" />
                     <button
                         onClick={onClose}
                         className="lg:hidden p-2 text-slate-400 hover:text-slate-100 rounded-lg hover:bg-slate-800"

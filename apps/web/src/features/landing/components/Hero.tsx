@@ -10,7 +10,7 @@ const Hero = () => {
         <section className="relative flex flex-col items-center py-16 px-8 max-md:py-12 max-sm:px-4 max-w-[1440px] mx-auto text-center font-sans">
             <div className="max-w-[900px] flex flex-col items-center gap-8 mb-16">
                 <h1 className="font-bold text-[80px] max-md:text-[48px] max-sm:text-[38px] leading-[1.1] text-slate-900 m-0 tracking-tight">
-                    Discover the Future <br /> with EAOverseas
+                    Discover the Future <br /> with Eduwoy
                 </h1>
                 <p className="font-normal text-[20px] max-sm:text-[16px] leading-relaxed text-slate-800 max-w-[760px] m-0">
                     We empower students to study abroad with affordable guidance and end-to-
@@ -18,7 +18,7 @@ const Hero = () => {
                     counseling — we've got you covered.
                 </p>
                 <button
-                    className="bg-[#7a29c2] hover:bg-[#6823a4] text-white border-none py-4 px-8 rounded-lg text-[18px] font-semibold cursor-pointer w-fit transition-all duration-200 outline-none shadow-md hover:shadow-lg hover:-translate-y-1"
+                    className="bg-primary hover:bg-[#6823a4] text-white border-none py-4 px-8 rounded-lg text-[18px] font-semibold cursor-pointer w-fit transition-all duration-200 outline-none shadow-md hover:shadow-lg hover:-translate-y-1"
                     onClick={() => navigate('/about')}
                 >
                     Explore More About Us

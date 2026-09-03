@@ -13,7 +13,7 @@ const seedBlogs = [
             <h2>The German Technical Renaissance</h2>
             <p>As we approach the mid-2020s, the landscape of international education is shifting dramatically. While traditional powerhouse destinations like the US and UK remain popular, Germany has emerged as a formidable challenger, particularly for students in STEM fields.</p>
             
-            <blockquote>"The zero-tuition model, combined with high-tech industry integration, makes Germany the most strategic choice for the modern engineer." - EAOverseas Strategy Team</blockquote>
+            <blockquote>"The zero-tuition model, combined with high-tech industry integration, makes Germany the most strategic choice for the modern engineer." - Eduwoy Strategy Team</blockquote>
 
             <h3>Key Competitive Advantages</h3>
             <ul>
@@ -22,7 +22,7 @@ const seedBlogs = [
                 <li><strong>Post-Study Opportunities:</strong> With an 18-month job seeker visa, the transition to the workforce is seamless.</li>
             </ul>
 
-            <p>For international students, the primary hurdle is no longer financial—it's linguistic and cultural integration. At EAOverseas, we optimize your profile to meet these specific institutional requirements.</p>
+            <p>For international students, the primary hurdle is no longer financial—it's linguistic and cultural integration. At Eduwoy, we optimize your profile to meet these specific institutional requirements.</p>
         `,
         excerpt: "Discover why Germany has become the top destination for international STEM students in 2025, from zero-tuition to industrial dominance.",
         author: "Prasenjeet Kumar",
@@ -38,7 +38,7 @@ const seedBlogs = [
             <h2>Beyond the GPA: The Institutional Fit</h2>
             <p>Admissions at Tier-1 US universities have evolved beyond numerical metrics. A 4.0 GPA and perfect SAT scores are now baseline requirements, not differentiators.</p>
             
-            <h3>The EAOverseas Framework for Success</h3>
+            <h3>The Eduwoy Framework for Success</h3>
             <ol>
                 <li><strong>Intellectual Vitality:</strong> Demonstrating a passion that extends beyond the classroom.</li>
                 <li><strong>Social Impact:</strong> Quantifiable contributions to your community or industry.</li>

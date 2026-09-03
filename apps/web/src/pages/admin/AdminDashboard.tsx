@@ -85,7 +85,7 @@ const AdminDashboard = () => {
         <div className="space-y-10">
             <div className="space-y-1">
                 <h1 className="text-2xl md:text-3xl font-black text-gray-900">Enterprise Dashboard</h1>
-                <p className="text-gray-500 font-medium text-sm md:text-base">Live overview of EAOverseas platform metrics.</p>
+                <p className="text-gray-500 font-medium text-sm md:text-base">Live overview of Eduwoy platform metrics.</p>
             </div>
 
             {/* ── Stats Grid ── */}

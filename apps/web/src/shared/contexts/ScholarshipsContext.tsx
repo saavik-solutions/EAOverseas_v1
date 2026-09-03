@@ -111,7 +111,7 @@ export const ScholarshipsProvider: React.FC<{ children: ReactNode }> = ({ childr
     const isInternalUpdate = React.useRef(false);
 
     useEffect(() => {
-        const channel = new BroadcastChannel('eaoverseas_scholarships_channel');
+        const channel = new BroadcastChannel('eduwoy_scholarships_channel');
         channelRef.current = channel;
 
         channel.onmessage = (event) => {

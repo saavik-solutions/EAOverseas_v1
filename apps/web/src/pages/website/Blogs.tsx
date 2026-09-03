@@ -10,7 +10,7 @@ const FeaturedImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => 
     return imgError ? (
         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-700 via-violet-600 to-purple-900 relative">
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
-            <img src={logo} alt="EAOverseas" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" style={{ filter: 'brightness(0) invert(1)' }} />
+            <img src={logo} alt="Eduwoy" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" style={{ filter: 'brightness(0) invert(1)' }} />
         </div>
     ) : (
         <img src={src} alt={alt} onError={() => setImgError(true)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
@@ -23,7 +23,7 @@ const BlogCardImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => 
     return imgError ? (
         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-700 via-violet-600 to-purple-900 relative">
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
-            <img src={logo} alt="EAOverseas" className="relative z-10 h-16 w-auto object-contain drop-shadow-xl" style={{ filter: 'brightness(0) invert(1)' }} />
+            <img src={logo} alt="Eduwoy" className="relative z-10 h-16 w-auto object-contain drop-shadow-xl" style={{ filter: 'brightness(0) invert(1)' }} />
         </div>
     ) : (
         <img src={src} alt={alt} onError={() => setImgError(true)} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
@@ -78,7 +78,7 @@ const Blogs = () => {
                 >
                     <FeaturedImage src={featuredBlog.coverImage} alt={featuredBlog.title} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-20">
-                        <span className="bg-[#7a29c2] text-white px-4 py-2 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-widest w-fit mb-4 md:mb-6 shadow-xl shadow-purple-500/20">
+                        <span className="bg-primary text-white px-4 py-2 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-widest w-fit mb-4 md:mb-6 shadow-xl shadow-purple-500/20">
                             Featured Strategy
                         </span>
                         <h1 className="text-3xl md:text-6xl font-black text-white mb-4 md:mb-6 max-w-4xl leading-[1.2] md:leading-[1.1]">
@@ -89,10 +89,10 @@ const Blogs = () => {
                         </p>
                         <div className="flex flex-wrap items-center gap-4 md:gap-6">
                             <div className="flex items-center gap-2 md:gap-3">
-                                <div className="w-8 h-8 md:w-10 md:h-10 bg-purple-100 rounded-full flex items-center justify-center text-[#7a29c2] font-black text-[10px] md:text-xs">
+                                <div className="w-8 h-8 md:w-10 md:h-10 bg-purple-100 rounded-full flex items-center justify-center text-primary font-black text-[10px] md:text-xs">
                                     EA
                                 </div>
-                                <span className="text-white text-sm md:text-base font-bold">{featuredBlog.author || 'EAOverseas Expert'}</span>
+                                <span className="text-white text-sm md:text-base font-bold">{featuredBlog.author || 'Eduwoy Expert'}</span>
                             </div>
                             <span className="hidden md:inline text-white/40 font-bold">•</span>
                             <span className="text-white/60 text-xs md:text-base font-bold">
@@ -108,7 +108,7 @@ const Blogs = () => {
             <section className="mb-20">
                 <div className="flex items-end justify-between mb-12">
                     <div className="space-y-2">
-                        <h2 className="text-[#7a29c2] font-black uppercase tracking-[0.2em] text-xs">Knowledge Base</h2>
+                        <h2 className="text-primary font-black uppercase tracking-[0.2em] text-xs">Knowledge Base</h2>
                         <h3 className="text-4xl font-black text-gray-900">Latest Global Insights</h3>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                             <div className="px-3 md:px-4 space-y-3 md:space-y-4 flex-1">
-                                <h3 className="text-xl md:text-2xl font-black text-gray-900 leading-tight group-hover:text-[#7a29c2] transition-colors">
+                                <h3 className="text-xl md:text-2xl font-black text-gray-900 leading-tight group-hover:text-primary transition-colors">
                                     {blog.title}
                                 </h3>
                                 <p className="text-gray-500 text-sm md:text-base font-medium line-clamp-2 leading-relaxed">
@@ -140,7 +140,7 @@ const Blogs = () => {
                             <div className="px-3 md:px-4 pt-6 md:pt-8 pb-3 md:pb-4 flex items-center justify-between mt-auto">
                                 <div className="flex items-center gap-3 md:gap-4 text-[10px] md:text-xs font-bold text-gray-400">
                                     <div className="flex items-center gap-1.5">
-                                        <span className="material-symbols-outlined text-sm text-[#7a29c2]">visibility</span>
+                                        <span className="material-symbols-outlined text-sm text-primary">visibility</span>
                                         {blog.views}
                                     </div>
                                     <div className="flex items-center gap-1.5">

@@ -8,7 +8,7 @@ const ActivePartnersPage = () => {
 
     useEffect(() => {
         try {
-            const saved = localStorage.getItem('eaoverseas_universities');
+            const saved = localStorage.getItem('eduwoy_universities') || localStorage.getItem('eaoverseas_universities');
             if (saved) {
                 const parsed = JSON.parse(saved);
                 setUniversities(Array.isArray(parsed) ? parsed : []);

@@ -13,7 +13,7 @@ const ConsultantCTA = () => {
         e.preventDefault();
         setStatus('submitting');
         const res = await submitLead({
-            source: 'EAOverseas_Main_Website',
+            source: 'Eduwoy_Main_Website',
             data: {
                 name,
                 phone,

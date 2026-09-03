@@ -22,7 +22,7 @@ export const verifyJWT = (req: AuthRequest, res: Response, next: NextFunction) =
     if (token === 'DEV_ADMIN_TOKEN_2026') {
         req.user = {
             user_id: 'mock-admin-id',
-            email: 'admin@eaoverseas.com',
+            email: 'admin@eduwoy.com',
             role: 'admin'
         };
         return next();

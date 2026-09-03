@@ -126,7 +126,7 @@ const Scholarships = () => {
                                             </div>
                                             <div className="flex flex-col min-w-0">
                                                 <h5 className="text-[10px] font-black text-slate-900 group-hover:text-[#1E63F3] transition-colors leading-tight truncate uppercase tracking-tight">
-                                                    {scholarship.institution || 'EA Overseas Partner'}
+                                                    {scholarship.institution || 'Eduwoy Partner'}
                                                 </h5>
                                                 <div className="flex items-center gap-1.5 mt-0.5">
                                                     <span className="size-1 rounded-full bg-emerald-500 animate-pulse" />

@@ -302,7 +302,7 @@ const BookingCTASection = () => {
           </button>
         )}
         <button 
-          onClick={() => window.open('https://student.eaoverseas.com/auth/login', '_blank', 'noopener,noreferrer')}
+          onClick={() => window.open('https://student.eduwoy.com/auth/login', '_blank', 'noopener,noreferrer')}
           className="w-full bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-bold py-4 rounded-xl transition-colors shadow-[0_4px_14px_rgba(124,58,237,0.3)] tracking-wide text-[15px]"
         >
           Sign In

@@ -22,7 +22,7 @@ const Verification = () => {
                             <span className="material-symbols-outlined fill-current">star</span>
                             <span className="material-symbols-outlined fill-current">star_half</span>
                         </div>
-                        <p className="text-lg leading-relaxed font-medium mb-6">"Secure your future with EAOverseas. We ensure your application process is safe, verified, and successful."</p>
+                        <p className="text-lg leading-relaxed font-medium mb-6">"Secure your future with Eduwoy. We ensure your application process is safe, verified, and successful."</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@ const Verification = () => {
                         <div className="bg-[#0d6cf2]/10 rounded-lg flex items-center justify-center size-10 text-[#0d6cf2] group-hover:bg-[#0d6cf2] group-hover:text-white transition-colors">
                             <span className="material-symbols-outlined text-[24px]">school</span>
                         </div>
-                        <span className="font-bold text-slate-900 text-xl">EAOverseas</span>
+                        <span className="font-bold text-slate-900 text-xl">Eduwoy</span>
                     </Link>
 
                     {/* Header */}

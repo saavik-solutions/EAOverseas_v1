@@ -31,7 +31,7 @@ const UniversityPendingVerification = () => {
             {/* Header - Same as UniversityVerification */}
             <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
                 <div className="w-full px-6 h-20 flex items-center">
-                    <img src={logo} alt="EAOverseas Logo" className="h-12 mix-blend-multiply" />
+                    <img src={logo} alt="Eduwoy Logo" className="h-12 mix-blend-multiply" />
                 </div>
             </header>
 
@@ -47,7 +47,7 @@ const UniversityPendingVerification = () => {
                             Your university account is under review
                         </h1>
                         <p className="text-[#616f89] dark:text-gray-400 text-lg max-w-xl">
-                            Welcome to EAOverseas. Our team is currently verifying your institution's credentials to ensure the highest quality of partners on our platform.
+                            Welcome to Eduwoy. Our team is currently verifying your institution's credentials to ensure the highest quality of partners on our platform.
                         </p>
                     </div>
 
@@ -177,7 +177,7 @@ const UniversityPendingVerification = () => {
                     </div>
 
                     <footer className="text-center py-6">
-                        <p className="text-sm text-[#616f89]">© 2024 EAOverseas Global Education Network. All rights reserved.</p>
+                        <p className="text-sm text-[#616f89]">© 2024 Eduwoy Global Education Network. All rights reserved.</p>
                     </footer>
                 </div>
             </main>

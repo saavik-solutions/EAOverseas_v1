@@ -29,7 +29,7 @@ const ReadingTestInstructions = () => {
                             </svg>
                         </div>
                         <div>
-                            <h1 className="text-lg font-bold leading-tight">EAOverseas</h1>
+                            <h1 className="text-lg font-bold leading-tight">Eduwoy</h1>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">

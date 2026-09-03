@@ -44,7 +44,7 @@ const WritingTest = () => {
                         </div>
                         <div>
                             <h1 className="text-lg font-bold leading-tight tracking-tight">IELTS Writing</h1>
-                            <p className="text-xs text-[#616f89] font-medium uppercase tracking-wider">EAOverseas Platform</p>
+                            <p className="text-xs text-[#616f89] font-medium uppercase tracking-wider">Eduwoy Platform</p>
                         </div>
                     </div>
 

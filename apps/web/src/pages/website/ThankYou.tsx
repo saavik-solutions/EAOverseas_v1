@@ -22,7 +22,7 @@ const ThankYou: React.FC = () => {
                     Inquiry Received!
                 </h1>
                 <p className="text-lg text-slate-600 mb-10 max-w-md mx-auto">
-                    Your request has been synchronized with the EAOverseas Institutional Vault. Our team will connect you soon...
+                    Your request has been synchronized with the Eduwoy Institutional Vault. Our team will connect you soon...
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-left">

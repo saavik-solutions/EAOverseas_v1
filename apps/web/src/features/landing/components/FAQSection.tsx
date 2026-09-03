@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     id: 10,
-    question: 'Will EAOverseas help me prepare for my visa interview?',
+    question: 'Will Eduwoy help me prepare for my visa interview?',
     answer: 'Absolutely. We conduct mock visa interviews, help organize your financial documents, and provide comprehensive guidance on how to confidently answer questions from the consular officer.',
     category: 'Visa'
   },
@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     id: 13,
-    question: 'Does EAOverseas charge extra for scholarship assistance?',
+    question: 'Does Eduwoy charge extra for scholarship assistance?',
     answer: 'No, scholarship guidance is integrated into our end-to-end admission counseling process at no additional cost.',
     category: 'Scholarship'
   },

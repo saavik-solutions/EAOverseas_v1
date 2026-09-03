@@ -12,13 +12,13 @@ export function SEOHead({
     title, 
     description, 
     image = '/assets/logo.webp', // Default Logo
-    url = 'https://eaoverseas.com',
+    url = 'https://eduwoy.com',
     type = 'website'
 }: SEOHeadProps) {
-    const siteTitle = title.includes('EAOverseas') ? title : `${title} | EAOverseas`;
+    const siteTitle = title.includes('Eduwoy') ? title : `${title} | Eduwoy`;
     
     // Ensure absolute image URL for social scrapers
-    const siteBaseUrl = 'https://eaoverseas.com';
+    const siteBaseUrl = 'https://eduwoy.com';
     const absoluteImage = image.startsWith('http') ? image : `${siteBaseUrl}${image}`;
     const absoluteUrl = url.startsWith('http') ? url : `${siteBaseUrl}${url}`;
 
@@ -36,7 +36,7 @@ export function SEOHead({
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={absoluteImage} />
-            <meta property="og:site_name" content="EAOverseas" />
+            <meta property="og:site_name" content="Eduwoy" />
 
             {/* Twitter */}
             <meta property="twitter:card" content="summary_large_image" />

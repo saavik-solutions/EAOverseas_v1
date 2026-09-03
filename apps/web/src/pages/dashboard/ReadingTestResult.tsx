@@ -22,7 +22,7 @@ const ReadingTestResult = () => {
                             <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
                         </svg>
                     </div>
-                    <h2 className="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">EAOverseas</h2>
+                    <h2 className="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">Eduwoy</h2>
                 </div>
                 <div className="flex flex-1 justify-end gap-8 items-center">
                     <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">Candidate ID: IELTS-99283</span>
@@ -104,7 +104,7 @@ const ReadingTestResult = () => {
                     </div>
                     <div className="hidden md:block w-px h-4 bg-slate-200 dark:bg-slate-700"></div>
                     <div className="flex items-center gap-2">
-                        © 2024 EAOverseas AI Platform
+                        © 2024 Eduwoy AI Platform
                     </div>
                 </div>
             </footer>
