@@ -101,14 +101,14 @@ const ContactUs = () => {
                                     <span className="material-symbols-outlined text-2xl">location_on</span>
                                 </div>
                                 <div className="space-y-1">
-                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.25em]">Global Headquarters</p>
+                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.25em]">Headquarters</p>
                                     <a 
-                                        href="https://maps.app.goo.gl/wpGfQLZSgCT2c2X49" 
+                                        href="https://maps.app.goo.gl/NWABAsU8CfrcG1aB7?g_st=ic" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                         className="block text-xl font-black text-gray-900 leading-snug hover:text-primary transition-colors tracking-tight"
                                     >
-                                        6250 West Park Dr Ste 319,<br />Houston, TX 77057 United States
+                                        Office no: 605 6th Floor<br />110, Saifabad, Khairtabad,<br />Hyderabad, Telangana 500004
                                     </a>
                                 </div>
                             </div>
@@ -244,8 +244,8 @@ const ContactUs = () => {
                 <div className="mt-24 md:mt-32 animate-fade-in-up">
                     <div className="relative rounded-[4rem] overflow-hidden h-[450px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.2)] border-8 border-white/50 backdrop-blur-3xl group">
                         <iframe 
-                            title="Eduwoy Headquarters"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.851321609353!2d-95.49440849999999!3d29.724065699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3cb76c7e067%3A0x7d366f36e70be664!2s6250%20Westpark%20Dr%20%23319%2C%20Houston%2C%20TX%2077057%2C%20USA!5e0!3m2!1sen!2sin!4v1774251384681!5m2!1sen!2sin" 
+                            title="EAOverseas Headquarters"
+                            src="https://maps.google.com/maps?q=Office%20no:%20605%206th%20Floor%20110,%20Saifabad,%20Khairtabad,%20Hyderabad,%20Telangana%20500004&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                             width="100%" 
                             height="100%" 
                             style={{ border: 0, filter: 'grayscale(0.1) contrast(1.1) brightness(1.05)' }} 
@@ -260,7 +260,7 @@ const ContactUs = () => {
                                     <span className="material-symbols-outlined text-xl">hub</span>
                                 </div>
                                 <div>
-                                    <h5 className="font-black text-gray-900">Texas Hub</h5>
+                                    <h5 className="font-black text-gray-900">Hyderabad Hub</h5>
                                     <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">HQ Location</p>
                                 </div>
                             </div>

@@ -8,7 +8,8 @@ export const CONTACTS = {
         email: 'edu@eduwoy.com',
         phone: '+91 97015 63362',
         phoneSecondary: '+91 97015 63362',
-        address: '6250 West Park Dr Ste 319, Houston, TX 77057 United States',
+        address: 'Office no: 605 6th Floor, 110, Saifabad, Khairtabad, Hyderabad, Telangana 500004',
+        mapsUrl: 'https://maps.app.goo.gl/NWABAsU8CfrcG1aB7?g_st=ic',
     },
     socials: {
         facebook: 'https://facebook.com/eduwoy',
