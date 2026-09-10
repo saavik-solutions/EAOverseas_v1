@@ -28,6 +28,12 @@ const AIChatWidget: React.FC = () => {
         if (scrollRef.current) { scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }
     }, [messages, isLoading]);
 
+    const isFullView = isOpen && !isMinimized;
+
+    useEffect(() => {
+        window.dispatchEvent(new CustomEvent('ai-chat-visibility', { detail: { isOpen: isFullView } }));
+    }, [isFullView]);
+
     const handleSend = async (userMsgText?: string) => {
         const userMsg = (userMsgText || inputValue).trim();
         if (!userMsg || isLoading) return;
@@ -69,46 +75,44 @@ const AIChatWidget: React.FC = () => {
         if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); }
     };
 
-    const isFullView = isOpen && !isMinimized;
-
     return (
         <>
-            {/* ── Background Overlay (Desktop Only) ── */}
+            {/* ── Background Overlay ── */}
             {isFullView && (
                 <div 
-                    className="fixed inset-0 z-[44] bg-black/40 backdrop-blur-sm md:block hidden"
+                    className="fixed inset-0 z-[1000] bg-black/40 backdrop-blur-sm"
                     onClick={() => setIsMinimized(true)}
                 />
             )}
 
-            <div className={`fixed z-[45] transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
+            <div className={`fixed transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
                 ${isFullView 
-                    ? 'inset-x-0 bottom-0 md:inset-auto md:bottom-8 md:right-8 flex items-end justify-center md:justify-end' 
-                    : 'bottom-20 right-4 md:bottom-28 md:right-8 pointer-events-none'}`}>
+                    ? 'z-[1001] inset-x-0 bottom-0 md:inset-auto md:bottom-6 md:right-6 flex items-end justify-center md:justify-end pointer-events-auto' 
+                    : 'z-[50] bottom-20 right-4 md:bottom-24 md:right-6 pointer-events-none'}`}>
 
                 {isOpen && !isMinimized && (
-                    <div className="bg-white flex flex-col w-full h-[90vh] md:w-[420px] md:h-[650px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] md:rounded-[2rem] overflow-hidden pointer-events-auto border border-slate-100 animate-[enterpriseEnter_0.4s_ease-out]">
+                    <div className="bg-white flex flex-col w-full h-[85vh] md:w-[380px] md:h-[540px] max-h-[calc(100vh-100px)] shadow-[0_25px_70px_rgba(0,0,0,0.2)] rounded-t-[2rem] md:rounded-[2rem] overflow-hidden pointer-events-auto border border-slate-100 animate-[enterpriseEnter_0.35s_ease-out]">
                         
                         {/* ── Compact Header ── */}
-                        <div className="px-6 py-4 flex items-center justify-between border-b border-slate-50 bg-white z-20">
-                            <div className="flex items-center gap-3">
+                        <div className="px-5 py-3.5 flex items-center justify-between border-b border-slate-100 bg-white z-20">
+                            <div className="flex items-center gap-2.5">
                                 <div className="relative">
-                                    <div className="w-10 h-10 rounded-xl bg-[#0f1118] flex items-center justify-center">
-                                        <span className="material-symbols-outlined text-white text-[20px]">account_circle</span>
+                                    <div className="w-9 h-9 rounded-xl bg-[#0f1118] flex items-center justify-center shadow-sm">
+                                        <span className="material-symbols-outlined text-white text-[18px]">account_circle</span>
                                     </div>
-                                    <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
+                                    <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="text-[15px] font-black text-slate-800 font-bricolage tracking-tight">Eduwoy Assistant</h4>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-primary">Enterprise AI</p>
+                                    <h4 className="text-sm font-black text-slate-800 font-bricolage tracking-tight">Eduwoy Assistant</h4>
+                                    <p className="text-[9px] font-bold uppercase tracking-widest text-primary">Enterprise AI</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-1">
-                                <button onClick={() => setIsMinimized(true)} className="w-8 h-8 rounded-full hover:bg-slate-50 flex items-center justify-center text-slate-400 transition-all">
-                                    <span className="material-symbols-outlined text-[20px]">unfold_less</span>
+                                <button onClick={() => setIsMinimized(true)} className="w-7 h-7 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 transition-all">
+                                    <span className="material-symbols-outlined text-[18px]">unfold_less</span>
                                 </button>
-                                <button onClick={() => setIsOpen(false)} className="w-8 h-8 rounded-full hover:bg-slate-50 flex items-center justify-center text-slate-400 hover:text-red-500 transition-all">
-                                    <span className="material-symbols-outlined text-[20px]">close</span>
+                                <button onClick={() => setIsOpen(false)} className="w-7 h-7 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 hover:text-red-500 transition-all">
+                                    <span className="material-symbols-outlined text-[18px]">close</span>
                                 </button>
                             </div>
                         </div>

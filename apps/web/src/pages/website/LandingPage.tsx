@@ -38,7 +38,16 @@ const LandingPage = () => {
 
     const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
     const [showAllSlides, setShowAllSlides] = useState(false);
+    const [isAIChatOpen, setIsAIChatOpen] = useState(false);
     const { isLoginModalOpen, setLoginModalOpen } = useAuth();
+
+    useEffect(() => {
+        const handleAIChatVisibility = (e: any) => {
+            setIsAIChatOpen(Boolean(e.detail?.isOpen));
+        };
+        window.addEventListener('ai-chat-visibility', handleAIChatVisibility);
+        return () => window.removeEventListener('ai-chat-visibility', handleAIChatVisibility);
+    }, []);
 
     useEffect(() => {
         const timer = setTimeout(() => setShowAllSlides(true), 2500);
@@ -124,7 +133,9 @@ const LandingPage = () => {
                         href={getWhatsAppLink()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[9999] block transition-transform hover:scale-110 active:scale-95"
+                        className={`fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[45] block transition-all duration-300 hover:scale-110 active:scale-95 ${
+                            isAIChatOpen ? 'opacity-0 pointer-events-none scale-75' : 'opacity-100'
+                        }`}
                         aria-label="Contact us on WhatsApp"
                     >
                         <img
@@ -132,7 +143,7 @@ const LandingPage = () => {
                             alt="Chat on WhatsApp"
                             width={64}
                             height={64}
-                            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain drop-shadow-lg hover:drop-shadow-xl"
+                            className="w-12 h-12 sm:w-14 sm:h-14 md:w-14 md:h-14 object-contain drop-shadow-lg hover:drop-shadow-xl"
                         />
                     </a>
 

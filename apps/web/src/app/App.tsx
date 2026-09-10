@@ -28,6 +28,7 @@ const ThankYou = lazy(() => import('@/pages/website/ThankYou'));
 const Testimonials = lazy(() => import('@/pages/website/Testimonials'));
 const StudentStory = lazy(() => import('@/pages/website/StudentStory'));
 const CountryDetails = lazy(() => import('@/pages/website/CountryDetails'));
+const ServiceComingSoon = lazy(() => import('@/pages/website/ServiceComingSoon'));
 
 // Dashboard Pages - Lazy Loaded
 const HomeDashboard = lazy(() => import('@/pages/dashboard/HomeDashboard'));
@@ -201,6 +202,8 @@ function App() {
                                                 <Route path="/testimonials" element={<Testimonials />} />
                                                 <Route path="/thank-you" element={<ThankYou />} />
                                                 <Route path="/testimonials/:id" element={<StudentStory />} />
+                                                <Route path="/services" element={<ServiceComingSoon />} />
+                                                <Route path="/services/:serviceSlug" element={<ServiceComingSoon />} />
                                             </Route>
 
                                             {/* Enterprise Admin Dashboard */}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import logo from '@/assets/logo.webp';
+import logoWhite from '@/assets/logo-white.webp';
 
 // Cover image with purple-theme logo fallback
 const CoverImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => {
@@ -13,7 +13,7 @@ const CoverImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => {
                     className="absolute inset-0 opacity-10"
                     style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '36px 36px' }}
                 />
-                <img src={logo} alt="Eduwoy" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src={logoWhite} alt="Eduwoy" className="relative z-10 h-56 w-auto object-contain drop-shadow-2xl" />
             </div>
         );
     }

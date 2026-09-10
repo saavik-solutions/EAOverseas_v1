@@ -2,9 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CONTACTS, getWhatsAppLink } from '@/shared/constants/contacts';
 import { destinations } from '@/data/countries';
-import logo from '@/assets/logo.webp';
-
-const FALLBACK = 'https://student.eduwoy.com';
+import logoWhite from '@/assets/logo-white.webp';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -16,63 +14,44 @@ const Footer = () => {
     { name: 'Privacy Policy',      path: '/privacy-policy' },
     { name: 'Terms & Conditions',  path: '/terms' },
     { name: 'Cookie Policy',       path: '/cookie-policy' },
-    { name: 'Help Center',         path: FALLBACK, external: true },
-    { name: 'Careers',             path: FALLBACK, external: true },
-    { name: 'Eduwoy USA',          path: FALLBACK, external: true },
-    { name: 'Sitemap',             path: FALLBACK, external: true },
   ];
 
   const servicesLinks = [
-    { name: 'University Shortlisting', path: FALLBACK, external: true },
-    { name: 'SOP / LOR Assistance',    path: FALLBACK, external: true },
-    { name: 'Visa Guidance',           path: FALLBACK, external: true },
-    { name: 'Scholarship Navigation',  path: FALLBACK, external: true },
-    { name: 'Education Loans',         path: FALLBACK, external: true },
-    { name: 'Test Prep (IELTS/TOEFL)', path: FALLBACK, external: true },
-    { name: 'Accommodation Help',      path: FALLBACK, external: true },
-    { name: 'Pre-Departure Briefing',  path: FALLBACK, external: true },
-    { name: 'AI Profile Intelligence', path: FALLBACK, external: true },
-    { name: 'Loan Calculator',         path: FALLBACK, external: true },
+    { name: 'University Shortlisting', path: '/services/university-shortlisting' },
+    { name: 'Visa Guidance',           path: '/services/visa-guidance' },
+    { name: 'Scholarship Navigation',  path: '/services/scholarship-navigation' },
+    { name: 'Education Loans',         path: '/services/education-loans' },
+    { name: 'Test Prep (IELTS/TOEFL)', path: '/services/test-prep' },
+    { name: 'Accommodation Help',      path: '/services/accommodation-help' },
+    { name: 'AI Profile Intelligence', path: '/services/ai-profile-intelligence' },
+    { name: 'Loan Calculator',         path: '/services/loan-calculator' },
   ];
 
   const resourcesLinks = [
-    { name: 'Blogs & Insights',       path: FALLBACK, external: true },
-    { name: 'Global Testimonials',    path: FALLBACK, external: true },
-    { name: 'Student Stories',        path: FALLBACK, external: true },
-    { name: 'Event Webinars',         path: FALLBACK, external: true },
-    { name: 'Discover Courses',       path: FALLBACK, external: true },
-    { name: 'Country Guides',         path: FALLBACK, external: true },
-    { name: 'Scholarship Database',   path: FALLBACK, external: true },
-    { name: 'Visa Checklists',        path: FALLBACK, external: true },
-    { name: 'IELTS Preparation',      path: FALLBACK, external: true },
-    { name: 'Dashboard Feed',         path: FALLBACK, external: true },
+    { name: 'Blogs & Insights',       path: '/blogs' },
+    { name: 'Global Testimonials',    path: '/testimonials' },
+    { name: 'Discover Courses',       path: '/courses' },
+    { name: 'Country Guides',         path: '/countries' },
+    { name: 'All Destinations',        path: '/all-destinations' },
+    { name: 'Community Feed',         path: '/community-feed' },
   ];
 
   const quickLinks = [
-    { name: 'Expert Advisors',        path: FALLBACK, external: true },
-    { name: 'Partner with Us',        path: FALLBACK, external: true },
-    { name: 'Refer & Earn',           path: FALLBACK, external: true },
-    { name: 'Book a Consultation',    path: FALLBACK, external: true },
-    { name: 'Sign In',                path: 'https://student.eduwoy.com/auth/login', external: true },
-    { name: 'Sign Up',                path: 'https://student.eduwoy.com/auth/signup', external: true },
-    { name: 'News & Updates',         path: FALLBACK, external: true },
-    { name: 'Work With Us',           path: FALLBACK, external: true },
-    { name: 'Media & Press',          path: FALLBACK, external: true },
-    { name: 'Feedback',               path: FALLBACK, external: true },
+    { name: 'Sign In',                path: '/login' },
+    { name: 'Sign Up',                path: '/signup' },
+    { name: 'Expert Advisors',        path: '/team' },
+    { name: 'Refer & Earn',           path: '/referrals' },
+    { name: 'Book a Consultation',    path: '/contact' },
   ];
 
-  const renderLink = (link: { name: string; path: string; external?: boolean }) =>
-    link.external ? (
-      <a href={link.path} target="_blank" rel="noopener noreferrer"
-        className="text-[13px] text-gray-400 font-medium hover:text-white hover:translate-x-1 transition-all duration-200 inline-block">
-        {link.name}
-      </a>
-    ) : (
-      <Link to={link.path}
-        className="text-[13px] text-gray-400 font-medium hover:text-white hover:translate-x-1 transition-all duration-200 inline-block">
-        {link.name}
-      </Link>
-    );
+  const renderLink = (link: { name: string; path: string }) => (
+    <Link
+      to={link.path}
+      className="text-[13px] text-gray-400 font-medium hover:text-white hover:translate-x-1 transition-all duration-200 inline-block"
+    >
+      {link.name}
+    </Link>
+  );
 
   return (
     <>
@@ -95,10 +74,9 @@ const Footer = () => {
                 aria-label="Eduwoy Home"
               >
                 <img 
-                  src={logo} 
+                  src={logoWhite} 
                   alt="Eduwoy Logo" 
-                  className="h-12 w-auto object-contain transition-all duration-300 ease-in-out" 
-                  style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }}
+                  className="h-10 w-auto object-contain transition-all duration-300 ease-in-out" 
                 />
               </Link>
               <h3 className="text-[18px] font-bold mb-2 tracking-tight text-white">Need an Admission Roadmap?</h3>
@@ -208,7 +186,7 @@ const Footer = () => {
               {['facebook', 'youtube', 'twitter', 'instagram', 'linkedin', 'whatsapp'].map(social => (
                 <a
                   key={social}
-                  href={social === 'whatsapp' ? getWhatsAppLink() : CONTACTS.socials[social as keyof typeof CONTACTS.socials] || FALLBACK}
+                  href={social === 'whatsapp' ? getWhatsAppLink() : CONTACTS.socials[social as keyof typeof CONTACTS.socials] || '#'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full bg-white/5 border border-white/10 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all"

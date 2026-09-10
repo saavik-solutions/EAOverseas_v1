@@ -86,8 +86,7 @@ const Navbar = () => {
                     <img 
                         src={logo} 
                         alt="Eduwoy Logo" 
-                        className="h-12 lg:h-14 w-auto object-contain transition-all duration-300 ease-in-out" 
-                        style={{ filter: 'brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(6011%) hue-rotate(272deg) brightness(83%) contrast(98%)' }}
+                        className="h-10 lg:h-12 w-auto object-contain transition-all duration-300 ease-in-out hover:opacity-90" 
                     />
                 </Link>
 
